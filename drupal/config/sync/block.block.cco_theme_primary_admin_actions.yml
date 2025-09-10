@@ -1,0 +1,20 @@
+uuid: 33683866-a41d-48ca-86c8-1a00f65ea5ad
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - cco_theme
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: cco_theme_primary_admin_actions
+theme: cco_theme
+region: header
+weight: -6
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: "Actions d'administration principales"
+  label_display: '0'
+  provider: core
+visibility: {  }

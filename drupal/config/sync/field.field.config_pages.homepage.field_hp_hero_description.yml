@@ -1,0 +1,22 @@
+uuid: 3e8133fc-1884-4e4d-82c7-e32206535dd7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - config_pages.type.homepage
+    - field.storage.config_pages.field_hp_hero_description
+  module:
+    - text
+id: config_pages.homepage.field_hp_hero_description
+field_name: field_hp_hero_description
+entity_type: config_pages
+bundle: homepage
+label: Description
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

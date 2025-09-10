@@ -1,0 +1,71 @@
+@use "../tools/colors" as colors;
+@use "../tools/fonts" as fonts;
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: colors.$midnight-blue;
+  background: colors.$honey-yellow;
+  padding: .5rem 1rem;
+  border-radius: 30px;
+  transition: all 500ms;
+  margin: .5rem auto;
+  text-align: center;
+  font-family: fonts.$fredoka;
+  border: none;
+
+  &:focus,
+  &:hover {
+    background: colors.$midnight-blue;
+    color: colors.$honey-yellow;
+    cursor: pointer;
+  }
+
+  &--lagoon-blue {
+    background: colors.$lagoon-blue;
+
+    &:focus,
+    &:hover {
+      color: colors.$lagoon-blue;
+    }
+  }
+
+  &--vine-peach {
+    background: colors.$vine-peach;
+
+    &:focus,
+    &:hover {
+      color: colors.$vine-peach;
+    }
+  }
+
+  &--honey-yellow {
+    background: colors.$honey-yellow;
+
+    &:focus,
+    &:hover {
+      color: colors.$honey-yellow;
+    }
+  }
+
+  &--lavender-purple-medium {
+    background: colors.$lavender-purple-medium;
+
+    &:focus,
+    &:hover {
+      color: colors.$lavender-purple-medium;
+    }
+  }
+
+  &--midnight-blue {
+    background: colors.$midnight-blue;
+    color: colors.$snow-white;
+
+    &:focus,
+    &:hover {
+      color: colors.$midnight-blue;
+      background: colors.$snow-white;
+    }
+  }
+}
+

@@ -1,0 +1,127 @@
+@use "../../tools/colors" as colors;
+@use "../../tools/variables" as variables;
+@use "../../tools/fonts" as fonts;
+@use "../../tools/mixins" as mixins;
+
+// Bloc Services.
+.hp-services {
+  padding: 3rem 0;
+
+  &__title {
+    color: colors.$electric-blue;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+
+    @include mixins.media-min("xl") {
+      width: 50%;
+    }
+  }
+
+  &__description {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+
+    p {
+      font-size: 18px !important;
+    }
+
+    @include mixins.media-min("xl") {
+      width: 75%;
+    }
+  }
+
+  &__services {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-left: 0;
+  }
+
+  &__service {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    padding: 3rem;
+    background: colors.$salt-flower-gray;
+    position: relative;
+    align-items: start;
+
+    &:first-child {
+      margin-top: 3rem;
+    }
+
+    &-image {
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &-content {
+      width: 100%;
+    }
+
+    &::before {
+      content: "";
+      width: 80px !important;
+      height: 80px;
+      border-radius: 50%;
+      position: absolute;
+      left: -40px;
+      top: 100px;
+    }
+
+    @include mixins.media-min("md") {
+      &-image {
+        width: 50%;
+      }
+    }
+
+    @include mixins.media-min("xl") {
+      flex-direction: row;
+      gap: 3rem;
+      border-left: 10px solid colors.$honey-yellow;
+      padding: 2rem 2rem 2rem 5rem;
+      align-items: center;
+
+      &-image {
+        width: 30%;
+      }
+
+      &--lagoon-blue {
+        border-left-color: colors.$lagoon-blue;
+
+        &::before {
+          background: colors.$lagoon-blue;
+        }
+      }
+
+      &--vine-peach {
+        border-left-color: colors.$vine-peach;
+
+        &::before {
+          background: colors.$vine-peach;
+        }
+      }
+
+      &--honey-yellow {
+        border-left-color: colors.$honey-yellow;
+
+        &::before {
+          background: colors.$honey-yellow;
+        }
+      }
+
+      &--lavender-purple-medium {
+        border-left-color: colors.$lavender-purple-medium;
+
+        &::before {
+          background: colors.$lavender-purple-medium;
+        }
+      }
+    }
+  }
+}

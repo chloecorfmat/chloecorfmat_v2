@@ -1,0 +1,150 @@
+@use "../../tools/colors" as colors;
+@use "../../tools/variables" as variables;
+@use "../../tools/fonts" as fonts;
+@use "../../tools/mixins" as mixins;
+
+// Bloc Podcast.
+.hp-podcast {
+  background: colors.$lavender-purple-light;
+  background-image: url("/themes/custom/cco_theme/assets/asset-podcast.png");
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-position-y: center;
+  color: colors.$midnight-blue;
+  padding: 3rem 0;
+
+  > .block {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+
+    @include mixins.media-min("xl") {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  h2 {
+    color: colors.$midnight-blue;
+  }
+
+  &__content {
+    width: 100%;
+
+    &-header {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+
+      &-img {
+        width: 20%;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      &-content {
+        width: 70%;
+      }
+    }
+
+    &-description {
+      .wysiwyg {
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+
+    &-platforms {
+      &-title {
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      &-list {
+        padding-left: 0;
+        display: flex;
+        gap: 1rem;
+        list-style-type: none;
+
+        &-item {
+          width: 50px;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    &-transcription {
+      &-text {
+        font-size: 18px;
+      }
+    }
+
+    @include mixins.media-min("xl") {
+      width: 60%;
+    }
+  }
+
+  &__mascotte{
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+
+    @include mixins.media-min("xl") {
+      width: 40%;
+    }
+  }
+
+  .btn {
+    background-color: colors.$electric-blue;
+    color: colors.$snow-white;
+    font-size: 18px;
+
+    &:hover,
+    &:focus {
+      background: colors.$midnight-blue;
+    }
+  }
+}
+
+// Bannière de mots défilante.
+.hp-podcast__banner {
+  max-width: 100%;
+  overflow: hidden;
+  background: colors.$lavender-purple;
+  color: colors.$midnight-blue;
+}
+
+.hp-podcast__banner-marquee {
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: marquee 90s linear infinite;
+}
+
+.hp-podcast__banner-marquee p {
+  display: inline-block;
+  font-size: 24px;
+  font-family: fonts.$kanopi;
+  line-height: 3;
+  letter-spacing: 0.06em;
+  margin: 0;
+  word-spacing: 1rem;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}

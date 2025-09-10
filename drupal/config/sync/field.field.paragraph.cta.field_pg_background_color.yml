@@ -1,0 +1,22 @@
+uuid: 11d03a7b-8b62-44a1-a1d1-443db918e4f5
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_background_color
+    - paragraphs.paragraphs_type.cta
+  module:
+    - color_field
+id: paragraph.cta.field_pg_background_color
+field_name: field_pg_background_color
+entity_type: paragraph
+bundle: cta
+label: 'Couleur de fond'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

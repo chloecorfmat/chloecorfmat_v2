@@ -1,0 +1,19 @@
+uuid: 6a9e8126-a111-42d1-8824-53b2fbd5d620
+langcode: fr
+status: true
+dependencies:
+  config:
+    - config_pages.type.contact
+    - field.storage.config_pages.field_contact_social_title
+id: config_pages.contact.field_contact_social_title
+field_name: field_contact_social_title
+entity_type: config_pages
+bundle: contact
+label: 'Titre "Réseaux sociaux"'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

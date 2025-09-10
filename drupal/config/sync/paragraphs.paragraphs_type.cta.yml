@@ -1,0 +1,10 @@
+uuid: 52b45d56-27e3-458b-8061-e013092a9060
+langcode: fr
+status: true
+dependencies: {  }
+id: cta
+label: "Appel à l'action"
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

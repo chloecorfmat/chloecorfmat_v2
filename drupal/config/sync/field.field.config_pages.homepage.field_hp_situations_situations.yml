@@ -1,0 +1,34 @@
+uuid: ccf064ea-ee3a-4578-ba65-d3e020e87260
+langcode: fr
+status: true
+dependencies:
+  config:
+    - config_pages.type.homepage
+    - field.storage.config_pages.field_hp_situations_situations
+    - paragraphs.paragraphs_type.situation
+  module:
+    - entity_reference_revisions
+id: config_pages.homepage.field_hp_situations_situations
+field_name: field_hp_situations_situations
+entity_type: config_pages
+bundle: homepage
+label: Situations
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      situation: situation
+    negate: 0
+    target_bundles_drag_drop:
+      cta:
+        weight: 4
+        enabled: false
+      situation:
+        weight: 3
+        enabled: true
+field_type: entity_reference_revisions

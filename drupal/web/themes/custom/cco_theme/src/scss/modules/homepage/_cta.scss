@@ -1,0 +1,148 @@
+@use "../../tools/colors" as colors;
+@use "../../tools/variables" as variables;
+@use "../../tools/fonts" as fonts;
+@use "../../tools/mixins" as mixins;
+
+.hp-cta {
+  background: colors.$vine-peach;
+  padding: 3rem 0;
+
+  > .block {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+
+    @include mixins.media-min("md") {
+      gap: 5rem;
+    }
+
+    @include mixins.media-min("xl") {
+      gap: 7rem;
+      flex-direction: row;
+    }
+  }
+
+  h2 {
+    color: colors.$midnight-blue;
+  }
+
+  li,
+  p {
+    font-size: 18px;
+  }
+
+  &__content {
+    width: 100%;
+
+    @include mixins.media-min("xl") {
+      width: 60%;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    position: relative;
+    text-align: center;
+
+    &-photo {
+      width: 100%;
+    }
+
+    &-inclusion {
+      position: absolute;
+      transform: rotate(-10deg);
+      display: none;
+    }
+
+    &-creative-engagee {
+      position: absolute;
+      display: none;
+    }
+
+    &-notes {
+      position: absolute;
+      display: none;
+    }
+
+    &-mug {
+      position: absolute;
+      display: none;
+    }
+
+    @include mixins.media-min("md") {
+      &-photo {
+        width: 70%;
+      }
+
+      &-inclusion {
+        top: -2rem;
+        left: 2rem;
+        display: block;
+        max-width: 300px;
+      }
+
+      &-creative-engagee {
+        bottom: -3rem;
+        left: 4rem;
+        display: block;
+        max-width: 300px;
+      }
+
+      &-notes {
+        display: block;
+        max-width: 180px;
+        right: 1rem;
+        top: 5rem;
+      }
+
+      &-mug {
+        display: block;
+        max-width: 125px;
+        transform: rotate(-10deg);
+        top: 14rem;
+        right: 3rem;
+      }
+
+    }
+
+    @include mixins.media-min("xl") {
+      width: 40%;
+
+      &-photo {
+        width: 100%;
+      }
+
+      &-inclusion {
+        top: -2rem;
+        left: -5rem;
+        max-width: 220px;
+      }
+
+      &-creative-engagee {
+        bottom: -3rem;
+        left:-5rem;
+        max-width: 250px;
+      }
+
+      &-notes {
+        max-width: 120px;
+        right: -3rem;
+        top: 3rem;
+      }
+
+      &-mug {
+        max-width: 100px;
+        top: 10rem;
+        right: -3rem;
+      }
+    }
+  }
+
+  &__background {
+    display: block;
+    min-height: 13rem;
+    background-image: url("/themes/custom/cco_theme/assets/asset-cta-2.png");
+    background-repeat: repeat-x;
+  }
+}

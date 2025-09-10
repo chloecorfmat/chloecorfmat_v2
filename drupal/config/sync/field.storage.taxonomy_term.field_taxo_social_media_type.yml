@@ -1,0 +1,27 @@
+uuid: 1ac9752d-0d50-4a3d-b0ca-cc9aa5e7e1a0
+langcode: fr
+status: true
+dependencies:
+  module:
+    - options
+    - taxonomy
+id: taxonomy_term.field_taxo_social_media_type
+field_name: field_taxo_social_media_type
+entity_type: taxonomy_term
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: podcast
+      label: Podcast
+    -
+      value: social_media
+      label: 'Réseaux sociaux'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

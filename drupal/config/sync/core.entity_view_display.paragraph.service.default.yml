@@ -1,0 +1,52 @@
+uuid: 4c59db37-5473-4b22-b507-6dfa97a15514
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.service.field_pg_service_cta
+    - field.field.paragraph.service.field_pg_service_description
+    - field.field.paragraph.service.field_pg_service_image
+    - field.field.paragraph.service.field_pg_service_name
+    - paragraphs.paragraphs_type.service
+  module:
+    - entity_reference_revisions
+    - text
+id: paragraph.service.default
+targetEntityType: paragraph
+bundle: service
+mode: default
+content:
+  field_pg_service_cta:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_pg_service_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_pg_service_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_pg_service_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

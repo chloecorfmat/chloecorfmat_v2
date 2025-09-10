@@ -1,0 +1,73 @@
+@use "../../tools/colors" as colors;
+@use "../../tools/variables" as variables;
+@use "../../tools/fonts" as fonts;
+@use "../../tools/mixins" as mixins;
+
+// Bloc À propos.
+.hp-about {
+  padding: 3rem 0;
+
+  > .block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+
+    @include mixins.media-min("xl") {
+      gap: 5rem;
+      flex-direction: row;
+    }
+  }
+
+  .hp-about__image {
+    width: 100%;
+    position: relative;
+
+    .hp-about__image-photo {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+
+    .hp-about__image-badge {
+      position: absolute;
+      width: 150px;
+      bottom: -50px;
+      left: -50px;
+      display: none;
+
+      @include mixins.media-min("xl") {
+        display: block;
+      }
+    }
+
+    @include mixins.media-min("xl") {
+      width: 30%;
+      height: 30%;
+    }
+  }
+
+  .hp-about__content {
+    width: 100%;
+
+    h2 {
+      color: colors.$bloody-orange;
+    }
+
+    .wysiwyg {
+      color: colors.$midnight-blue;
+
+      p {
+        font-size: 18px;
+      }
+    }
+
+    .btn {
+      font-size: 18px;
+    }
+
+    @include mixins.media-min("xl") {
+      width: 70%;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+uuid: bd1005d2-8c93-4b50-b1b0-d0cb1336eb44
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cta.field_pg_background_color
+    - field.field.paragraph.cta.field_pg_is_external
+    - field.field.paragraph.cta.field_pg_link
+    - paragraphs.paragraphs_type.cta
+  module:
+    - color_field
+    - link
+id: paragraph.cta.default
+targetEntityType: paragraph
+bundle: cta
+mode: default
+content:
+  field_pg_background_color:
+    type: color_field_widget_box
+    weight: 2
+    region: content
+    settings:
+      default_colors: '#d54414,#3028f4,#f2bb04,#fa9a64,#121289,#aee6ed,#c7a9ff,#ffffff'
+    third_party_settings: {  }
+  field_pg_is_external:
+    type: boolean_checkbox
+    weight: 1
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_pg_link:
+    type: link_default
+    weight: 0
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,21 @@
+uuid: e324177f-2152-4d5e-a93a-200530f3111f
+langcode: fr
+status: true
+dependencies:
+  module:
+    - config_pages
+    - entity_reference_revisions
+    - paragraphs
+id: config_pages.field_hp_cta_cta
+field_name: field_hp_cta_cta
+entity_type: config_pages
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

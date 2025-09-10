@@ -1,0 +1,22 @@
+uuid: 3ce4e4fe-b6e1-41cb-852c-aa1a715a1354
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_situation_description
+    - paragraphs.paragraphs_type.situation
+  module:
+    - text
+id: paragraph.situation.field_pg_situation_description
+field_name: field_pg_situation_description
+entity_type: paragraph
+bundle: situation
+label: Description
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

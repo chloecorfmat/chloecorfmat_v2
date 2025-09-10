@@ -1,0 +1,19 @@
+uuid: 71e24f8b-894a-4859-a690-6f40eaded183
+langcode: fr
+status: true
+dependencies:
+  config:
+    - config_pages.type.homepage
+    - field.storage.config_pages.field_hp_contact_coord_email_txt
+id: config_pages.homepage.field_hp_contact_coord_email_txt
+field_name: field_hp_contact_coord_email_txt
+entity_type: config_pages
+bundle: homepage
+label: 'Texte "Par e-mail :"'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

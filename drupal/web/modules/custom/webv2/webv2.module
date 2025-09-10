@@ -1,0 +1,47 @@
+<?php
+
+/**
+ * @file
+ * Main file for module webv2.
+ */
+
+/**
+ * Implémentation de hook_help().
+ */
+function webv2_help($route_name, \Drupal\Core\Routing\RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.webv2':
+      return t('Aide pour le module Chloé Corfmat.');
+  }
+}
+
+function webv2_theme($existing, $type, $theme, $path) {
+  return [
+    'homepage' => [
+      'render element' => 'children',
+      'template' => 'homepage',
+      'path' => $path . '/templates',
+      'variables' => [
+        'hero' => NULL,
+        'situations' => NULL,
+        'podcast' => NULL,
+        'about' => NULL,
+        'newsletter' => NULL,
+        'services' => NULL,
+        'cta' => NULL,
+        'blog' => NULL,
+        'reviews' => NULL,
+        'resource' => NULL,
+        'contact' => NULL,
+      ],
+    ],
+    'newsletter_confirmation' => [
+      'render element' => 'children',
+      'template' => 'newsletter-confirmation',
+      'path' => $path . '/templates',
+      'variables' => [
+        'title' => NULL,
+      ],
+    ],
+  ];
+}

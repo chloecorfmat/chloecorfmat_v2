@@ -1,0 +1,19 @@
+uuid: eb1b765f-f02f-4459-b757-48401fc7af90
+langcode: fr
+status: true
+dependencies:
+  config:
+    - config_pages.type.homepage
+    - field.storage.config_pages.field_hp_contact_coord_title
+id: config_pages.homepage.field_hp_contact_coord_title
+field_name: field_hp_contact_coord_title
+entity_type: config_pages
+bundle: homepage
+label: 'Titre des coordonnées'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

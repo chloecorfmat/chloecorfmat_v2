@@ -1,0 +1,36 @@
+@use "../tools/fonts" as fonts;
+@use "../tools/colors" as colors;
+
+h1  {
+  font-family: fonts.$momentz;
+  color: colors.$bloody-orange;
+  font-weight: normal;
+  font-size: 32px;
+}
+
+h2 {
+  font-family: fonts.$momentz;
+  color: colors.$electric-blue;
+  font-weight: normal;
+  font-size: 28px;
+  margin: 0;
+}
+
+h3 {
+  font-family: fonts.$fredoka;
+  font-weight: 700;
+  font-size: 22px
+}
+
+li,
+p {
+  font-family: fonts.$fredoka;
+  color: colors.$midnight-blue;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a {
+  font-family: fonts.$fredoka;
+  text-decoration: underline;
+}

@@ -1,0 +1,21 @@
+uuid: fe15e116-d5ca-4196-9113-2ce53c5c62bd
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_is_external
+    - paragraphs.paragraphs_type.cta
+id: paragraph.cta.field_pg_is_external
+field_name: field_pg_is_external
+entity_type: paragraph
+bundle: cta
+label: 'Est externe ?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

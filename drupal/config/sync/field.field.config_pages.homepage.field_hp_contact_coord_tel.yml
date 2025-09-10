@@ -1,0 +1,21 @@
+uuid: 7706db33-be21-499a-a945-0630f8d1d893
+langcode: fr
+status: true
+dependencies:
+  config:
+    - config_pages.type.homepage
+    - field.storage.config_pages.field_hp_contact_coord_tel
+  module:
+    - telephone
+id: config_pages.homepage.field_hp_contact_coord_tel
+field_name: field_hp_contact_coord_tel
+entity_type: config_pages
+bundle: homepage
+label: 'Numéro de téléphone'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

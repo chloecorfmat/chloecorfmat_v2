@@ -1,0 +1,65 @@
+@use "../../tools/colors" as colors;
+@use "../../tools/variables" as variables;
+@use "../../tools/fonts" as fonts;
+@use "../../tools/mixins" as mixins;
+
+.hp-reviews {
+  position: relative;
+  padding: 5rem 0 3rem;
+
+  &__pencils {
+    position: absolute;
+    width: 100px;
+    top: -4rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__title {
+    text-align: center;
+    margin: auto;
+
+    @include mixins.media-min("xl") {
+      max-width: 70%;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    margin: auto;
+
+    @include mixins.media-min("xl") {
+      max-width: 70%;
+    }
+
+    .wysiwyg {
+      > p {
+        margin: .5rem auto;
+        font-size: 18px;
+        text-align: center;
+      }
+    }
+  }
+
+  &__company {
+    font-weight: 700;
+  }
+
+  &__review {
+    > p {
+      font-size: 18px;
+    }
+  }
+
+  &__cta {
+    text-align: center;
+
+    a {
+      font-size: 18px;
+    }
+  }
+
+  .carousel__slide {
+    text-align: center;
+  }
+}

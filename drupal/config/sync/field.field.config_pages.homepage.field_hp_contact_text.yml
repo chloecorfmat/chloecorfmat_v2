@@ -1,0 +1,22 @@
+uuid: 825ae69f-c58c-4c08-91ca-93766ca659c5
+langcode: fr
+status: true
+dependencies:
+  config:
+    - config_pages.type.homepage
+    - field.storage.config_pages.field_hp_contact_text
+  module:
+    - text
+id: config_pages.homepage.field_hp_contact_text
+field_name: field_hp_contact_text
+entity_type: config_pages
+bundle: homepage
+label: Texte
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

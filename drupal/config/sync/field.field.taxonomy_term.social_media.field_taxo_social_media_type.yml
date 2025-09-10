@@ -1,0 +1,23 @@
+uuid: 726be470-6bae-44d3-bd4d-f1adb2c7128c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_taxo_social_media_type
+    - taxonomy.vocabulary.social_media
+  module:
+    - options
+id: taxonomy_term.social_media.field_taxo_social_media_type
+field_name: field_taxo_social_media_type
+entity_type: taxonomy_term
+bundle: social_media
+label: Type
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: social_media
+default_value_callback: ''
+settings: {  }
+field_type: list_string

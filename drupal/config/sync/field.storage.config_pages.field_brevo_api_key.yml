@@ -1,0 +1,21 @@
+uuid: 60ce4bb7-93f9-4d1a-a64c-18ec72030326
+langcode: fr
+status: true
+dependencies:
+  module:
+    - config_pages
+id: config_pages.field_brevo_api_key
+field_name: field_brevo_api_key
+entity_type: config_pages
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

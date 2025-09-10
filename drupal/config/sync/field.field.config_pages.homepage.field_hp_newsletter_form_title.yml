@@ -1,0 +1,19 @@
+uuid: a3f998d6-a62a-4071-9afe-c63f5267c78d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - config_pages.type.homepage
+    - field.storage.config_pages.field_hp_newsletter_form_title
+id: config_pages.homepage.field_hp_newsletter_form_title
+field_name: field_hp_newsletter_form_title
+entity_type: config_pages
+bundle: homepage
+label: "Titre formulaire d'inscription"
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

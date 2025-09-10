@@ -1,0 +1,9 @@
+uuid: 15c930b3-e0b9-48bd-abee-dd2cfb6a060d
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Réseaux sociaux'
+vid: social_media
+description: null
+weight: 0
+new_revision: false

@@ -1,0 +1,10 @@
+uuid: 0015aa9c-9046-49c2-b2b8-ab99bfe55f41
+langcode: fr
+status: true
+dependencies: {  }
+id: review
+label: Recommandation
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

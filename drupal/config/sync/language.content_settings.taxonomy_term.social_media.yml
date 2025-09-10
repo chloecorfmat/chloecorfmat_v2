@@ -1,0 +1,11 @@
+uuid: 78386c74-05b4-4ecf-80fd-61b18d002704
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.social_media
+id: taxonomy_term.social_media
+target_entity_type_id: taxonomy_term
+target_bundle: social_media
+default_langcode: site_default
+language_alterable: false

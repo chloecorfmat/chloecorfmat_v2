@@ -1,0 +1,31 @@
+uuid: 7d6fc3ed-4996-4b11-a973-2ac1e85f4b65
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.situation.field_pg_situation_description
+    - field.field.paragraph.situation.field_pg_situation_title
+    - paragraphs.paragraphs_type.situation
+  module:
+    - text
+id: paragraph.situation.default
+targetEntityType: paragraph
+bundle: situation
+mode: default
+content:
+  field_pg_situation_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_pg_situation_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

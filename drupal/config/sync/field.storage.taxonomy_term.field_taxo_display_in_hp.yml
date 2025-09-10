@@ -1,0 +1,18 @@
+uuid: bc43ccc1-1f4c-4dce-b8c7-906e248d929e
+langcode: fr
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.field_taxo_display_in_hp
+field_name: field_taxo_display_in_hp
+entity_type: taxonomy_term
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

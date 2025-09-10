@@ -1,0 +1,22 @@
+uuid: c615c38c-7571-4707-b3dd-c27c38563f46
+langcode: fr
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - cco_theme
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: cco_theme_help
+theme: cco_theme
+region: header
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Aide
+  label_display: '0'
+  provider: help
+visibility: {  }

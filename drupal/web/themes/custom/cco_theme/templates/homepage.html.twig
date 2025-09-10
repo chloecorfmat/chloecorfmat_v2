@@ -1,0 +1,369 @@
+<div class="hp-hero">
+  <div class="block">
+    <div class="hp-hero__col">
+      {% set media = hero.photo %}
+      {% if media.field_media_image.entity %}
+        {% set uri = media.field_media_image.entity.uri.value %}
+        {% set alt = media.field_media_image.alt %}
+        <div class="img__container">
+          <img
+            src="{{ file_url(uri) }}"
+            alt=""
+          >
+        </div>
+      {% endif %}
+    </div>
+    <div class="hp-hero__col">
+      <h1>{{ hero.title }}</h1>
+      <p>{{ hero.description|raw }}</p>
+      <a href="{{ hero.cta.url }}" target="{{ '_' ~ hero.cta.target }}" class="btn">
+        {{ hero.cta.text }}
+      </a>
+    </div>
+  </div>
+  <div class="hp-hero__background">
+  </div>
+</div>
+
+<div class="hp-situations">
+  <div class="block">
+    <div class="hp-situations__title">
+      <h2>{{ situations.title }}</h2>
+      <div class="hp-situations__title-img">
+        <img src="/themes/custom/cco_theme/assets/asset-sticker-book.png" alt="" />
+      </div>
+    </div>
+
+
+    {% if situations.situations is not empty %}
+      <ul class="hp-situations__list">
+        {% for situation in situations.situations %}
+          <li>
+            <h3>{{ situation.title }}</h3>
+            <div>
+              {{ situation.description|raw }}
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+</div>
+
+<div class="hp-podcast">
+  <div class="block">
+    <div class="hp-podcast__content">
+      <div class="hp-podcast__content-header">
+        <div class="hp-podcast__content-header-img">
+          <img src="/themes/custom/cco_theme/assets/asset-sticker-podcast-white.png" alt="">
+        </div>
+        <div class="hp-podcast__content-header-content">
+          <h2>{{ podcast.title }}</h2>
+        </div>
+      </div>
+
+      <div class="hp-podcast__content-description">
+        <div class="wysiwyg">
+          {{ podcast.description|raw }}
+        </div>
+      </div>
+
+      <div class="hp-podcast__content-platforms">
+        <p class="hp-podcast__content-platforms-title">
+          <strong>{{ podcast.platforms.text }}</strong>
+        </p>
+
+        {% if podcast.platforms.platforms is not empty %}
+          <ul class="hp-podcast__content-platforms-list">
+            {% for platform in podcast.platforms.platforms %}
+              <li class="hp-podcast__content-platforms-list-item">
+                <a href="{{ platform.url }}" title="{{ platform.name ~ ' - Nouvelle fenêtre' }}">
+                  <img src="{{ file_url(platform.logo) }}" alt="" />
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+
+      <div class="hp-podcast__content-transcription">
+        <p class="hp-podcast__content-transcription-text">
+          <strong>{{ podcast.transcription.text }}</strong>
+        </p>
+        <a href="{{ podcast.transcription.cta.url }}" target="{{ '_' ~ podcast.transcription.cta.target }}" class="btn">
+          {{ podcast.transcription.cta.text }}
+        </a>
+      </div>
+    </div>
+    <div class="hp-podcast__mascotte">
+      <img src="{{ file_url(podcast.mascotte) }}" alt="">
+    </div>
+  </div>
+</div>
+<div class="hp-podcast__banner" aria-hidden="true">
+  <div class="hp-podcast__banner-marquee">
+    {% set words = '' %}
+    {% for word in podcast.banner %}
+      {% set words = words ~ ' ' ~ word.value %}
+    {% endfor %}
+
+    {% for i in 1..2 %}
+      {% set words = words ~ ' ' ~ words %}
+    {% endfor %}
+
+    <p class="hp-podcast__banner-list" data-text="{{ words }}">
+      {{ words }}
+    </p>
+    <p class="hp-podcast__banner-list" data-text="{{ words }}">
+      {{ words }}
+    </p>
+  </div>
+</div>
+
+<div class="hp-about">
+  <div class="block">
+    <div class="hp-about__image">
+      <img src="{{ file_url(about.photo) }}" alt="" class="hp-about__image-photo">
+      <img src="/themes/custom/cco_theme/assets/logo-badge-bloody-orange.png" alt="" class="hp-about__image-badge">
+    </div>
+    <div class="hp-about__content">
+      <h2>{{ about.title }}</h2>
+      <div class="wysiwyg">
+        {{ about.description|raw }}
+      </div>
+      <a href="{{ about.cta.url }}" target="{{ '_' ~ about.cta.target }}" class="btn">
+        {{ about.cta.text }}
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="hp-newsletter">
+  <div class="block">
+    <div class="hp-newsletter__content">
+      <h2>{{ newsletter.title }}</h2>
+      <div class="wysiwyg">
+        {{ newsletter.text|raw }}
+      </div>
+
+      <div class="hp-newsletter__form">
+        <h3>{{ newsletter.form.title }}</h3>
+        {{ newsletter.form.form }}
+      </div>
+
+      <div class="hp-newsletter__last-editions">
+        <div class="wysiwyg">
+          {{ newsletter.last_editions.text|raw }}
+        </div>
+        <a href="{{ newsletter.last_editions.cta.url }}" target="{{ '_' ~ newsletter.last_editions.cta.target }}" class="btn">
+          {{ newsletter.last_editions.cta.text }}
+        </a>
+      </div>
+    </div>
+    <div class="hp-newsletter__image">
+      <img src="/themes/custom/cco_theme/assets/asset-sticker-accessible-white.png" alt="" class="hp-newsletter__image-accessible">
+      <img src="/themes/custom/cco_theme/assets/asset-sticker-impact-white.png" alt="" class="hp-newsletter__image-impact">
+      <img src="{{ file_url(newsletter.photo) }}" alt="" class="hp-newsletter__image-photo">
+      <img src="/themes/custom/cco_theme/assets/asset-sticker-numerique-responsable-white.png" alt="" class="hp-newsletter__image-numerique-responsable">
+    </div>
+  </div>
+</div>
+
+<div class="hp-services">
+  <div class="block">
+    <h2 class="hp-services__title">{{ services.title }}</h2>
+    <div class="hp-services__description wysiwyg">
+      {{ services.description|raw }}
+    </div>
+
+    {% if services.services is not empty %}
+      <ul class="hp-services__services">
+        {% for service in services.services %}
+          <li class="hp-services__service hp-services__service--{{ service.cta.color }}">
+            <div class="hp-services__service-image">
+              <img src="{{ file_url(service.image) }}" alt="" >
+            </div>
+            <div class="hp-services__service-content">
+              <h3>{{ service.name }}</h3>
+              <div class="hp-services__service-description wysiwyg">
+                {{ service.description|raw }}
+              </div>
+              <a href="{{ service.cta.url }}" target="{{ '_' ~ service.cta.target }}" class="btn btn--{{ service.cta.color }}">
+                {{ service.cta.text }}
+              </a>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+</div>
+
+<div class="hp-cta">
+  <div class="block">
+    <div class="hp-cta__image">
+      <img src="/themes/custom/cco_theme/assets/asset-sticker-inclusion-white.png" alt="" class="hp-cta__image-inclusion">
+      <img src="/themes/custom/cco_theme/assets/asset-sticker-creative-engagee-white.png" alt="" class="hp-cta__image-creative-engagee">
+      <img src="{{ file_url(cta.photo) }}" alt="" class="hp-cta__image-photo">
+      <img src="/themes/custom/cco_theme/assets/asset-sticker-notes-white.png" alt="" class="hp-cta__image-notes">
+      <img src="/themes/custom/cco_theme/assets/asset-sticker-mug-white.png" alt="" class="hp-cta__image-mug">
+    </div>
+    <div class="hp-cta__content">
+      <h2>{{ cta.title }}</h2>
+      <div class="wysiwyg">
+        {{ cta.text|raw }}
+      </div>
+      <a href="{{ cta.cta.url }}" target="{{ '_' ~ cta.cta.target }}" class="btn btn--{{ cta.cta.color }}">
+        {{ cta.cta.text }}
+      </a>
+    </div>
+  </div>
+</div>
+<div class="hp-cta__background">
+</div>
+
+<div class="hp-blog">
+  <div class="block">
+    <h2>{{ blog.title }}</h2>
+    <div class="hp-blog__text">
+      <div class="wysiwyg">
+        {{ blog.text|raw }}
+      </div>
+    </div>
+
+    <div class="hp-blog__articles">
+      <div class="hp-blog__articles-article">
+        <img src="/themes/custom/cco_theme/assets/asset-blog-1.png" alt="" class="">
+        <h3>Comment les déficients visuels utilisent le web ? – Podcast Clic Éthique</h3>
+        <p>Je suis très heureuse de vous présenter le second épisode de mon podcast Clic Éthique : « Comment les déficients visuels utilisent le web ? »</p>
+        <a href="{{ blog.cta.url }}" target="{{ '_' ~ blog.cta.target }}" class="btn">
+          Lire l'article
+        </a>
+      </div>
+      <div class="hp-blog__articles-article">
+        <img src="/themes/custom/cco_theme/assets/asset-blog-2.png" alt="" class="">
+        <h3>Comment les déficients visuels utilisent le web ? – Podcast Clic Éthique</h3>
+        <p>Je suis très heureuse de vous présenter le second épisode de mon podcast Clic Éthique : « Comment les déficients visuels utilisent le web ? »</p>
+        <a href="{{ blog.cta.url }}" target="{{ '_' ~ blog.cta.target }}" class="btn">
+          Lire l'article
+        </a>
+      </div>
+      <div class="hp-blog__articles-article">
+        <img src="/themes/custom/cco_theme/assets/asset-blog-3.png" alt="" class="">
+        <h3>Comment les déficients visuels utilisent le web ? – Podcast Clic Éthique</h3>
+        <p>Je suis très heureuse de vous présenter le second épisode de mon podcast Clic Éthique : « Comment les déficients visuels utilisent le web ? »</p>
+        <a href="{{ blog.cta.url }}" target="{{ '_' ~ blog.cta.target }}" class="btn">
+          Lire l'article
+        </a>
+      </div>
+    </div>
+
+    <div class="hp-blog__cta">
+      <a href="{{ blog.cta.url }}" target="{{ '_' ~ blog.cta.target }}" class="btn btn--{{ blog.cta.color }}">
+        {{ blog.cta.text }}
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="hp-reviews">
+  <img src="/themes/custom/cco_theme/assets/asset-pencils-white.png" alt="" class="hp-reviews__pencils">
+  <div class="block">
+    <h2 class="hp-reviews__title" id="reviews-title">{{ reviews.title }}</h2>
+    <div class="hp-reviews__text">
+      <div class="wysiwyg">
+        {{ reviews.text|raw }}
+      </div>
+    </div>
+
+    {# Carousel #}
+    <div class="carousel" role="group" aria-roledescription="Carrousel" aria-labelledby="hp-reviews-title">
+      <button class="carousel__btn carousel__prev">
+        <i class="fa-solid fa-chevron-left fa-2x" aria-hidden="true"></i>
+        <span class="visually-hidden">Recommandations précédentes</span>
+      </button>
+      <div class="carousel__viewport">
+        <ul id="carousel__track" class="carousel__slides" aria-atomic="false" aria-live="polite">
+          {% for review in reviews.reviews %}
+            <li class="carousel__slide carousel--{{ review.color }}" role="group" aria-roledescription="Recommandation" aria-label="1 sur 4">
+              <blockquote cite="https://www.linkedin.com/in/chloecorfmat/">
+                <div class="hp-reviews__review">{{ review.review|raw }}</div>
+                <p>{{ review.name }}, <span class="hp-reviews__company">{{ review.company }}</span></p>
+              </blockquote>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <button class="carousel__btn carousel__next">
+        <i class="fa-solid fa-chevron-right fa-2x" aria-hidden="true"></i>
+        <span class="visually-hidden">Recommandations suivantes</span>
+      </button>
+    </div>
+
+    <div class="hp-reviews__cta">
+      <a href="{{ reviews.cta.url }}" target="{{ '_' ~ reviews.cta.target }}" class="btn btn--{{ reviews.cta.color }}">
+        {{ reviews.cta.text }}
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="hp-resource">
+  <div class="block">
+    <div class="hp-resource__content">
+      <h2>{{ resource.title }}</h2>
+      <div class="wysiwyg">
+        {{ resource.text|raw }}
+      </div>
+    </div>
+    <div class="hp-resource__image">
+      <div class="hp-resource__image-container">
+        <img
+          src="{{ file_url(resource.photo) }}"
+          alt=""
+          class="hp-resource__image-photo"
+        >
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="hp-contact">
+  <div class="block">
+    <img src="/themes/custom/cco_theme/assets/asset-mascotte-contact.png" alt="" class="hp-contact__mascotte">
+    <div class="hp-contact__content">
+      <div class="hp-contact__text">
+        <h2>{{ contact.title }}</h2>
+        <div class="wysiwyg">
+          {{ contact.text|raw }}
+        </div>
+
+        <div class="hp-contact__others">
+          <h3>{{ contact.others.title }}</h3>
+          <div class="wysiwyg">
+            {{ contact.others.text|raw }}
+          </div>
+        </div>
+
+        <div class="hp-contact__social">
+          <h3>{{ contact.social.title }}</h3>
+          {% if contact.social.platforms is not empty %}
+            <ul class="hp-contact__social-list">
+              {% for platform in contact.social.platforms %}
+                <li class="hp-contact__social-item">
+                  <a href="{{ platform.url }}" target="_blank" title="{{ platform.name ~ ' - Nouvelle fenêtre' }}">
+                    <img src="{{ file_url(platform.logo) }}" alt="{{ platform.name }}">
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </div>
+      </div>
+      <div class="hp-contact__form">
+        <h2>{{ contact.form.title }}</h2>
+        <img src="/themes/custom/cco_theme/assets/asset-sticker-computer-white.png" alt="" class="hp-contact__computer">
+      </div>
+    </div>
+  </div>
+</div>

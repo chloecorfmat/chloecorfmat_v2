@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: ijfbzDTN4CbE7Sr-6ubWzy_t1vH4OtU1doNCLssVz-4
+langcode: fr
+uuid: fe5066ba-03fe-480a-91e3-46f8609b9d39
+name: 'Chloé Corfmat'
+mail: contact@chloecorfmat.fr
+slogan: 'Ingénieure web créative & engagée'
+page:
+  403: ''
+  404: ''
+  front: /homepage
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: fr
+mail_notification: null

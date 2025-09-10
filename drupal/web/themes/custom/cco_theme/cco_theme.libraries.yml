@@ -1,0 +1,9 @@
+global:
+  css:
+    theme:
+      dist/styles.css: { }
+  js:
+    dist/main.js: {}
+carousel:
+  js:
+    src/js/carousel.js: {}

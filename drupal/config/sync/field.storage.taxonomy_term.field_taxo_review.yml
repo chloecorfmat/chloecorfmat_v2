@@ -1,0 +1,19 @@
+uuid: 98c1b59b-bd35-45a0-852d-69c519a5c0c4
+langcode: fr
+status: true
+dependencies:
+  module:
+    - taxonomy
+    - text
+id: taxonomy_term.field_taxo_review
+field_name: field_taxo_review
+entity_type: taxonomy_term
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

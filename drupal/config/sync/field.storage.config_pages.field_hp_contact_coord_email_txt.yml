@@ -1,0 +1,21 @@
+uuid: 8d3f360f-e21e-4a2f-88f3-60ab3535ed1f
+langcode: fr
+status: true
+dependencies:
+  module:
+    - config_pages
+id: config_pages.field_hp_contact_coord_email_txt
+field_name: field_hp_contact_coord_email_txt
+entity_type: config_pages
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

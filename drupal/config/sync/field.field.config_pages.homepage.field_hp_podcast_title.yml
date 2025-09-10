@@ -1,0 +1,19 @@
+uuid: 795dac97-fd58-4b07-94cc-5241a1fe2d69
+langcode: fr
+status: true
+dependencies:
+  config:
+    - config_pages.type.homepage
+    - field.storage.config_pages.field_hp_podcast_title
+id: config_pages.homepage.field_hp_podcast_title
+field_name: field_hp_podcast_title
+entity_type: config_pages
+bundle: homepage
+label: Titre
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

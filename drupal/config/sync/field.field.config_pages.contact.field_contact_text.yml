@@ -1,0 +1,22 @@
+uuid: 53b2099c-2b73-49de-a585-34aa0c21bd6e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - config_pages.type.contact
+    - field.storage.config_pages.field_contact_text
+  module:
+    - text
+id: config_pages.contact.field_contact_text
+field_name: field_contact_text
+entity_type: config_pages
+bundle: contact
+label: Texte
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

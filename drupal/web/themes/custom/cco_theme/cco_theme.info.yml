@@ -1,0 +1,14 @@
+name: 'Chloé Corfmat'
+type: theme
+description: 'Thème du site chloecorfmat.fr v2'
+core_version_requirement: ^11
+base theme: false
+regions:
+  header: 'Header'
+  navbar: 'Navigation'
+  content: 'Contenu principal'
+  footer: 'Pied de page'
+  not_displayed: 'Non affiché'
+libraries:
+  - cco_theme/global
+  - cco_theme/carousel

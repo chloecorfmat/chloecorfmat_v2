@@ -1,0 +1,22 @@
+uuid: bf7362f2-e0cd-4e23-b242-0de25fb2e8fc
+langcode: fr
+status: true
+dependencies:
+  config:
+    - config_pages.type.homepage
+    - field.storage.config_pages.field_hp_resource_text
+  module:
+    - text
+id: config_pages.homepage.field_hp_resource_text
+field_name: field_hp_resource_text
+entity_type: config_pages
+bundle: homepage
+label: Texte
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

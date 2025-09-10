@@ -1,0 +1,53 @@
+services:
+  drupal:
+    build:
+      context: .
+      dockerfile: docker/drupal/dev/php/Dockerfile
+    ports:
+      - 8080:80
+    working_dir: /app/public/drupal
+    volumes:
+      - .:/app/public
+      - ./docker/drupal/dev/caddy/Caddyfile:/etc/frankenphp/Caddyfile
+      - ./docker/drupal/dev/php/php.ini:/usr/local/etc/php/php.ini
+    depends_on:
+      - db
+    networks:
+      - chloecorfmat-network
+
+  db:
+    image: postgres:16-bookworm
+    command: -c 'max_connections=10'
+    volumes:
+      - db-data:/var/lib/postgresql/data
+      - ./docker/postgres/init-patrimony-db.sh:/docker-entrypoint-initdb.d/init-patrimony-db.sh
+    environment:
+      - POSTGRES_DB=drupal
+      - POSTGRES_USER=drupal
+      - POSTGRES_PASSWORD=drupal
+    ports:
+      - '5432:5432'
+    networks:
+      - chloecorfmat-network
+
+  node:
+    image: node:20
+    volumes:
+      - ./drupal/web/themes/:/usr/app
+    restart: on-failure
+    entrypoint: "tail -f /dev/null"
+    working_dir: "/usr/app"
+
+  a11y:
+    image: node:20
+    volumes:
+      - ./:/usr/app
+    restart: on-failure
+    entrypoint: "tail -f /dev/null"
+    working_dir: "/usr/app"
+
+volumes:
+  db-data:
+
+networks:
+  chloecorfmat-network:

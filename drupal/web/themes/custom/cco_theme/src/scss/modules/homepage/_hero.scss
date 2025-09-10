@@ -1,0 +1,93 @@
+@use "../../tools/colors" as colors;
+@use "../../tools/variables" as variables;
+@use "../../tools/fonts" as fonts;
+@use "../../tools/mixins" as mixins;
+
+// Bloc hero.
+.hp-hero {
+  @include mixins.media-min("xl") {
+    margin: 5rem auto 0;
+  }
+
+  .block {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    @include mixins.media-min("xl") {
+      flex-direction: row;
+    }
+  }
+
+  &__col {
+    box-sizing: border-box;
+
+    &:first-child {
+      width: 100%;
+
+      @include mixins.media-min("xl") {
+        width: 35%;
+      }
+    }
+
+    &:nth-child(2) {
+      width: 100%;
+
+      @include mixins.media-min("xl") {
+        width: 65%;
+      }
+    }
+
+    .img__container {
+      max-width: 200px;
+      margin-left: 3rem;
+      margin-bottom: 2rem;
+
+      position: relative;
+      display: inline-block;
+
+      @include mixins.media-min("xl") {
+        max-width: 350px;
+        margin: initial;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 30px;
+        left: -30px;
+        right: 30px;
+        bottom: -30px;
+        background-color: colors.$lavender-purple-medium;
+        transform: rotate(-2deg);
+        z-index: 1;
+        border-radius: variables.$border-radius;
+      }
+
+      img {
+        width: 100%;
+        border-radius: variables.$border-radius;
+
+        display: block;
+        position: relative;
+        z-index: 2;
+      }
+    }
+
+    .btn,
+    li,
+    p {
+      font-size: 18px;
+    }
+  }
+
+  &__background {
+    min-height: 13rem;
+    background-image: url("/themes/custom/cco_theme/assets/asset-hero.png");
+    background-repeat: repeat-x;
+
+    @include mixins.media-min("xl") {
+      margin-top: -4rem;
+    }
+  }
+}

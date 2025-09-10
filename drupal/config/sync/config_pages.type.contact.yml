@@ -1,0 +1,17 @@
+uuid: ab4356ba-07b7-455e-bb06-d6ff87d8261e
+langcode: fr
+status: true
+dependencies: {  }
+id: contact
+label: Contact
+token: false
+context:
+  show_warning: true
+  group:
+    language: false
+  fallback:
+    language: ''
+menu:
+  path: ''
+  weight: 0
+  description: ''

@@ -1,0 +1,20 @@
+uuid: 0c7ec910-6bc9-4f1c-a87b-dea99b79fd2e
+langcode: fr
+status: true
+dependencies:
+  module:
+    - config_pages
+    - media
+id: config_pages.field_hp_newsletter_photo
+field_name: field_hp_newsletter_photo
+entity_type: config_pages
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

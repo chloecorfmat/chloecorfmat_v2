@@ -1,0 +1,738 @@
+uuid: d6fdae6b-dbf5-4934-99f6-c29048210e02
+langcode: fr
+status: true
+dependencies:
+  config:
+    - config_pages.type.homepage
+    - field.field.config_pages.homepage.field_hp_about_cta
+    - field.field.config_pages.homepage.field_hp_about_description
+    - field.field.config_pages.homepage.field_hp_about_photo
+    - field.field.config_pages.homepage.field_hp_about_title
+    - field.field.config_pages.homepage.field_hp_blog_cta
+    - field.field.config_pages.homepage.field_hp_blog_text
+    - field.field.config_pages.homepage.field_hp_blog_title
+    - field.field.config_pages.homepage.field_hp_contact_coord_email
+    - field.field.config_pages.homepage.field_hp_contact_coord_email_txt
+    - field.field.config_pages.homepage.field_hp_contact_coord_tel
+    - field.field.config_pages.homepage.field_hp_contact_coord_tel_text
+    - field.field.config_pages.homepage.field_hp_contact_coord_title
+    - field.field.config_pages.homepage.field_hp_contact_form_title
+    - field.field.config_pages.homepage.field_hp_contact_social_title
+    - field.field.config_pages.homepage.field_hp_contact_text
+    - field.field.config_pages.homepage.field_hp_contact_title
+    - field.field.config_pages.homepage.field_hp_cta_cta
+    - field.field.config_pages.homepage.field_hp_cta_photo
+    - field.field.config_pages.homepage.field_hp_cta_text
+    - field.field.config_pages.homepage.field_hp_cta_title
+    - field.field.config_pages.homepage.field_hp_hero_cta
+    - field.field.config_pages.homepage.field_hp_hero_description
+    - field.field.config_pages.homepage.field_hp_hero_photo
+    - field.field.config_pages.homepage.field_hp_hero_title
+    - field.field.config_pages.homepage.field_hp_newsletter_form_title
+    - field.field.config_pages.homepage.field_hp_newsletter_last_cta
+    - field.field.config_pages.homepage.field_hp_newsletter_last_text
+    - field.field.config_pages.homepage.field_hp_newsletter_photo
+    - field.field.config_pages.homepage.field_hp_newsletter_text
+    - field.field.config_pages.homepage.field_hp_newsletter_title
+    - field.field.config_pages.homepage.field_hp_podcast_banner
+    - field.field.config_pages.homepage.field_hp_podcast_description
+    - field.field.config_pages.homepage.field_hp_podcast_image
+    - field.field.config_pages.homepage.field_hp_podcast_platforms_text
+    - field.field.config_pages.homepage.field_hp_podcast_title
+    - field.field.config_pages.homepage.field_hp_podcast_transcript_cta
+    - field.field.config_pages.homepage.field_hp_podcast_transcript_text
+    - field.field.config_pages.homepage.field_hp_resource_photo
+    - field.field.config_pages.homepage.field_hp_resource_text
+    - field.field.config_pages.homepage.field_hp_resource_title
+    - field.field.config_pages.homepage.field_hp_reviews_cta
+    - field.field.config_pages.homepage.field_hp_reviews_text
+    - field.field.config_pages.homepage.field_hp_reviews_title
+    - field.field.config_pages.homepage.field_hp_services_description
+    - field.field.config_pages.homepage.field_hp_services_services
+    - field.field.config_pages.homepage.field_hp_services_title
+    - field.field.config_pages.homepage.field_hp_situations_situations
+    - field.field.config_pages.homepage.field_hp_situations_title
+  module:
+    - field_group
+    - media_library
+    - paragraphs
+    - telephone
+    - text
+third_party_settings:
+  field_group:
+    group_hp_block_hero:
+      children:
+        - field_hp_hero_title
+        - field_hp_hero_description
+        - field_hp_hero_photo
+        - field_hp_hero_cta
+      label: 'Bloc Hero'
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+    group_hp_block_situations:
+      children:
+        - field_hp_situations_title
+        - field_hp_situations_situations
+      label: 'Bloc Situations'
+      region: content
+      parent_name: ''
+      weight: 1
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+    group_hp_block_services:
+      children:
+        - field_hp_services_title
+        - field_hp_services_description
+        - field_hp_services_services
+      label: 'Bloc Prestations'
+      region: content
+      parent_name: ''
+      weight: 5
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+    group_hp_block_about:
+      children:
+        - field_hp_about_photo
+        - field_hp_about_title
+        - field_hp_about_description
+        - field_hp_about_cta
+      label: 'Bloc À propos'
+      region: content
+      parent_name: ''
+      weight: 3
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+    group_hp_block_podcast:
+      children:
+        - field_hp_podcast_title
+        - field_hp_podcast_description
+        - field_hp_podcast_image
+        - field_hp_podcast_platforms_text
+        - field_hp_podcast_transcript_text
+        - field_hp_podcast_transcript_cta
+        - field_hp_podcast_banner
+      label: 'Bloc Podcast'
+      region: content
+      parent_name: ''
+      weight: 2
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+    group_hp_block_newsletter:
+      children:
+        - field_hp_newsletter_title
+        - field_hp_newsletter_text
+        - field_hp_newsletter_photo
+        - field_hp_newsletter_form_title
+        - field_hp_newsletter_last_text
+        - field_hp_newsletter_last_cta
+      label: 'Bloc Newsletter'
+      region: content
+      parent_name: ''
+      weight: 4
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+    group_hp_block_cta:
+      children:
+        - field_hp_cta_title
+        - field_hp_cta_text
+        - field_hp_cta_cta
+        - field_hp_cta_photo
+      label: "Bloc Appel à l'action"
+      region: content
+      parent_name: ''
+      weight: 6
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+    group_hp_block_blog:
+      children:
+        - field_hp_blog_title
+        - field_hp_blog_text
+        - field_hp_blog_cta
+      label: 'Bloc Blog'
+      region: content
+      parent_name: ''
+      weight: 7
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+    group_hp_block_reviews:
+      children:
+        - field_hp_reviews_title
+        - field_hp_reviews_text
+        - field_hp_reviews_cta
+      label: 'Bloc Recommandations'
+      region: content
+      parent_name: ''
+      weight: 8
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+    group_hp_block_contact:
+      children:
+        - field_hp_contact_title
+        - field_hp_contact_text
+        - field_hp_contact_form_title
+        - field_hp_contact_coord_title
+        - field_hp_contact_coord_tel_text
+        - field_hp_contact_coord_tel
+        - field_hp_contact_coord_email_txt
+        - field_hp_contact_coord_email
+        - field_hp_contact_social_title
+      label: 'Bloc Contact'
+      region: content
+      parent_name: ''
+      weight: 9
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+    group_hp_block_resource:
+      children:
+        - field_hp_resource_title
+        - field_hp_resource_text
+        - field_hp_resource_photo
+      label: Ressource
+      region: content
+      parent_name: ''
+      weight: 10
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+id: config_pages.homepage.default
+targetEntityType: config_pages
+bundle: homepage
+mode: default
+content:
+  field_hp_about_cta:
+    type: paragraphs
+    weight: 21
+    region: content
+    settings:
+      title: Paragraphe
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_hp_about_description:
+    type: text_textarea
+    weight: 20
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_hp_about_photo:
+    type: media_library_widget
+    weight: 17
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_hp_about_title:
+    type: string_textfield
+    weight: 18
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_hp_blog_cta:
+    type: paragraphs
+    weight: 10
+    region: content
+    settings:
+      title: Paragraphe
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_hp_blog_text:
+    type: text_textarea
+    weight: 9
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_hp_blog_title:
+    type: string_textfield
+    weight: 8
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_hp_contact_coord_email:
+    type: email_default
+    weight: 30
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+  field_hp_contact_coord_email_txt:
+    type: string_textfield
+    weight: 29
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_hp_contact_coord_tel:
+    type: telephone_default
+    weight: 28
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_hp_contact_coord_tel_text:
+    type: string_textfield
+    weight: 27
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_hp_contact_coord_title:
+    type: string_textfield
+    weight: 26
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_hp_contact_form_title:
+    type: string_textfield
+    weight: 25
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_hp_contact_social_title:
+    type: string_textfield
+    weight: 31
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_hp_contact_text:
+    type: text_textarea
+    weight: 24
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_hp_contact_title:
+    type: string_textfield
+    weight: 23
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_hp_cta_cta:
+    type: paragraphs
+    weight: 9
+    region: content
+    settings:
+      title: Paragraphe
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_hp_cta_photo:
+    type: media_library_widget
+    weight: 10
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_hp_cta_text:
+    type: text_textarea
+    weight: 8
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_hp_cta_title:
+    type: string_textfield
+    weight: 7
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_hp_hero_cta:
+    type: paragraphs
+    weight: 4
+    region: content
+    settings:
+      title: Paragraphe
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_hp_hero_description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_hp_hero_photo:
+    type: media_library_widget
+    weight: 3
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_hp_hero_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_hp_newsletter_form_title:
+    type: string_textfield
+    weight: 9
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_hp_newsletter_last_cta:
+    type: paragraphs
+    weight: 11
+    region: content
+    settings:
+      title: Paragraphe
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_hp_newsletter_last_text:
+    type: text_textarea
+    weight: 10
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_hp_newsletter_photo:
+    type: media_library_widget
+    weight: 8
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_hp_newsletter_text:
+    type: text_textarea
+    weight: 7
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_hp_newsletter_title:
+    type: string_textfield
+    weight: 6
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_hp_podcast_banner:
+    type: string_textfield
+    weight: 13
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_hp_podcast_description:
+    type: text_textarea
+    weight: 8
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_hp_podcast_image:
+    type: media_library_widget
+    weight: 9
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_hp_podcast_platforms_text:
+    type: string_textfield
+    weight: 10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_hp_podcast_title:
+    type: string_textfield
+    weight: 7
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_hp_podcast_transcript_cta:
+    type: paragraphs
+    weight: 12
+    region: content
+    settings:
+      title: Paragraphe
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_hp_podcast_transcript_text:
+    type: string_textfield
+    weight: 11
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_hp_resource_photo:
+    type: media_library_widget
+    weight: 25
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_hp_resource_text:
+    type: text_textarea
+    weight: 24
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_hp_resource_title:
+    type: string_textfield
+    weight: 23
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_hp_reviews_cta:
+    type: paragraphs
+    weight: 16
+    region: content
+    settings:
+      title: Paragraphe
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_hp_reviews_text:
+    type: text_textarea
+    weight: 15
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_hp_reviews_title:
+    type: string_textfield
+    weight: 14
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_hp_services_description:
+    type: text_textarea
+    weight: 7
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_hp_services_services:
+    type: paragraphs
+    weight: 9
+    region: content
+    settings:
+      title: Paragraphe
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_hp_services_title:
+    type: string_textfield
+    weight: 6
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_hp_situations_situations:
+    type: paragraphs
+    weight: 3
+    region: content
+    settings:
+      title: Paragraphe
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_hp_situations_title:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  label: true

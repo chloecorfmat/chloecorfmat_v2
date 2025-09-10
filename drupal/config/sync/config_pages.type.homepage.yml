@@ -1,0 +1,17 @@
+uuid: 9b036692-eee9-46ad-8d90-dc09863c0424
+langcode: fr
+status: true
+dependencies: {  }
+id: homepage
+label: "Page d'accueil"
+token: false
+context:
+  show_warning: true
+  group:
+    language: false
+  fallback:
+    language: ''
+menu:
+  path: ''
+  weight: 0
+  description: ''

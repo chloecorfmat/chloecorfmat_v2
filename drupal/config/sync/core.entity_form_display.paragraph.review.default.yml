@@ -1,0 +1,43 @@
+uuid: c9abe26c-a39f-4797-93d5-8ee8c6c789d3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.review.field_pg_review_author
+    - field.field.paragraph.review.field_pg_review_company
+    - field.field.paragraph.review.field_pg_review_text
+    - paragraphs.paragraphs_type.review
+  module:
+    - text
+id: paragraph.review.default
+targetEntityType: paragraph
+bundle: review
+mode: default
+content:
+  field_pg_review_author:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_pg_review_company:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_pg_review_text:
+    type: text_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

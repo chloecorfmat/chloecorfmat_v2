@@ -1,0 +1,22 @@
+uuid: e8b41ccd-7b39-4b34-8934-1a53f6802259
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cco_theme
+_core:
+  default_config_hash: BZ5tpW7H8X4PVGRm3MImTIHd2tN0eF7zOtp4SpRYUA0
+id: cco_theme_messages
+theme: cco_theme
+region: header
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Messages de statut'
+  label_display: '0'
+  provider: system
+visibility: {  }

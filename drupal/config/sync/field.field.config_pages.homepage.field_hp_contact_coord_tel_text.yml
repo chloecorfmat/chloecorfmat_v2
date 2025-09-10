@@ -1,0 +1,19 @@
+uuid: d49bc6b5-d0d7-4357-8163-144f60a65902
+langcode: fr
+status: true
+dependencies:
+  config:
+    - config_pages.type.homepage
+    - field.storage.config_pages.field_hp_contact_coord_tel_text
+id: config_pages.homepage.field_hp_contact_coord_tel_text
+field_name: field_hp_contact_coord_tel_text
+entity_type: config_pages
+bundle: homepage
+label: 'Texte "Par téléphone :"'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

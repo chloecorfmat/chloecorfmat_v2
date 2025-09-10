@@ -1,0 +1,79 @@
+@use "../../tools/colors" as colors;
+@use "../../tools/variables" as variables;
+@use "../../tools/fonts" as fonts;
+@use "../../tools/mixins" as mixins;
+
+.hp-resource {
+  position: relative;
+  padding: 3rem 0 10rem;
+  background: colors.$honey-yellow-light;
+  color: colors.$electric-blue;
+
+  > .block {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    @include mixins.media-min("md") {
+      gap: 5rem;
+    }
+
+    @include mixins.media-min("xl") {
+      gap: 7rem;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  &__content {
+    width: 100%;
+
+    @include mixins.media-min("xl") {
+      width: 60%;
+    }
+  }
+
+  &__image {
+    width: 100%;
+
+    @include mixins.media-min("xl") {
+      width: 40%;
+    }
+
+    &-container {
+      margin-left: 3rem;
+      margin-bottom: 2rem;
+      position: relative;
+      display: inline-block;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 30px;
+        left: -30px;
+        right: 30px;
+        bottom: -30px;
+        background-color: colors.$electric-blue;
+        transform: rotate(-2deg);
+        z-index: 1;
+        border-radius: variables.$border-radius;
+      }
+    }
+
+    &-photo {
+      width: 100%;
+      border-radius: variables.$border-radius;
+
+      display: block;
+      position: relative;
+      z-index: 2;
+    }
+
+  }
+
+  .wysiwyg {
+    > p {
+      font-size: 18px;
+    }
+  }
+}

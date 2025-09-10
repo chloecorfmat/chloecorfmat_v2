@@ -1,0 +1,22 @@
+uuid: 16a60416-a117-40a7-a99b-38946f878977
+langcode: fr
+status: true
+dependencies:
+  config:
+    - config_pages.type.homepage
+    - field.storage.config_pages.field_hp_reviews_text
+  module:
+    - text
+id: config_pages.homepage.field_hp_reviews_text
+field_name: field_hp_reviews_text
+entity_type: config_pages
+bundle: homepage
+label: Texte
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

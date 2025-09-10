@@ -1,0 +1,19 @@
+uuid: 41c114c4-c04f-4407-9579-a6bf43370c3f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - config_pages.type.config
+    - field.storage.config_pages.field_brevo_list_newsletter
+id: config_pages.config.field_brevo_list_newsletter
+field_name: field_brevo_list_newsletter
+entity_type: config_pages
+bundle: config
+label: 'Liste newsletter'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

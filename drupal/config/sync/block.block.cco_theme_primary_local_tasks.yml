@@ -1,0 +1,22 @@
+uuid: 223e04f5-354a-4081-b6e4-11acfa409345
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - cco_theme
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: cco_theme_primary_local_tasks
+theme: cco_theme
+region: header
+weight: -2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Onglets principaux'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

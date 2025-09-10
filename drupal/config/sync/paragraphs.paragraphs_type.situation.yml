@@ -1,0 +1,10 @@
+uuid: ae617088-df26-472b-a22d-29340e7890db
+langcode: fr
+status: true
+dependencies: {  }
+id: situation
+label: Situation
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

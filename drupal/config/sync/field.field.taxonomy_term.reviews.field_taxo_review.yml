@@ -1,0 +1,22 @@
+uuid: faecacc6-2638-4e52-abc9-e533ad68831a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_taxo_review
+    - taxonomy.vocabulary.reviews
+  module:
+    - text
+id: taxonomy_term.reviews.field_taxo_review
+field_name: field_taxo_review
+entity_type: taxonomy_term
+bundle: reviews
+label: Recommandation
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

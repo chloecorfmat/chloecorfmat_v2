@@ -1,0 +1,29 @@
+uuid: e82e8b6d-d6ef-4db9-8db3-c6ebce73d41a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - config_pages.type.homepage
+    - field.storage.config_pages.field_hp_cta_photo
+    - media.type.image
+id: config_pages.homepage.field_hp_cta_photo
+field_name: field_hp_cta_photo
+entity_type: config_pages
+bundle: homepage
+label: Photo
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

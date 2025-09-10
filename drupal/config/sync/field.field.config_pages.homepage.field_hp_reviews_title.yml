@@ -1,0 +1,19 @@
+uuid: a81e3f2b-fd16-42da-9eff-1770450d2fb2
+langcode: fr
+status: true
+dependencies:
+  config:
+    - config_pages.type.homepage
+    - field.storage.config_pages.field_hp_reviews_title
+id: config_pages.homepage.field_hp_reviews_title
+field_name: field_hp_reviews_title
+entity_type: config_pages
+bundle: homepage
+label: Titre
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

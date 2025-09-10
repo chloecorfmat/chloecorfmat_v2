@@ -1,0 +1,21 @@
+uuid: 1ca576cb-5e46-4d1f-bf1a-ea028f994491
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_taxo_display_in_hp
+    - taxonomy.vocabulary.reviews
+id: taxonomy_term.reviews.field_taxo_display_in_hp
+field_name: field_taxo_display_in_hp
+entity_type: taxonomy_term
+bundle: reviews
+label: "Affiché en page d'accueil"
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: Oui
+  off_label: Non
+field_type: boolean

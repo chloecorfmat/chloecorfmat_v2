@@ -1,0 +1,19 @@
+uuid: 5d27e51b-f0cb-46d4-a1c7-1243f088628c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - config_pages.type.homepage
+    - field.storage.config_pages.field_hp_hero_title
+id: config_pages.homepage.field_hp_hero_title
+field_name: field_hp_hero_title
+entity_type: config_pages
+bundle: homepage
+label: Titre
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

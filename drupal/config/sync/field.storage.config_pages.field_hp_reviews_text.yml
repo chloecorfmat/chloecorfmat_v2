@@ -1,0 +1,19 @@
+uuid: 2f3f9655-d6c8-43c8-9ce1-3037fdf51b41
+langcode: fr
+status: true
+dependencies:
+  module:
+    - config_pages
+    - text
+id: config_pages.field_hp_reviews_text
+field_name: field_hp_reviews_text
+entity_type: config_pages
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

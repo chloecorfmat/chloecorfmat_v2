@@ -1,0 +1,22 @@
+uuid: 500228d4-18c3-4957-8c4c-d70d4b67b7b6
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cco_theme
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: cco_theme_content
+theme: cco_theme
+region: content
+weight: -4
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Contenu de la page principale'
+  label_display: '0'
+  provider: system
+visibility: {  }

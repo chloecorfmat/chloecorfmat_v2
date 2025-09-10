@@ -1,0 +1,19 @@
+uuid: bff8e3c3-2621-4c60-a806-3fef3062eb15
+langcode: fr
+status: true
+dependencies:
+  config:
+    - config_pages.type.homepage
+    - field.storage.config_pages.field_hp_podcast_banner
+id: config_pages.homepage.field_hp_podcast_banner
+field_name: field_hp_podcast_banner
+entity_type: config_pages
+bundle: homepage
+label: Bannière
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

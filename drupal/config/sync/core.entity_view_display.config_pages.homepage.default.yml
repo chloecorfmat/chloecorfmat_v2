@@ -1,0 +1,449 @@
+uuid: f59578bf-04ee-400e-b1f2-d237f51f98ad
+langcode: fr
+status: true
+dependencies:
+  config:
+    - config_pages.type.homepage
+    - field.field.config_pages.homepage.field_hp_about_cta
+    - field.field.config_pages.homepage.field_hp_about_description
+    - field.field.config_pages.homepage.field_hp_about_photo
+    - field.field.config_pages.homepage.field_hp_about_title
+    - field.field.config_pages.homepage.field_hp_blog_cta
+    - field.field.config_pages.homepage.field_hp_blog_text
+    - field.field.config_pages.homepage.field_hp_blog_title
+    - field.field.config_pages.homepage.field_hp_contact_coord_email
+    - field.field.config_pages.homepage.field_hp_contact_coord_email_txt
+    - field.field.config_pages.homepage.field_hp_contact_coord_tel
+    - field.field.config_pages.homepage.field_hp_contact_coord_tel_text
+    - field.field.config_pages.homepage.field_hp_contact_coord_title
+    - field.field.config_pages.homepage.field_hp_contact_form_title
+    - field.field.config_pages.homepage.field_hp_contact_social_title
+    - field.field.config_pages.homepage.field_hp_contact_text
+    - field.field.config_pages.homepage.field_hp_contact_title
+    - field.field.config_pages.homepage.field_hp_cta_cta
+    - field.field.config_pages.homepage.field_hp_cta_photo
+    - field.field.config_pages.homepage.field_hp_cta_text
+    - field.field.config_pages.homepage.field_hp_cta_title
+    - field.field.config_pages.homepage.field_hp_hero_cta
+    - field.field.config_pages.homepage.field_hp_hero_description
+    - field.field.config_pages.homepage.field_hp_hero_photo
+    - field.field.config_pages.homepage.field_hp_hero_title
+    - field.field.config_pages.homepage.field_hp_newsletter_form_title
+    - field.field.config_pages.homepage.field_hp_newsletter_last_cta
+    - field.field.config_pages.homepage.field_hp_newsletter_last_text
+    - field.field.config_pages.homepage.field_hp_newsletter_photo
+    - field.field.config_pages.homepage.field_hp_newsletter_text
+    - field.field.config_pages.homepage.field_hp_newsletter_title
+    - field.field.config_pages.homepage.field_hp_podcast_banner
+    - field.field.config_pages.homepage.field_hp_podcast_description
+    - field.field.config_pages.homepage.field_hp_podcast_image
+    - field.field.config_pages.homepage.field_hp_podcast_platforms_text
+    - field.field.config_pages.homepage.field_hp_podcast_title
+    - field.field.config_pages.homepage.field_hp_podcast_transcript_cta
+    - field.field.config_pages.homepage.field_hp_podcast_transcript_text
+    - field.field.config_pages.homepage.field_hp_resource_photo
+    - field.field.config_pages.homepage.field_hp_resource_text
+    - field.field.config_pages.homepage.field_hp_resource_title
+    - field.field.config_pages.homepage.field_hp_reviews_cta
+    - field.field.config_pages.homepage.field_hp_reviews_text
+    - field.field.config_pages.homepage.field_hp_reviews_title
+    - field.field.config_pages.homepage.field_hp_services_description
+    - field.field.config_pages.homepage.field_hp_services_services
+    - field.field.config_pages.homepage.field_hp_services_title
+    - field.field.config_pages.homepage.field_hp_situations_situations
+    - field.field.config_pages.homepage.field_hp_situations_title
+  module:
+    - entity_reference_revisions
+    - text
+id: config_pages.homepage.default
+targetEntityType: config_pages
+bundle: homepage
+mode: default
+content:
+  field_hp_about_cta:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_hp_about_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_hp_about_photo:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_hp_about_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_hp_blog_cta:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 33
+    region: content
+  field_hp_blog_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 49
+    region: content
+  field_hp_blog_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 32
+    region: content
+  field_hp_contact_coord_email:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 41
+    region: content
+  field_hp_contact_coord_email_txt:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 45
+    region: content
+  field_hp_contact_coord_tel:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 40
+    region: content
+  field_hp_contact_coord_tel_text:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 42
+    region: content
+  field_hp_contact_coord_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 39
+    region: content
+  field_hp_contact_form_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 38
+    region: content
+  field_hp_contact_social_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 44
+    region: content
+  field_hp_contact_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 37
+    region: content
+  field_hp_contact_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 36
+    region: content
+  field_hp_cta_cta:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 30
+    region: content
+  field_hp_cta_photo:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 31
+    region: content
+  field_hp_cta_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 29
+    region: content
+  field_hp_cta_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 28
+    region: content
+  field_hp_hero_cta:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_hp_hero_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_hp_hero_photo:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_hp_hero_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_hp_newsletter_form_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 54
+    region: content
+  field_hp_newsletter_last_cta:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 53
+    region: content
+  field_hp_newsletter_last_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 55
+    region: content
+  field_hp_newsletter_photo:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 26
+    region: content
+  field_hp_newsletter_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 23
+    region: content
+  field_hp_newsletter_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 22
+    region: content
+  field_hp_podcast_banner:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 52
+    region: content
+  field_hp_podcast_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 14
+    region: content
+  field_hp_podcast_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 16
+    region: content
+  field_hp_podcast_platforms_text:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 17
+    region: content
+  field_hp_podcast_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 13
+    region: content
+  field_hp_podcast_transcript_cta:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 21
+    region: content
+  field_hp_podcast_transcript_text:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 20
+    region: content
+  field_hp_resource_photo:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 48
+    region: content
+  field_hp_resource_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 47
+    region: content
+  field_hp_resource_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 46
+    region: content
+  field_hp_reviews_cta:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 51
+    region: content
+  field_hp_reviews_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 50
+    region: content
+  field_hp_reviews_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 34
+    region: content
+  field_hp_services_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_hp_services_services:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_hp_services_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_hp_situations_situations:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_hp_situations_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden: {  }

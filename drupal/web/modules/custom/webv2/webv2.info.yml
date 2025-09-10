@@ -1,0 +1,5 @@
+name: webv2
+description: Chloe Corfmat
+package: Custom
+type: module
+core_version_requirement: ^11

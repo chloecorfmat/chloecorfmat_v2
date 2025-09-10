@@ -1,0 +1,75 @@
+@use "../../tools/colors" as colors;
+@use "../../tools/variables" as variables;
+@use "../../tools/fonts" as fonts;
+@use "../../tools/mixins" as mixins;
+
+.hp-blog {
+  background: colors.$lavender-purple-light;
+  color: colors.$midnight-blue;
+  padding: 3rem 0 5rem;
+
+  h2 {
+    color: colors.$midnight-blue;
+    text-align: center;
+  }
+
+  .wysiwyg {
+    > p {
+      margin: .5rem auto;
+      font-size: 18px;
+      text-align: center;
+    }
+  }
+
+  &__text {
+    @include mixins.media-min("xl") {
+      max-width: 70%;
+      margin: auto;
+    }
+  }
+
+  &__cta {
+    text-align: center;
+
+    a {
+      margin-bottom: 0;
+      font-size: 18px;
+    }
+  }
+
+  &__articles {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 3rem auto;
+
+    &-article {
+      width: 100%;
+
+      img {
+        width: 100%;
+        border-radius: variables.$border-radius;
+      }
+
+      .btn {
+        background: colors.$lavender-purple-light;
+        color: colors.$midnight-blue;
+        border: 2px solid colors.$midnight-blue;
+
+        &:focus,
+        &:hover {
+          background: colors.$midnight-blue;
+          color: colors.$snow-white;
+        }
+      }
+    }
+
+    @include mixins.media-min("xl") {
+      flex-direction: row;
+
+      &-article {
+        width: 30%;
+      }
+    }
+  }
+}

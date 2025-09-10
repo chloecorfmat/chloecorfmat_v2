@@ -1,0 +1,28 @@
+@use "../tools/colors" as colors;
+@use "../tools/fonts" as fonts;
+
+form {
+  .description {
+    font-size: 16px;
+
+    p {
+      margin: 0;
+      font-size: 16px;
+    }
+  }
+}
+
+label {
+  font-family: fonts.$fredoka;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+input[type="email"] {
+  border-radius: 30px;
+  border: none;
+  font-family: fonts.$fredoka;
+  font-size: 16px;
+  padding: .5rem 1rem;
+  margin: .5rem auto;
+}

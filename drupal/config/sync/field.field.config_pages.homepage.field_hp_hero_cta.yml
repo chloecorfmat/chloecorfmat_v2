@@ -1,0 +1,31 @@
+uuid: d09cf71a-0c02-4e38-8876-6767fc10c6f9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - config_pages.type.homepage
+    - field.storage.config_pages.field_hp_hero_cta
+    - paragraphs.paragraphs_type.cta
+  module:
+    - entity_reference_revisions
+id: config_pages.homepage.field_hp_hero_cta
+field_name: field_hp_hero_cta
+entity_type: config_pages
+bundle: homepage
+label: "Appel à l'action"
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      cta: cta
+    negate: 0
+    target_bundles_drag_drop:
+      cta:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

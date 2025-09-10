@@ -1,0 +1,37 @@
+uuid: 86cb58ed-c959-4f77-bde9-33392c746d95
+langcode: fr
+status: true
+dependencies:
+  config:
+    - config_pages.type.homepage
+    - field.storage.config_pages.field_hp_services_services
+    - paragraphs.paragraphs_type.service
+  module:
+    - entity_reference_revisions
+id: config_pages.homepage.field_hp_services_services
+field_name: field_hp_services_services
+entity_type: config_pages
+bundle: homepage
+label: Prestations
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      service: service
+    negate: 0
+    target_bundles_drag_drop:
+      cta:
+        weight: 5
+        enabled: false
+      service:
+        weight: 4
+        enabled: true
+      situation:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,19 @@
+uuid: c9a80ea2-0bed-47ee-b256-3690e36b3dc7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - config_pages.type.homepage
+    - field.storage.config_pages.field_hp_contact_social_title
+id: config_pages.homepage.field_hp_contact_social_title
+field_name: field_hp_contact_social_title
+entity_type: config_pages
+bundle: homepage
+label: 'Titre "Réseaux sociaux"'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

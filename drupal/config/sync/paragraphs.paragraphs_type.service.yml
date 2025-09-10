@@ -1,0 +1,10 @@
+uuid: 90398695-d5b5-4b68-a996-85b09f233a03
+langcode: fr
+status: true
+dependencies: {  }
+id: service
+label: Prestation
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

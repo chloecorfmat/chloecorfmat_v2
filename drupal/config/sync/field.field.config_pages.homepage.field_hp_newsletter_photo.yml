@@ -1,0 +1,29 @@
+uuid: ee2a4c05-bea2-42b5-9a0e-266413e698b9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - config_pages.type.homepage
+    - field.storage.config_pages.field_hp_newsletter_photo
+    - media.type.image
+id: config_pages.homepage.field_hp_newsletter_photo
+field_name: field_hp_newsletter_photo
+entity_type: config_pages
+bundle: homepage
+label: Photo
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

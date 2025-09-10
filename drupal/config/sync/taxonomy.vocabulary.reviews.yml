@@ -1,0 +1,9 @@
+uuid: 35107d49-c019-4bb6-8baa-facd1635e33d
+langcode: fr
+status: true
+dependencies: {  }
+name: Recommandations
+vid: reviews
+description: null
+weight: 0
+new_revision: false

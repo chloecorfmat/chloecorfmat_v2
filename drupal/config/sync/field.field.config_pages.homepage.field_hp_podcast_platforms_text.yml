@@ -1,0 +1,19 @@
+uuid: 053fc261-5a4c-49c2-b65e-866ae0577250
+langcode: fr
+status: true
+dependencies:
+  config:
+    - config_pages.type.homepage
+    - field.storage.config_pages.field_hp_podcast_platforms_text
+id: config_pages.homepage.field_hp_podcast_platforms_text
+field_name: field_hp_podcast_platforms_text
+entity_type: config_pages
+bundle: homepage
+label: Texte
+description: "Ce texte précède la liste des plateformes d'écoute."
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

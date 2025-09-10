@@ -1,0 +1,79 @@
+uuid: 50c40b10-3dd7-49ef-9342-9d3f80a58aa3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.reviews.field_taxo_bg_color
+    - field.field.taxonomy_term.reviews.field_taxo_company
+    - field.field.taxonomy_term.reviews.field_taxo_display_in_hp
+    - field.field.taxonomy_term.reviews.field_taxo_review
+    - taxonomy.vocabulary.reviews
+  module:
+    - color_field
+    - path
+    - text
+id: taxonomy_term.reviews.default
+targetEntityType: taxonomy_term
+bundle: reviews
+mode: default
+content:
+  field_taxo_bg_color:
+    type: color_field_widget_box
+    weight: 3
+    region: content
+    settings:
+      default_colors: '#3028f4,#fa9a64,#aee6ed,#f8dd81,#e4cfff'
+    third_party_settings: {  }
+  field_taxo_company:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_taxo_display_in_hp:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_taxo_review:
+    type: text_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 5
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 7
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  description: true

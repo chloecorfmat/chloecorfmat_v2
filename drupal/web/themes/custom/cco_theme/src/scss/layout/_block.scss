@@ -1,0 +1,10 @@
+@use "../tools/mixins" as mixins;
+
+.block {
+  padding: 2rem;
+
+  @include mixins.media-min("xl") {
+    max-width: 1200px;
+    margin: auto;
+  }
+}

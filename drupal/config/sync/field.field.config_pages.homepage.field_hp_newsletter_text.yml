@@ -1,0 +1,22 @@
+uuid: baad873f-5b19-4990-95f7-6ab3ad041106
+langcode: fr
+status: true
+dependencies:
+  config:
+    - config_pages.type.homepage
+    - field.storage.config_pages.field_hp_newsletter_text
+  module:
+    - text
+id: config_pages.homepage.field_hp_newsletter_text
+field_name: field_hp_newsletter_text
+entity_type: config_pages
+bundle: homepage
+label: Texte
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

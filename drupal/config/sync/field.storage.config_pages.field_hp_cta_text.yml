@@ -1,0 +1,19 @@
+uuid: ef92afe4-4bc4-45a5-9b8e-2a0637268446
+langcode: fr
+status: true
+dependencies:
+  module:
+    - config_pages
+    - text
+id: config_pages.field_hp_cta_text
+field_name: field_hp_cta_text
+entity_type: config_pages
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

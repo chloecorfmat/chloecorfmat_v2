@@ -1,0 +1,61 @@
+uuid: 54568b5d-917e-477c-b3a8-b9a3cd5aeba7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.reviews.field_taxo_bg_color
+    - field.field.taxonomy_term.reviews.field_taxo_company
+    - field.field.taxonomy_term.reviews.field_taxo_display_in_hp
+    - field.field.taxonomy_term.reviews.field_taxo_review
+    - taxonomy.vocabulary.reviews
+  module:
+    - color_field
+    - text
+id: taxonomy_term.reviews.default
+targetEntityType: taxonomy_term
+bundle: reviews
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_taxo_bg_color:
+    type: color_field_formatter_text
+    label: above
+    settings:
+      format: hex
+      opacity: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_taxo_company:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_taxo_display_in_hp:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_taxo_review:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden:
+  langcode: true

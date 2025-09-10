@@ -1,0 +1,40 @@
+uuid: 0eb78fdb-a3c0-493a-aa0e-7e59ba88df1d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.review.field_pg_review_author
+    - field.field.paragraph.review.field_pg_review_company
+    - field.field.paragraph.review.field_pg_review_text
+    - paragraphs.paragraphs_type.review
+  module:
+    - text
+id: paragraph.review.default
+targetEntityType: paragraph
+bundle: review
+mode: default
+content:
+  field_pg_review_author:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_pg_review_company:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_pg_review_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

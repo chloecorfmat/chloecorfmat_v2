@@ -1,0 +1,22 @@
+uuid: f1f01f58-e02a-4033-ae59-e2fe1e070c36
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_taxo_bg_color
+    - taxonomy.vocabulary.reviews
+  module:
+    - color_field
+id: taxonomy_term.reviews.field_taxo_bg_color
+field_name: field_taxo_bg_color
+entity_type: taxonomy_term
+bundle: reviews
+label: 'Couleur de fond'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

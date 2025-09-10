@@ -1,0 +1,14 @@
+chloecorfmat.homepage:
+  path: '/homepage'
+  defaults:
+    _controller: '\Drupal\webv2\Controller\HomepageController:build'
+    _title: 'Accueil'
+  requirements:
+    _permission: 'access content'
+chloecorfmat.newsletter.confirmation:
+  path: '/newsletter/confirmation'
+  defaults:
+    _controller: '\Drupal\webv2\Controller\NewsletterController:confirmation'
+    _title: 'Votre inscription a bien été prise en compte.'
+  requirements:
+    _permission: 'access content'

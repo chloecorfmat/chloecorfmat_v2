@@ -1,0 +1,34 @@
+uuid: 107e991c-a7de-4b3e-8b78-8ac10ba84e1a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.situation.field_pg_situation_description
+    - field.field.paragraph.situation.field_pg_situation_title
+    - paragraphs.paragraphs_type.situation
+  module:
+    - text
+id: paragraph.situation.default
+targetEntityType: paragraph
+bundle: situation
+mode: default
+content:
+  field_pg_situation_description:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_pg_situation_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

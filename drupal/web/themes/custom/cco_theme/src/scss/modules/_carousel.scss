@@ -1,0 +1,151 @@
+@use "../tools/colors" as colors;
+@use "../tools/mixins" as mixins;
+
+.carousel {
+  display: flex;
+  margin: 2rem auto;
+  align-items: center;
+
+  &__slides {
+    //width: 90%;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    will-change: transform;
+    transition: transform .4s ease;
+
+    @media (prefers-reduced-motion: reduce) {
+      transition: none;
+    }
+  }
+
+  &__slide {
+    // width: 40%;
+
+    box-sizing: border-box;
+    flex: 0 0 100%; // Mobile : 1 visible
+    padding: 1rem;  // optionnel : un peu moins de padding pour petits écrans
+    display: flex;
+    align-items: center;
+
+    blockquote {
+      margin: 0;
+    }
+
+    p {
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    @include mixins.media-min("xl") {
+      flex: 0 0 calc((100% - 2rem) / 2); /* 2 visibles */
+      padding: 3rem;
+    }
+  }
+
+  .carousel__viewport {
+    overflow: hidden;
+    border-radius: 0;
+  }
+
+  &__btn {
+    font-size: 1.125rem;
+    line-height: 1;
+    cursor: pointer;
+    color: colors.$electric-blue;
+    background: none;
+
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    text-align: center;
+    border: 2px solid colors.$snow-white;
+
+    &[disabled],
+    &[aria-disabled="true"] {
+      opacity: .45;
+      cursor: not-allowed;
+
+      &:hover {
+        border: 2px solid colors.$snow-white;
+      }
+    }
+
+    &:hover {
+      border: 2px solid colors.$electric-blue;
+    }
+
+    &:focus,
+    &:focus-visible {
+      outline: 2px solid;
+    }
+  }
+
+  &__prev {
+    margin-right: 1rem;
+  }
+
+  &__next {
+    margin-left: 1rem;
+
+    @include mixins.media-min("xl") {
+      margin-left: 0;
+    }
+  }
+
+  &--lagoon-blue {
+    background: colors.$lagoon-blue;
+    color: colors.$midnight-blue;
+  }
+
+  &--vine-peach {
+    background: colors.$vine-peach;
+    color: colors.$midnight-blue;
+  }
+
+  &--honey-yellow {
+    background: colors.$honey-yellow;
+    color: colors.$midnight-blue;
+  }
+
+  &--honey-yellow-light {
+    background: colors.$honey-yellow-light;
+    color: colors.$electric-blue;
+
+    p {
+      color: colors.$electric-blue;
+    }
+  }
+
+  &--lavender-purple-medium {
+    background: colors.$lavender-purple-medium;
+    color: colors.$midnight-blue;
+  }
+
+  &--lavender-purple-light {
+    background: colors.$lavender-purple-light;
+    color: colors.$midnight-blue;
+  }
+
+  &--midnight-blue {
+    background: colors.$midnight-blue;
+    color: colors.$snow-white;
+  }
+
+  &--electric-blue {
+    background: colors.$electric-blue;
+    color: colors.$snow-white;
+
+    p {
+      color: colors.$snow-white !important;
+    }
+  }
+
+}

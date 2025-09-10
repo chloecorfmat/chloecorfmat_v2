@@ -1,0 +1,69 @@
+uuid: b7018429-dce6-4df1-9db9-8da076a516a8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - config_pages.type.contact
+    - field.field.config_pages.contact.field_contact_form_title
+    - field.field.config_pages.contact.field_contact_others_text
+    - field.field.config_pages.contact.field_contact_others_title
+    - field.field.config_pages.contact.field_contact_social_title
+    - field.field.config_pages.contact.field_contact_text
+    - field.field.config_pages.contact.field_contact_title
+  module:
+    - text
+id: config_pages.contact.default
+targetEntityType: config_pages
+bundle: contact
+mode: default
+content:
+  field_contact_form_title:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_contact_others_text:
+    type: text_textarea
+    weight: 4
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_contact_others_title:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_contact_social_title:
+    type: string_textfield
+    weight: 5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_contact_text:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_contact_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  label: true

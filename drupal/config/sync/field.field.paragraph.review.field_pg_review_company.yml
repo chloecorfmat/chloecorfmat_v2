@@ -1,0 +1,19 @@
+uuid: a4f4b460-40fd-4e7f-be2e-7c3b74e20ee4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_review_company
+    - paragraphs.paragraphs_type.review
+id: paragraph.review.field_pg_review_company
+field_name: field_pg_review_company
+entity_type: paragraph
+bundle: review
+label: Entreprise
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,22 @@
+uuid: 33293759-e4c0-49ae-8a1f-89ee87480aef
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_service_description
+    - paragraphs.paragraphs_type.service
+  module:
+    - text
+id: paragraph.service.field_pg_service_description
+field_name: field_pg_service_description
+entity_type: paragraph
+bundle: service
+label: Description
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

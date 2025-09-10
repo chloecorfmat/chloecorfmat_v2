@@ -1,0 +1,95 @@
+@use "../../tools/colors" as colors;
+@use "../../tools/variables" as variables;
+@use "../../tools/fonts" as fonts;
+@use "../../tools/mixins" as mixins;
+
+.hp-contact {
+  position: relative;
+  padding: 8rem 0 3rem;
+  background: colors.$bloody-orange;
+  color: colors.$snow-white;
+
+  &__mascotte {
+    position: absolute;
+    top: -10rem;
+    max-width: 500px;
+  }
+
+  &__computer {
+    max-width: 200px;
+    display: block;
+    margin-top: 2rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    @include mixins.media-min("xl") {
+      gap: 5rem;
+      flex-direction: row;
+    }
+  }
+
+  &__text {
+    width: 100%;
+
+    @include mixins.media-min("xl") {
+      width: 50%;
+    }
+  }
+
+  &__form {
+    width: 100%;
+    position: relative;
+
+    @include mixins.media-min("xl") {
+      width: 50%;
+    }
+  }
+
+  &__social {
+    &-list {
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      padding-left: 0;
+    }
+
+    &-item {
+      img {
+        max-width: 35px;
+      }
+    }
+  }
+
+  h2 {
+    color: colors.$snow-white;
+  }
+
+  .wysiwyg {
+    > p {
+      color: colors.$snow-white;
+      font-size: 18px;
+    }
+
+    li {
+      color: colors.$snow-white;
+      font-size: 18px;
+    }
+
+    a {
+      color: colors.$snow-white;
+      font-size: 18px;
+
+      &:hover {
+        color: colors.$honey-yellow-light;
+      }
+    }
+  }
+}

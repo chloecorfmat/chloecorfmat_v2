@@ -1,0 +1,51 @@
+uuid: bc1e7ecf-2aff-4655-b084-0126e1f5c96d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - config_pages.type.config
+    - field.field.config_pages.config.field_brevo_api_key
+    - field.field.config_pages.config.field_brevo_list_newsletter
+  module:
+    - field_group
+third_party_settings:
+  field_group:
+    group_brevo:
+      children:
+        - field_brevo_api_key
+        - field_brevo_list_newsletter
+      label: Brevo
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+id: config_pages.config.default
+targetEntityType: config_pages
+bundle: config
+mode: default
+content:
+  field_brevo_api_key:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_brevo_list_newsletter:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  label: true

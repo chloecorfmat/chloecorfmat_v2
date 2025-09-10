@@ -1,0 +1,22 @@
+uuid: 99c543e6-d31d-463e-83c2-72edd629a8ff
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_review_text
+    - paragraphs.paragraphs_type.review
+  module:
+    - text
+id: paragraph.review.field_pg_review_text
+field_name: field_pg_review_text
+entity_type: paragraph
+bundle: review
+label: Texte
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

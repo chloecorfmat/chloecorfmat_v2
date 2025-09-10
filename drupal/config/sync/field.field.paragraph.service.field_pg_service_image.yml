@@ -1,0 +1,29 @@
+uuid: 5b8befbc-035d-48e6-9bf7-cd9eab6e8690
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_service_image
+    - media.type.image
+    - paragraphs.paragraphs_type.service
+id: paragraph.service.field_pg_service_image
+field_name: field_pg_service_image
+entity_type: paragraph
+bundle: service
+label: Image
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

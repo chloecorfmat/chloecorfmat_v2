@@ -1,0 +1,22 @@
+uuid: e8a1fbc4-3302-4047-be8a-1be51a626744
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cco_theme
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: cco_theme_breadcrumbs
+theme: cco_theme
+region: content
+weight: -5
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: "Fils d'ariane"
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,11 @@
+uuid: a1a19bcd-8df2-4552-9e94-0fe55b3328b8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.reviews
+id: taxonomy_term.reviews
+target_entity_type_id: taxonomy_term
+target_bundle: reviews
+default_langcode: site_default
+language_alterable: false
