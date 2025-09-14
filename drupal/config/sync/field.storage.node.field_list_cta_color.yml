@@ -1,0 +1,20 @@
+uuid: a47a56e4-f406-430f-a8bd-3d2be536018d
+langcode: fr
+status: true
+dependencies:
+  module:
+    - color_field
+    - node
+id: node.field_list_cta_color
+field_name: field_list_cta_color
+entity_type: node
+type: color_field_type
+settings:
+  format: '#HEXHEX'
+module: color_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,29 @@
+uuid: bd4456da-a1bd-4dc9-a246-5513324d0e9b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - config_pages.type.services
+    - field.storage.config_pages.field_services_services
+    - node.type.service
+id: config_pages.services.field_services_services
+field_name: field_services_services
+entity_type: config_pages
+bundle: services
+label: Services
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      service: service
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

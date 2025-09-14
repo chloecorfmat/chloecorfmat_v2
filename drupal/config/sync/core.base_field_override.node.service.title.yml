@@ -1,0 +1,18 @@
+uuid: f9876869-8709-4f25-9dc8-78c85ad1f598
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.service
+id: node.service.title
+field_name: title
+entity_type: node
+bundle: service
+label: 'Nom de la prestation'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

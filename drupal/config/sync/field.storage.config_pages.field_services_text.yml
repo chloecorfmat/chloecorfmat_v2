@@ -1,0 +1,19 @@
+uuid: cef24c1b-295f-47c7-8c1d-1ffd02e22ba1
+langcode: fr
+status: true
+dependencies:
+  module:
+    - config_pages
+    - text
+id: config_pages.field_services_text
+field_name: field_services_text
+entity_type: config_pages
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

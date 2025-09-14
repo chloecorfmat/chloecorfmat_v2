@@ -1,0 +1,22 @@
+uuid: 1a8bc3cc-07c2-44e4-aaef-0f537ce61585
+langcode: fr
+status: true
+dependencies:
+  config:
+    - config_pages.type.services
+    - field.storage.config_pages.field_services_cta_text
+  module:
+    - text
+id: config_pages.services.field_services_cta_text
+field_name: field_services_cta_text
+entity_type: config_pages
+bundle: services
+label: "Texte de l'appel à l'action"
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

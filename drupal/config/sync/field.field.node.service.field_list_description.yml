@@ -1,0 +1,22 @@
+uuid: daf29888-9c3c-4a61-afe2-8636795a5f5c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_list_description
+    - node.type.service
+  module:
+    - text
+id: node.service.field_list_description
+field_name: field_list_description
+entity_type: node
+bundle: service
+label: Description
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

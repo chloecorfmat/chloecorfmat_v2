@@ -1,0 +1,59 @@
+uuid: daca6ae7-ff47-4def-8797-7183e604d305
+langcode: fr
+status: true
+dependencies:
+  config:
+    - config_pages.type.services
+    - field.field.config_pages.services.field_services_cta_cta
+    - field.field.config_pages.services.field_services_cta_text
+    - field.field.config_pages.services.field_services_services
+    - field.field.config_pages.services.field_services_text
+    - field.field.config_pages.services.field_services_title
+  module:
+    - entity_reference_revisions
+    - text
+id: config_pages.services.default
+targetEntityType: config_pages
+bundle: services
+mode: default
+content:
+  field_services_cta_cta:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_services_cta_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_services_services:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_services_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_services_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

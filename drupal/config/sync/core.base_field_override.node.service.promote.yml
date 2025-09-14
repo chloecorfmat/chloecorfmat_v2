@@ -1,0 +1,22 @@
+uuid: c9ea222c-3bb4-41a6-8b6a-116065a05484
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.service
+id: node.service.promote
+field_name: promote
+entity_type: node
+bundle: service
+label: "Promu en page d'accueil"
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

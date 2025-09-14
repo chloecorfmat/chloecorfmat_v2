@@ -1,0 +1,40 @@
+uuid: 0fc33f56-acaf-44d5-bfb3-4a3776fdf3bb
+langcode: fr
+status: true
+dependencies:
+  config:
+    - config_pages.type.services
+    - field.storage.config_pages.field_services_cta_cta
+    - paragraphs.paragraphs_type.cta
+  module:
+    - entity_reference_revisions
+id: config_pages.services.field_services_cta_cta
+field_name: field_services_cta_cta
+entity_type: config_pages
+bundle: services
+label: "Appel à l'action"
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      cta: cta
+    negate: 0
+    target_bundles_drag_drop:
+      cta:
+        weight: 5
+        enabled: true
+      review:
+        weight: 6
+        enabled: false
+      service:
+        weight: 7
+        enabled: false
+      situation:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

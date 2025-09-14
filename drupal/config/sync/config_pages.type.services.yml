@@ -1,0 +1,17 @@
+uuid: 98223fc1-af8e-4dc9-8f0a-1e742c06b2f7
+langcode: fr
+status: true
+dependencies: {  }
+id: services
+label: Prestations
+token: false
+context:
+  show_warning: true
+  group:
+    language: false
+  fallback:
+    language: ''
+menu:
+  path: ''
+  weight: 0
+  description: ''
