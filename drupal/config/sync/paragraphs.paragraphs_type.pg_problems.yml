@@ -1,0 +1,10 @@
+uuid: ebfce27b-2c93-4273-b1bd-0f82bd77e338
+langcode: fr
+status: true
+dependencies: {  }
+id: pg_problems
+label: 'Bloc Problématique / Contextualisation'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

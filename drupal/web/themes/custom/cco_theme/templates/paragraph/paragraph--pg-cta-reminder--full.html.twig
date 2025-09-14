@@ -1,0 +1,22 @@
+<div class="pg-cta-reminder">
+  <div class="block">
+    <div class="pg-cta-reminder__image">
+      <img src="/themes/custom/cco_theme/assets/asset-sticker-inclusion-white.png" alt="" class="pg-cta-reminder__image-inclusion">
+      <img src="/themes/custom/cco_theme/assets/asset-sticker-creative-engagee-white.png" alt="" class="pg-cta-reminder__image-creative-engagee">
+      <img src="{{ file_url(photo) }}" alt="" class="pg-cta-reminder__image-photo">
+      <img src="/themes/custom/cco_theme/assets/asset-sticker-notes-white.png" alt="" class="pg-cta-reminder__image-notes">
+      <img src="/themes/custom/cco_theme/assets/asset-sticker-mug-white.png" alt="" class="pg-cta-reminder__image-mug">
+    </div>
+    <div class="pg-cta-reminder__content">
+      <h2>{{ subhead }}</h2>
+      <div class="wysiwyg">
+        {{ text|raw }}
+      </div>
+      <a href="{{ cta.url }}" target="{{ '_' ~ cta.target }}" class="btn btn--{{ cta.color }}">
+        {{ cta.text }}
+      </a>
+    </div>
+  </div>
+</div>
+<div class="pg-cta-reminder__background">
+</div>

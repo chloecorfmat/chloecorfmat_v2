@@ -1,0 +1,25 @@
+uuid: b9027081-c146-46b2-97d6-923aec814590
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.full
+    - field.field.paragraph.pg_faq.field_pg_questions
+    - field.field.paragraph.pg_faq.field_pg_subhead
+    - field.field.paragraph.pg_faq.field_pg_text
+    - paragraphs.paragraphs_type.pg_faq
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.pg_faq.full
+targetEntityType: paragraph
+bundle: pg_faq
+mode: full
+content: {  }
+hidden:
+  field_pg_questions: true
+  field_pg_subhead: true
+  field_pg_text: true

@@ -1,0 +1,27 @@
+uuid: 5c7d7cc5-c1f2-4b6a-ac19-59114d562ab4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.full
+    - field.field.paragraph.pg_about.field_pg_cta
+    - field.field.paragraph.pg_about.field_pg_photo
+    - field.field.paragraph.pg_about.field_pg_subhead
+    - field.field.paragraph.pg_about.field_pg_text
+    - paragraphs.paragraphs_type.pg_about
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.pg_about.full
+targetEntityType: paragraph
+bundle: pg_about
+mode: full
+content: {  }
+hidden:
+  field_pg_cta: true
+  field_pg_photo: true
+  field_pg_subhead: true
+  field_pg_text: true

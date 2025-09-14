@@ -1,0 +1,71 @@
+uuid: 778fd238-e109-451c-8f3d-d89178c73fca
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.service
+    - paragraphs.paragraphs_type.pg_about
+    - paragraphs.paragraphs_type.pg_cta_reminder
+    - paragraphs.paragraphs_type.pg_faq
+    - paragraphs.paragraphs_type.pg_pitch
+    - paragraphs.paragraphs_type.pg_problems
+    - paragraphs.paragraphs_type.pg_solution
+  module:
+    - entity_reference_revisions
+id: node.service.field_content
+field_name: field_content
+entity_type: node
+bundle: service
+label: Contenu
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      pg_faq: pg_faq
+      pg_about: pg_about
+      pg_cta_reminder: pg_cta_reminder
+      pg_pitch: pg_pitch
+      pg_problems: pg_problems
+      pg_solution: pg_solution
+    negate: 0
+    target_bundles_drag_drop:
+      cta:
+        weight: 13
+        enabled: false
+      pg_about:
+        weight: 14
+        enabled: true
+      pg_cta_reminder:
+        weight: 15
+        enabled: true
+      pg_faq:
+        weight: 12
+        enabled: true
+      pg_pitch:
+        weight: 16
+        enabled: true
+      pg_problems:
+        weight: 17
+        enabled: true
+      pg_solution:
+        weight: 18
+        enabled: true
+      question:
+        weight: 19
+        enabled: false
+      review:
+        weight: 20
+        enabled: false
+      service:
+        weight: 21
+        enabled: false
+      situation:
+        weight: 22
+        enabled: false
+field_type: entity_reference_revisions

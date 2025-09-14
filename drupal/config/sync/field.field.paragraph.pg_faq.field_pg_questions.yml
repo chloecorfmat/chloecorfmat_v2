@@ -1,0 +1,61 @@
+uuid: e860dbe0-bf70-4e5b-93e2-0a76a19e7a77
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_questions
+    - paragraphs.paragraphs_type.pg_faq
+    - paragraphs.paragraphs_type.question
+  module:
+    - entity_reference_revisions
+id: paragraph.pg_faq.field_pg_questions
+field_name: field_pg_questions
+entity_type: paragraph
+bundle: pg_faq
+label: Questions
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      question: question
+    negate: 0
+    target_bundles_drag_drop:
+      cta:
+        weight: 13
+        enabled: false
+      pg_about:
+        weight: 14
+        enabled: false
+      pg_cta_reminder:
+        weight: 15
+        enabled: false
+      pg_faq:
+        weight: 12
+        enabled: false
+      pg_pitch:
+        weight: 16
+        enabled: false
+      pg_problems:
+        weight: 17
+        enabled: false
+      pg_solution:
+        weight: 18
+        enabled: false
+      question:
+        weight: 19
+        enabled: true
+      review:
+        weight: 20
+        enabled: false
+      service:
+        weight: 21
+        enabled: false
+      situation:
+        weight: 22
+        enabled: false
+field_type: entity_reference_revisions

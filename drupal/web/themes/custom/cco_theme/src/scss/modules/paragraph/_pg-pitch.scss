@@ -1,0 +1,39 @@
+@use "../../tools/mixins" as mixins;
+
+.pg-pitch {
+  padding: 0 0 2rem;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__img {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__content {
+    width: 100%;
+  }
+
+  @include mixins.media-min("xl") {
+    &__container {
+      flex-direction: row;
+      align-items: center;
+      gap: 5rem;
+    }
+
+    &__img {
+      width: 30%;
+    }
+
+    &__content {
+      width: 70%;
+    }
+  }
+}

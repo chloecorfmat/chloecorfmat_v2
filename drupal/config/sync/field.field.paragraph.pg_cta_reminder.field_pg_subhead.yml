@@ -1,0 +1,19 @@
+uuid: 32f56011-a781-4eda-95dc-773641d894b0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_subhead
+    - paragraphs.paragraphs_type.pg_cta_reminder
+id: paragraph.pg_cta_reminder.field_pg_subhead
+field_name: field_pg_subhead
+entity_type: paragraph
+bundle: pg_cta_reminder
+label: Sous-titre
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,25 @@
+uuid: 32e7072a-c7a4-4f22-99b1-d1a093c7ee80
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.full
+    - field.field.paragraph.pg_pitch.field_pg_cta
+    - field.field.paragraph.pg_pitch.field_pg_subhead
+    - field.field.paragraph.pg_pitch.field_pg_text
+    - paragraphs.paragraphs_type.pg_pitch
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.pg_pitch.full
+targetEntityType: paragraph
+bundle: pg_pitch
+mode: full
+content: {  }
+hidden:
+  field_pg_cta: true
+  field_pg_subhead: true
+  field_pg_text: true

@@ -1,0 +1,25 @@
+uuid: 6f37badb-21f6-4900-a276-3bd2dfd10a5a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.full
+    - field.field.paragraph.pg_problems.field_pg_sticker
+    - field.field.paragraph.pg_problems.field_pg_subhead
+    - field.field.paragraph.pg_problems.field_pg_text
+    - paragraphs.paragraphs_type.pg_problems
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.pg_problems.full
+targetEntityType: paragraph
+bundle: pg_problems
+mode: full
+content: {  }
+hidden:
+  field_pg_sticker: true
+  field_pg_subhead: true
+  field_pg_text: true

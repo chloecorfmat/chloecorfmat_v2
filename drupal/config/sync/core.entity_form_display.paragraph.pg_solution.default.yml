@@ -1,0 +1,34 @@
+uuid: bf90532b-d07c-46f6-ba5a-ec1c17e861cb
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pg_solution.field_pg_subhead
+    - field.field.paragraph.pg_solution.field_pg_text
+    - paragraphs.paragraphs_type.pg_solution
+  module:
+    - text
+id: paragraph.pg_solution.default
+targetEntityType: paragraph
+bundle: pg_solution
+mode: default
+content:
+  field_pg_subhead:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_pg_text:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

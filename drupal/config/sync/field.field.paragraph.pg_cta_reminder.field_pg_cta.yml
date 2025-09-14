@@ -1,0 +1,55 @@
+uuid: 2f38a33f-3c68-43a2-aa3c-ab303c150efb
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_cta
+    - paragraphs.paragraphs_type.cta
+    - paragraphs.paragraphs_type.pg_cta_reminder
+  module:
+    - entity_reference_revisions
+id: paragraph.pg_cta_reminder.field_pg_cta
+field_name: field_pg_cta
+entity_type: paragraph
+bundle: pg_cta_reminder
+label: "Appel à l'action"
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      cta: cta
+    negate: 0
+    target_bundles_drag_drop:
+      cta:
+        weight: 7
+        enabled: true
+      pg_about:
+        weight: 9
+        enabled: false
+      pg_cta_reminder:
+        weight: 10
+        enabled: false
+      pg_pitch:
+        weight: 6
+        enabled: false
+      pg_problems:
+        weight: 12
+        enabled: false
+      pg_solution:
+        weight: 13
+        enabled: false
+      review:
+        weight: 8
+        enabled: false
+      service:
+        weight: 9
+        enabled: false
+      situation:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

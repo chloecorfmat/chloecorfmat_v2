@@ -1,0 +1,10 @@
+uuid: 61f46a47-24a0-4a78-8d3f-af9bb2937460
+langcode: fr
+status: true
+dependencies: {  }
+id: pg_cta_reminder
+label: "Bloc Rappel de l'appel à l'action"
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

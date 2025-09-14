@@ -1,0 +1,19 @@
+<div class="pg-about">
+  <div class="block">
+    <div class="pg-about__image">
+      <img src="{{ file_url(photo) }}" alt="" class="pg-about__image-photo">
+      <img src="/themes/custom/cco_theme/assets/logo-badge-bloody-orange.png" alt="" class="pg-about__image-badge">
+    </div>
+    <div class="pg-about__content">
+      <h2>{{ subhead }}</h2>
+      <div class="wysiwyg">
+        {{ text|raw }}
+      </div>
+      <a href="{{ cta.url }}" target="{{ '_' ~ cta.target }}" class="btn">
+        {{ cta.text }}
+      </a>
+    </div>
+  </div>
+</div>
+<div class="pg-about__background">
+</div>

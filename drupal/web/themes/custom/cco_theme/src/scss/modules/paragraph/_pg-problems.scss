@@ -1,0 +1,53 @@
+@use "../../tools/mixins" as mixins;
+@use "../../tools/colors" as colors;
+
+.pg-problems {
+  background: colors.$honey-yellow-light;
+  padding: 3rem 0 2rem;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__img {
+    width: 100%;
+    text-align: center;
+
+    img {
+      width: 50%;
+    }
+  }
+
+  &__content {
+    width: 100%;
+
+    .wysiwyg {
+      li,
+      p {
+        color: colors.$electric-blue !important;
+      }
+    }
+  }
+
+  @include mixins.media-min("xl") {
+    &__container {
+      flex-direction: row;
+      align-items: center;
+      gap: 5rem;
+    }
+
+    &__img {
+      width: 20%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &__content {
+      width: 80%;
+    }
+  }
+}

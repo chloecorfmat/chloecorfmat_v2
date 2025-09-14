@@ -1,0 +1,42 @@
+uuid: 16c59a16-426b-431c-b5fe-a9fcc3d500a0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pg_pitch.field_pg_cta
+    - field.field.paragraph.pg_pitch.field_pg_subhead
+    - field.field.paragraph.pg_pitch.field_pg_text
+    - paragraphs.paragraphs_type.pg_pitch
+  module:
+    - entity_reference_revisions
+    - text
+id: paragraph.pg_pitch.default
+targetEntityType: paragraph
+bundle: pg_pitch
+mode: default
+content:
+  field_pg_cta:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_pg_subhead:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_pg_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

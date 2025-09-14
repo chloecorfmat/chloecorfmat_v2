@@ -1,0 +1,18 @@
+<div class="pg-pitch">
+  <div class="block pg-pitch__container">
+    <div class="pg-pitch__img">
+      <img src="{{ file_url(mascot) }}" alt="" />
+    </div>
+    <div class="pg-pitch__content">
+      <h2>{{ subhead }}</h2>
+      <div class="wysiwyg fs-lg">
+        {{ text|raw }}
+      </div>
+      {% if cta is defined %}
+        <a href="{{ cta.url }}" target="{{ '_' ~ cta.target }}" class="btn btn--{{ cta.color }} fs-lg">
+          {{ cta.text }}
+        </a>
+      {% endif %}
+    </div>
+  </div>
+</div>

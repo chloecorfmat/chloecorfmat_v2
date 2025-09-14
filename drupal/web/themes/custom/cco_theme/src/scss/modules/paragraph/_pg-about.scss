@@ -1,0 +1,72 @@
+@use "../../tools/colors" as colors;
+@use "../../tools/variables" as variables;
+@use "../../tools/fonts" as fonts;
+@use "../../tools/mixins" as mixins;
+
+// Bloc À propos.
+.pg-about {
+  padding: 3rem 0;
+
+  > .block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+
+    @include mixins.media-min("xl") {
+      gap: 5rem;
+      flex-direction: row;
+    }
+  }
+
+  .pg-about__image {
+    width: 100%;
+    position: relative;
+
+    .pg-about__image-photo {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+
+    .pg-about__image-badge {
+      position: absolute;
+      width: 150px;
+      bottom: -50px;
+      left: -50px;
+      display: none;
+
+      @include mixins.media-min("xl") {
+        display: block;
+      }
+    }
+
+    @include mixins.media-min("xl") {
+      width: 30%;
+      height: 30%;
+    }
+  }
+
+  .pg-about__content {
+    width: 100%;
+
+    h2 {
+      color: colors.$bloody-orange;
+    }
+
+    .wysiwyg {
+      color: colors.$midnight-blue;
+    }
+
+    @include mixins.media-min("xl") {
+      width: 70%;
+    }
+  }
+
+  &__background {
+    display: block;
+    min-height: 13rem;
+    background-image: url("/themes/custom/cco_theme/assets/asset-hero.png");
+    background-repeat: repeat-x;
+  }
+}

@@ -1,0 +1,22 @@
+@use "../../tools/mixins" as mixins;
+@use "../../tools/colors" as colors;
+
+.pg-solution {
+  background: colors.$lavender-purple-light;
+  padding: 3rem 0 2rem;
+
+  &__content {
+    width: 100%;
+
+    h2 {
+      color: colors.$midnight-blue;
+    }
+  }
+
+  @include mixins.media-min("xl") {
+    &__content {
+      width: 70%;
+      margin: auto;
+    }
+  }
+}

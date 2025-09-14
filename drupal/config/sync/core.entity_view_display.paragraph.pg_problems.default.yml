@@ -1,0 +1,41 @@
+uuid: d3f33ac8-4ab9-4ca0-9a1c-e23a331c1ebf
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pg_problems.field_pg_sticker
+    - field.field.paragraph.pg_problems.field_pg_subhead
+    - field.field.paragraph.pg_problems.field_pg_text
+    - paragraphs.paragraphs_type.pg_problems
+  module:
+    - text
+id: paragraph.pg_problems.default
+targetEntityType: paragraph
+bundle: pg_problems
+mode: default
+content:
+  field_pg_sticker:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_pg_subhead:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_pg_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

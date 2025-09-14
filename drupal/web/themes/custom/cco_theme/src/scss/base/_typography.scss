@@ -1,47 +1,56 @@
 @use "../tools/fonts" as fonts;
 @use "../tools/colors" as colors;
+@use "../tools/mixins" as mixins;
 
-h1  {
-  font-family: fonts.$momentz;
-  color: colors.$bloody-orange;
-  font-weight: normal;
-  font-size: 32px;
-}
+body {
+  h1  {
+    font-family: fonts.$momentz;
+    color: colors.$bloody-orange;
+    font-weight: normal;
+    font-size: 32px;
+  }
 
-h1.page-title {
-  font-size: 48px;
-  text-align: center;
-}
+  h1.page-title {
+    font-size: 42px;
+    text-align: center;
 
-h2 {
-  font-family: fonts.$momentz;
-  color: colors.$electric-blue;
-  font-weight: normal;
-  font-size: 28px;
-  margin: 0;
-}
+    @include mixins.media-min("xl") {
+      font-size: 48px;
+    }
+  }
 
-h3 {
-  font-family: fonts.$fredoka;
-  font-weight: 700;
-  font-size: 22px
-}
+  h2 {
+    font-family: fonts.$momentz;
+    color: colors.$electric-blue;
+    font-weight: normal;
+    font-size: 28px;
+    margin: 0;
+  }
 
-li,
-p {
-  font-family: fonts.$fredoka;
-  color: colors.$midnight-blue;
-  font-size: 16px;
-  line-height: 1.5;
-}
+  h3 {
+    font-family: fonts.$fredoka;
+    font-weight: 700;
+    font-size: 22px
+  }
 
-.fs-lg,
-.fs-lg p,
-.fs-lg a {
-  font-size: 18px !important;
-}
+  li,
+  p {
+    font-family: fonts.$fredoka;
+    color: colors.$midnight-blue;
+    font-size: 16px;
+    line-height: 1.5;
+  }
 
-a {
-  font-family: fonts.$fredoka;
-  text-decoration: underline;
+  .fs-lg,
+  .fs-lg p,
+  .fs-lg a,
+  .fs-lg li {
+    font-size: 18px !important;
+  }
+
+  a {
+    font-family: fonts.$fredoka;
+    text-decoration: underline;
+  }
+
 }

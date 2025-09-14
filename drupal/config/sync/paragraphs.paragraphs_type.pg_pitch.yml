@@ -1,0 +1,10 @@
+uuid: ed513154-eab6-4a61-aafa-1c560c2f55e2
+langcode: fr
+status: true
+dependencies: {  }
+id: pg_pitch
+label: 'Bloc Pitch'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

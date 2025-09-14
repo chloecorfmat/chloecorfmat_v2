@@ -1,0 +1,10 @@
+uuid: 4bcc33b9-1aa5-487c-af53-1ddc3bad904d
+langcode: fr
+status: true
+dependencies: {  }
+id: pg_about
+label: 'Bloc À propos'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

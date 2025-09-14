@@ -1,0 +1,52 @@
+uuid: bcb3c0d2-c0a1-41da-8961-35e826f7ea02
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pg_cta_reminder.field_pg_cta
+    - field.field.paragraph.pg_cta_reminder.field_pg_photo
+    - field.field.paragraph.pg_cta_reminder.field_pg_subhead
+    - field.field.paragraph.pg_cta_reminder.field_pg_text
+    - paragraphs.paragraphs_type.pg_cta_reminder
+  module:
+    - entity_reference_revisions
+    - text
+id: paragraph.pg_cta_reminder.default
+targetEntityType: paragraph
+bundle: pg_cta_reminder
+mode: default
+content:
+  field_pg_cta:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_pg_photo:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_pg_subhead:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_pg_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

@@ -1,0 +1,22 @@
+uuid: 5ec1ccec-a2b5-4ca2-a60a-16b3505b9893
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_text
+    - paragraphs.paragraphs_type.pg_faq
+  module:
+    - text
+id: paragraph.pg_faq.field_pg_text
+field_name: field_pg_text
+entity_type: paragraph
+bundle: pg_faq
+label: Texte
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

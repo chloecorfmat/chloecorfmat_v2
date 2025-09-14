@@ -1,0 +1,23 @@
+uuid: 73cffeee-8d64-4356-af1b-a9575ddfbd69
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.full
+    - field.field.paragraph.pg_solution.field_pg_subhead
+    - field.field.paragraph.pg_solution.field_pg_text
+    - paragraphs.paragraphs_type.pg_solution
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.pg_solution.full
+targetEntityType: paragraph
+bundle: pg_solution
+mode: full
+content: {  }
+hidden:
+  field_pg_subhead: true
+  field_pg_text: true

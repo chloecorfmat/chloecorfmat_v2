@@ -1,0 +1,22 @@
+uuid: ca333f83-1d18-4518-ab6b-1ada22d21009
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_text
+    - paragraphs.paragraphs_type.pg_solution
+  module:
+    - text
+id: paragraph.pg_solution.field_pg_text
+field_name: field_pg_text
+entity_type: paragraph
+bundle: pg_solution
+label: Texte
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

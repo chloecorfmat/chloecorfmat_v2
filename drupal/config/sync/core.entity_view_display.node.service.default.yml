@@ -3,6 +3,7 @@ langcode: fr
 status: true
 dependencies:
   config:
+    - field.field.node.service.field_content
     - field.field.node.service.field_list_cta_color
     - field.field.node.service.field_list_cta_text
     - field.field.node.service.field_list_description
@@ -10,59 +11,27 @@ dependencies:
     - field.field.node.service.field_mascot
     - node.type.service
   module:
-    - color_field
-    - text
+    - entity_reference_revisions
     - user
 id: node.service.default
 targetEntityType: node
 bundle: service
 mode: default
 content:
-  field_list_cta_color:
-    type: color_field_formatter_text
-    label: above
+  field_content:
+    type: entity_reference_revisions_entity_view
+    label: hidden
     settings:
-      format: hex
-      opacity: true
+      view_mode: full
+      link: ''
     third_party_settings: {  }
-    weight: 104
-    region: content
-  field_list_cta_text:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 103
-    region: content
-  field_list_description:
-    type: text_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 102
-    region: content
-  field_list_name:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 101
-    region: content
-  field_mascot:
-    type: entity_reference_entity_view
-    label: above
-    settings:
-      view_mode: default
-      link: false
-    third_party_settings: {  }
-    weight: 105
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
+    weight: 6
     region: content
 hidden:
+  field_list_cta_color: true
+  field_list_cta_text: true
+  field_list_description: true
+  field_list_name: true
+  field_mascot: true
   langcode: true
+  links: true

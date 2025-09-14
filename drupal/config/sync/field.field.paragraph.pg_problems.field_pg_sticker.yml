@@ -1,0 +1,29 @@
+uuid: e5955dfb-b10a-4392-bdf3-9689e61c280c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_sticker
+    - media.type.image
+    - paragraphs.paragraphs_type.pg_problems
+id: paragraph.pg_problems.field_pg_sticker
+field_name: field_pg_sticker
+entity_type: paragraph
+bundle: pg_problems
+label: Sticker
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

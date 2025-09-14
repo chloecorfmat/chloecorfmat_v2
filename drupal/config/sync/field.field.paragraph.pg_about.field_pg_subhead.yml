@@ -1,0 +1,19 @@
+uuid: 2a78c7c3-baa5-4d11-a87f-af4bf8eb4d87
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_subhead
+    - paragraphs.paragraphs_type.pg_about
+id: paragraph.pg_about.field_pg_subhead
+field_name: field_pg_subhead
+entity_type: paragraph
+bundle: pg_about
+label: Sous-titre
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

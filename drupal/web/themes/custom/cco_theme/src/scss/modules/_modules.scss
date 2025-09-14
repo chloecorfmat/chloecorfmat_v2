@@ -6,6 +6,12 @@
 
 @use "list_services";
 
+@use "paragraph/pg-about";
+@use "paragraph/pg-cta-reminder";
+@use "paragraph/pg-pitch";
+@use "paragraph/pg-problems";
+@use "paragraph/pg-solution";
+
 @use "pages/services" as pages-services;
 
 @use "homepage/about";
