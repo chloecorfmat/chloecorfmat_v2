@@ -4,6 +4,10 @@
 @use "form";
 @use "wysiwyg";
 
+@use "list_services";
+
+@use "pages/services" as pages-services;
+
 @use "homepage/about";
 @use "homepage/blog";
 @use "homepage/contact";
@@ -13,6 +17,6 @@
 @use "homepage/podcast";
 @use "homepage/reviews";
 @use "homepage/resource";
-@use "homepage/services";
+@use "homepage/services" as homepage-services;
 @use "homepage/situations";
 

@@ -1,0 +1,3 @@
+services:
+  webv2.color_service:
+    class: Drupal\webv2\Service\ColorService

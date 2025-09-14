@@ -1,0 +1,29 @@
+uuid: aae9f27e-7506-4bd0-9cd6-8ed2e0d6ec42
+langcode: fr
+status: true
+dependencies:
+  config:
+    - config_pages.type.services
+    - field.storage.config_pages.field_services_cta_photo
+    - media.type.image
+id: config_pages.services.field_services_cta_photo
+field_name: field_services_cta_photo
+entity_type: config_pages
+bundle: services
+label: Photo
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -10,7 +10,7 @@ _core:
   default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
 id: cco_theme_page_title
 theme: cco_theme
-region: header
+region: content
 weight: -4
 provider: null
 plugin: page_title_block
@@ -23,4 +23,4 @@ visibility:
   request_path:
     id: request_path
     negate: true
-    pages: '<front>'
+    pages: "<front>\r\n/prestations"

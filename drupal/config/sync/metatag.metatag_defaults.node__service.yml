@@ -1,0 +1,9 @@
+uuid: a6c1e7f2-c790-44c0-a856-fbad54111ea3
+langcode: fr
+status: true
+dependencies: {  }
+id: node__service
+label: 'Contenu: Prestation'
+tags:
+  robots: 'index, follow'
+  title: '[node:title] | [site:name]'

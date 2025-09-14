@@ -1,0 +1,17 @@
+uuid: 2083aa39-aaab-4f51-b095-043a6c43f84e
+langcode: fr
+status: true
+dependencies: {  }
+id: linktree
+label: 'Arbre à liens'
+token: false
+context:
+  show_warning: true
+  group:
+    language: false
+  fallback:
+    language: ''
+menu:
+  path: ''
+  weight: 0
+  description: ''

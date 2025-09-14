@@ -9,7 +9,7 @@ _core:
 id: cco_theme_primary_local_tasks
 theme: cco_theme
 region: header
-weight: -2
+weight: -4
 provider: null
 plugin: local_tasks_block
 settings:

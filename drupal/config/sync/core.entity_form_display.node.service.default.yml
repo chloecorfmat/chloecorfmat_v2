@@ -7,10 +7,12 @@ dependencies:
     - field.field.node.service.field_list_cta_text
     - field.field.node.service.field_list_description
     - field.field.node.service.field_list_name
+    - field.field.node.service.field_mascot
     - node.type.service
   module:
     - color_field
     - field_group
+    - media_library
     - path
     - text
 third_party_settings:
@@ -24,7 +26,7 @@ third_party_settings:
       label: 'Liste des prestations'
       region: content
       parent_name: ''
-      weight: 1
+      weight: 2
       format_type: fieldset
       format_settings:
         classes: ''
@@ -40,7 +42,7 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 3
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -75,15 +77,22 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_mascot:
+    type: media_library_widget
+    weight: 1
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
   path:
     type: path
-    weight: 4
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 5
+    weight: 6
     region: content
     settings:
       display_label: true
@@ -98,7 +107,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 2
+    weight: 3
     region: content
     settings:
       match_operator: CONTAINS

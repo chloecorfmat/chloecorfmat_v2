@@ -12,3 +12,10 @@ chloecorfmat.newsletter.confirmation:
     _title: 'Votre inscription a bien été prise en compte.'
   requirements:
     _permission: 'access content'
+chloecorfmat.services:
+  path: '/prestations'
+  defaults:
+    _controller: '\Drupal\webv2\Controller\ServicesController:list'
+    _title: 'Mes prestations'
+  requirements:
+    _permission: 'access content'

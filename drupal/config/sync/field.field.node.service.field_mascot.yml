@@ -1,0 +1,29 @@
+uuid: 619ff9ad-f7ad-4df6-890a-48901ea1c670
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mascot
+    - media.type.image
+    - node.type.service
+id: node.service.field_mascot
+field_name: field_mascot
+entity_type: node
+bundle: service
+label: Mascotte
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

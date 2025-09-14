@@ -5,18 +5,21 @@ dependencies:
   config:
     - config_pages.type.services
     - field.field.config_pages.services.field_services_cta_cta
+    - field.field.config_pages.services.field_services_cta_photo
     - field.field.config_pages.services.field_services_cta_text
     - field.field.config_pages.services.field_services_services
     - field.field.config_pages.services.field_services_text
     - field.field.config_pages.services.field_services_title
   module:
     - field_group
+    - media_library
     - paragraphs
     - text
 third_party_settings:
   field_group:
     group_services_cta:
       children:
+        - field_services_cta_photo
         - field_services_cta_text
         - field_services_cta_cta
       label: "Appel à l'action"
@@ -38,7 +41,7 @@ mode: default
 content:
   field_services_cta_cta:
     type: paragraphs
-    weight: 7
+    weight: 9
     region: content
     settings:
       title: Paragraphe
@@ -54,9 +57,16 @@ content:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
     third_party_settings: {  }
+  field_services_cta_photo:
+    type: media_library_widget
+    weight: 7
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
   field_services_cta_text:
     type: text_textarea
-    weight: 6
+    weight: 8
     region: content
     settings:
       rows: 5

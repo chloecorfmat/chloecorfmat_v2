@@ -1,0 +1,58 @@
+<div class="services">
+  <div class="block services__intro">
+    <h1 class="page-title">{{ title }}</h1>
+    <div class="fs-lg">
+      <div class="wysiwyg">
+        {{ text|raw }}
+      </div>
+    </div>
+  </div>
+
+  <div class="list-services">
+    <div class="block">
+      {% if services is not empty %}
+        <ul class="list-services__services">
+          {% for service in services %}
+            <li class="list-services__service list-services__service--{{ service.cta.color }}">
+              <div class="list-services__service-image">
+                <img src="{{ file_url(service.image) }}" alt="" >
+              </div>
+              <div class="list-services__service-content">
+                <h3>{{ service.name }}</h3>
+                <div class="list-services__service-description wysiwyg">
+                  {{ service.description|raw }}
+                </div>
+                <a href="{{ service.cta.url }}" class="btn btn--{{ service.cta.color }}">
+                  {{ service.cta.text }}
+                </a>
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="hp-cta">
+    <div class="block">
+      <div class="hp-cta__image">
+        <img src="/themes/custom/cco_theme/assets/asset-sticker-inclusion-white.png" alt="" class="hp-cta__image-inclusion">
+        <img src="/themes/custom/cco_theme/assets/asset-sticker-creative-engagee-white.png" alt="" class="hp-cta__image-creative-engagee">
+        <img src="{{ file_url(cta.photo) }}" alt="" class="hp-cta__image-photo">
+        <img src="/themes/custom/cco_theme/assets/asset-sticker-notes-white.png" alt="" class="hp-cta__image-notes">
+        <img src="/themes/custom/cco_theme/assets/asset-sticker-mug-white.png" alt="" class="hp-cta__image-mug">
+      </div>
+      <div class="hp-cta__content">
+        <h2>{{ cta.title }}</h2>
+        <div class="wysiwyg fs-lg">
+          {{ cta.text|raw }}
+        </div>
+        <a href="{{ cta.cta.url }}" target="{{ '_' ~ cta.cta.target }}" class="btn btn--{{ cta.cta.color }}">
+          {{ cta.cta.text }}
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="hp-cta__background">
+  </div>
+</div>
