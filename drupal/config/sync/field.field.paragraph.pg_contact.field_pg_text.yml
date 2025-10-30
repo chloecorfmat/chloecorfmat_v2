@@ -1,0 +1,22 @@
+uuid: 3d255581-7cf6-439d-93fd-a543464a17f8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_text
+    - paragraphs.paragraphs_type.pg_contact
+  module:
+    - text
+id: paragraph.pg_contact.field_pg_text
+field_name: field_pg_text
+entity_type: paragraph
+bundle: pg_contact
+label: Texte
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

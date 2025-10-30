@@ -1,0 +1,60 @@
+@use "../../tools/colors" as colors;
+@use "../../tools/variables" as variables;
+@use "../../tools/fonts" as fonts;
+@use "../../tools/mixins" as mixins;
+
+.pg-projects {
+  background: colors.$honey-yellow-light;
+  padding: 3rem 0;
+  color: colors.$electric-blue;
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+
+    > .pg-projects__text {
+      > .wysiwyg {
+        > p {
+          color: colors.$electric-blue !important;
+        }
+      }
+    }
+
+  }
+
+  &__text {
+    width: 100%;
+
+    @include mixins.media-min("xl") {
+      width: 70%;
+    }
+  }
+
+  &__image {
+    max-width: 200px;
+
+    &-container {
+      display: none;
+      width: 30%;
+      text-align: right;
+
+      @include mixins.media-min("xl") {
+        display: block;
+      }
+    }
+  }
+
+  &__projects {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 2rem;
+
+    @include mixins.media-min("xl") {
+      flex-direction: row;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+uuid: dfc44ad2-39aa-4ade-a469-10c5c6ee40a8
+langcode: fr
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_pg_format
+field_name: field_pg_format
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: title_text_image
+      label: 'Titre > Texte > Image'
+    -
+      value: title_image_text
+      label: 'Titre > Image > Texte'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

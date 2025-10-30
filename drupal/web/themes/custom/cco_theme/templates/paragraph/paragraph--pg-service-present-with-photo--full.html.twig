@@ -1,0 +1,14 @@
+<div class="pg-service-present-with-photo">
+  <div class="block">
+    <div class="pg-service-present-with-photo__content">
+      <h2>{{ title }}</h2>
+      <div class="wysiwyg">
+        {{ text|raw }}
+      </div>
+    </div>
+
+    <div class="pg-service-present-with-photo__image">
+      <img src="{{ file_url(photo) }}" alt="" class="pg-service-present-with-photo__image-photo">
+    </div>
+  </div>
+</div>

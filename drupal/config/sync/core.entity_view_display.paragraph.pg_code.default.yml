@@ -1,0 +1,38 @@
+uuid: 897b549a-6e12-49a5-b97d-654ff5eda810
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pg_code.field_pg_code
+    - field.field.paragraph.pg_code.field_pg_filename
+    - field.field.paragraph.pg_code.field_pg_language
+    - paragraphs.paragraphs_type.pg_code
+id: paragraph.pg_code.default
+targetEntityType: paragraph
+bundle: pg_code
+mode: default
+content:
+  field_pg_code:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_pg_filename:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_pg_language:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

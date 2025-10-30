@@ -1,0 +1,30 @@
+uuid: 815f4543-873f-4e22-8f75-0a67d6c76d7b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pg_working_method.field_pg_options_text
+    - field.field.paragraph.pg_working_method.field_pg_steps
+    - field.field.paragraph.pg_working_method.field_pg_text
+    - field.field.paragraph.pg_working_method.field_pg_title
+    - paragraphs.paragraphs_type.pg_working_method
+  module:
+    - entity_reference_revisions
+id: paragraph.pg_working_method.default
+targetEntityType: paragraph
+bundle: pg_working_method
+mode: default
+content:
+  field_pg_steps:
+    type: entity_reference_revisions_entity_view
+    label: visually_hidden
+    settings:
+      view_mode: full
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_pg_options_text: true
+  field_pg_text: true
+  field_pg_title: true

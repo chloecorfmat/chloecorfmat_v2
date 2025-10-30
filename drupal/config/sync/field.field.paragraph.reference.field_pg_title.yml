@@ -1,0 +1,19 @@
+uuid: 8e65f3e7-6790-4457-90f9-64db01204197
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_title
+    - paragraphs.paragraphs_type.reference
+id: paragraph.reference.field_pg_title
+field_name: field_pg_title
+entity_type: paragraph
+bundle: reference
+label: Titre
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

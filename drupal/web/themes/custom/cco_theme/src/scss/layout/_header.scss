@@ -1,0 +1,53 @@
+@use "../tools/colors" as colors;
+@use "../tools/fonts" as fonts;
+@use "../tools/mixins" as mixins;
+@use "../tools/variables" as variables;
+
+.header {
+  background: colors.$bloody-orange;
+
+  &__logo {
+    width: 200px
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  &__menu-main {
+    display: flex;
+    flex-direction: column;
+    background: colors.$snow-white;
+    padding: .5rem 1rem;
+    margin: 0;
+
+    a, span {
+      color: colors.$bloody-orange;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+    @include mixins.media-min("xl") {
+      margin: 1rem 0 0;
+      flex-direction: row;
+      gap: 1.5rem;
+      padding: .5rem 3rem;
+      border-radius: 30px;
+    }
+  }
+}
+
+#block-cco-theme-main-menu {
+  width: 100%;
+
+  @include mixins.media-min("lg") {
+    width: initial;
+  }
+}

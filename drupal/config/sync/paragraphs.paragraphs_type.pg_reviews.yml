@@ -1,0 +1,10 @@
+uuid: f4853c95-f54c-44b8-b8e5-3e6ae09b5883
+langcode: fr
+status: true
+dependencies: {  }
+id: pg_reviews
+label: 'Bloc Recommandations'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

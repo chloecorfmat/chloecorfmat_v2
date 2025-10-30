@@ -1,0 +1,23 @@
+uuid: 0162cf43-3028-41de-8773-b5a4e14ce575
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_link
+    - paragraphs.paragraphs_type.reference
+  module:
+    - link
+id: paragraph.reference.field_pg_link
+field_name: field_pg_link
+entity_type: paragraph
+bundle: reference
+label: Lien
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 17
+field_type: link

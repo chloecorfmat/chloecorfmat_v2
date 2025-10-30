@@ -1,0 +1,19 @@
+uuid: 74fda80f-c4d6-4b6e-97af-618ed548c383
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_title
+    - paragraphs.paragraphs_type.pg_contact
+id: paragraph.pg_contact.field_pg_title
+field_name: field_pg_title
+entity_type: paragraph
+bundle: pg_contact
+label: Titre
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,22 @@
+uuid: 5e46f96d-e53c-48fb-9c08-284dda4f5c3a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_background_color
+    - paragraphs.paragraphs_type.step
+  module:
+    - color_field
+id: paragraph.step.field_pg_background_color
+field_name: field_pg_background_color
+entity_type: paragraph
+bundle: step
+label: 'Couleur de fond'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

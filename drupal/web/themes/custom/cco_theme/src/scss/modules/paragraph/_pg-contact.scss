@@ -1,0 +1,50 @@
+@use "../../tools/colors" as colors;
+@use "../../tools/variables" as variables;
+@use "../../tools/fonts" as fonts;
+@use "../../tools/mixins" as mixins;
+
+.pg-contact {
+  background: colors.$bloody-orange;
+  padding: 3rem 0;
+
+  .wysiwyg {
+    p {
+      color: colors.$snow-white;
+    }
+  }
+
+  h2 {
+    color: colors.$snow-white;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    @include mixins.media-min("xl") {
+      flex-direction: row;
+      gap: 2rem;
+      align-items: end;
+    }
+  }
+
+  &__text {
+    width: 100%;
+
+    @include mixins.media-min("xl") {
+      width: 60%;
+    }
+  }
+
+  &__image {
+    width: 100%;
+
+    &-container {
+      width: 100%;
+
+      @include mixins.media-min("xl") {
+        width: 40%;
+      }
+    }
+  }
+}

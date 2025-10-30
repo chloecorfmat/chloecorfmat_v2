@@ -1,0 +1,45 @@
+uuid: 412bf825-59ce-4878-88c7-7f8ee94b981a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.reference.field_pg_description
+    - field.field.paragraph.reference.field_pg_link
+    - field.field.paragraph.reference.field_pg_title
+    - paragraphs.paragraphs_type.reference
+  module:
+    - link
+id: paragraph.reference.default
+targetEntityType: paragraph
+bundle: reference
+mode: default
+content:
+  field_pg_description:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_pg_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_pg_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

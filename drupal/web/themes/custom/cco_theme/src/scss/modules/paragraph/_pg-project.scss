@@ -1,0 +1,22 @@
+@use "../../tools/colors" as colors;
+@use "../../tools/variables" as variables;
+@use "../../tools/fonts" as fonts;
+@use "../../tools/mixins" as mixins;
+
+.pg-project {
+  width: 100%;
+  text-align: center;
+
+  h3 {
+    color: colors.$midnight-blue;
+    margin-top: 0;
+  }
+
+  &__image {
+    max-width: 100%;
+  }
+
+  @include mixins.media-min("xl") {
+    width: 33%;
+  }
+}

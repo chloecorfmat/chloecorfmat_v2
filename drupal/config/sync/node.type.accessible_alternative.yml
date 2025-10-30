@@ -1,0 +1,18 @@
+uuid: a735f0fb-519a-4db9-94aa-2654dabfc1f3
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Alternative accessible'
+type: accessible_alternative
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

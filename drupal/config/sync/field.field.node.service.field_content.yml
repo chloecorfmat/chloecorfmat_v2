@@ -6,11 +6,16 @@ dependencies:
     - field.storage.node.field_content
     - node.type.service
     - paragraphs.paragraphs_type.pg_about
+    - paragraphs.paragraphs_type.pg_contact
     - paragraphs.paragraphs_type.pg_cta_reminder
     - paragraphs.paragraphs_type.pg_faq
     - paragraphs.paragraphs_type.pg_pitch
     - paragraphs.paragraphs_type.pg_problems
+    - paragraphs.paragraphs_type.pg_projects
+    - paragraphs.paragraphs_type.pg_reviews
+    - paragraphs.paragraphs_type.pg_service_present_with_photo
     - paragraphs.paragraphs_type.pg_solution
+    - paragraphs.paragraphs_type.pg_working_method
   module:
     - entity_reference_revisions
 id: node.service.field_content
@@ -32,7 +37,12 @@ settings:
       pg_cta_reminder: pg_cta_reminder
       pg_pitch: pg_pitch
       pg_problems: pg_problems
+      pg_service_present_with_photo: pg_service_present_with_photo
       pg_solution: pg_solution
+      pg_reviews: pg_reviews
+      pg_projects: pg_projects
+      pg_contact: pg_contact
+      pg_working_method: pg_working_method
     negate: 0
     target_bundles_drag_drop:
       cta:
@@ -41,23 +51,53 @@ settings:
       pg_about:
         weight: 14
         enabled: true
+      pg_callout:
+        weight: 20
+        enabled: false
+      pg_code:
+        weight: 21
+        enabled: false
+      pg_contact:
+        weight: 23
+        enabled: true
       pg_cta_reminder:
         weight: 15
         enabled: true
       pg_faq:
         weight: 12
         enabled: true
+      pg_paragraph:
+        weight: 24
+        enabled: false
       pg_pitch:
         weight: 16
         enabled: true
       pg_problems:
         weight: 17
         enabled: true
+      pg_projects:
+        weight: 21
+        enabled: true
+      pg_reviews:
+        weight: 20
+        enabled: true
+      pg_service_present_with_photo:
+        weight: 17
+        enabled: true
       pg_solution:
         weight: 18
         enabled: true
+      pg_working_method:
+        weight: 31
+        enabled: true
+      project:
+        weight: 38
+        enabled: false
       question:
         weight: 19
+        enabled: false
+      reference:
+        weight: 29
         enabled: false
       review:
         weight: 20
@@ -67,5 +107,8 @@ settings:
         enabled: false
       situation:
         weight: 22
+        enabled: false
+      step:
+        weight: 19
         enabled: false
 field_type: entity_reference_revisions

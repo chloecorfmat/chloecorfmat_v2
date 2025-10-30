@@ -1,0 +1,20 @@
+uuid: e5f78537-4f77-4fdf-9743-4f2c840a14f8
+langcode: fr
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_pg_position
+field_name: field_pg_position
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

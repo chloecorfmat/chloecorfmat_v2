@@ -1,0 +1,25 @@
+uuid: c25a96c6-127d-4edf-8bfd-8bc84efe642e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.full
+    - field.field.paragraph.pg_service_present_with_photo.field_pg_photo
+    - field.field.paragraph.pg_service_present_with_photo.field_pg_text
+    - field.field.paragraph.pg_service_present_with_photo.field_pg_title
+    - paragraphs.paragraphs_type.pg_service_present_with_photo
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.pg_service_present_with_photo.full
+targetEntityType: paragraph
+bundle: pg_service_present_with_photo
+mode: full
+content: {  }
+hidden:
+  field_pg_photo: true
+  field_pg_text: true
+  field_pg_title: true

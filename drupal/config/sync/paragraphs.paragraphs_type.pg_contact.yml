@@ -1,0 +1,10 @@
+uuid: a2f73a64-7dcf-46a9-837b-c6d38783ac73
+langcode: fr
+status: true
+dependencies: {  }
+id: pg_contact
+label: 'Bloc Contact'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

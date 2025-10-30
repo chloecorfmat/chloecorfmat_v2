@@ -1,0 +1,22 @@
+uuid: d304bf47-579c-40d9-94c6-30aff42c1f8a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.podcast
+id: node.podcast.promote
+field_name: promote
+entity_type: node
+bundle: podcast
+label: "Promu en page d'accueil"
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

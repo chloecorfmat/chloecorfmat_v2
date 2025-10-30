@@ -1,0 +1,21 @@
+<div class="pg-contact">
+  <div class="block">
+    <div class="pg-contact__content">
+      <div class="pg-contact__text">
+        <h2>{{ title }}</h2>
+        <div class="wysiwyg">
+          {{ text|raw }}
+        </div>
+
+        <a href="{{ cta.url }}" target="{{ '_' ~ cta.target }}" class="btn btn--{{ cta.color }}">
+          {{ cta.text }}
+        </a>
+      </div>
+
+      <div class="pg-contact__image-container">
+        <img src="/themes/custom/cco_theme/assets/asset-mascotte-contact.png" alt="" class="pg-contact__image">
+      </div>
+    </div>
+
+  </div>
+</div>

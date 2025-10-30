@@ -1,0 +1,47 @@
+@use "../tools/colors" as colors;
+@use "../tools/fonts" as fonts;
+@use "../tools/mixins" as mixins;
+
+.footer {
+  border-top: 2px solid colors.$snow-white;
+  background: colors.$bloody-orange;
+
+  &__logo {
+    width: 200px
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    @include mixins.media-min("xl") {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    h2 {
+      color: colors.$snow-white;
+      font-family: fonts.$fredoka;
+      font-size: 18px;
+      font-weight: 700;
+      padding-bottom: 0.5rem;
+    }
+
+    a {
+      font-size: 16px;
+      color: colors.$snow-white;
+      text-decoration: none;
+    }
+
+    ul {
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      list-style-type: none;
+      line-height: 2;
+    }
+  }
+}

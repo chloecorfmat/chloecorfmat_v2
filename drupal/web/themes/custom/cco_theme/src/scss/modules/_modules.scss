@@ -1,3 +1,4 @@
+@use "accordion";
 @use "back-to-top";
 @use "button";
 @use "carousel";
@@ -7,10 +8,17 @@
 @use "list_services";
 
 @use "paragraph/pg-about";
+@use "paragraph/pg-contact";
 @use "paragraph/pg-cta-reminder";
 @use "paragraph/pg-pitch";
+@use "paragraph/pg-faq";
 @use "paragraph/pg-problems";
+@use "paragraph/pg-project";
+@use "paragraph/pg-projects";
+@use "paragraph/pg-service-present-with-photo";
 @use "paragraph/pg-solution";
+@use "paragraph/pg-step";
+@use "paragraph/pg-working-method";
 
 @use "pages/services" as pages-services;
 

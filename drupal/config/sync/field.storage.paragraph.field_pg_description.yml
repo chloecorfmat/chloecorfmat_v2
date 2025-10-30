@@ -1,0 +1,21 @@
+uuid: b2a0d2ea-33c5-4ae0-aab2-b1b58fd3020c
+langcode: fr
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_pg_description
+field_name: field_pg_description
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

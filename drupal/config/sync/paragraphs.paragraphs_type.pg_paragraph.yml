@@ -1,0 +1,10 @@
+uuid: 1e5880d7-22bd-4c6e-965e-6281c188697c
+langcode: fr
+status: true
+dependencies: {  }
+id: pg_paragraph
+label: 'Bloc Paragraphe'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

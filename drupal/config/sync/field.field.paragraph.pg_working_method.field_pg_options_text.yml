@@ -1,0 +1,22 @@
+uuid: e2da1e0e-dfb1-4089-9dbd-c83f3fa6a07d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_options_text
+    - paragraphs.paragraphs_type.pg_working_method
+  module:
+    - text
+id: paragraph.pg_working_method.field_pg_options_text
+field_name: field_pg_options_text
+entity_type: paragraph
+bundle: pg_working_method
+label: 'Texte "options"'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

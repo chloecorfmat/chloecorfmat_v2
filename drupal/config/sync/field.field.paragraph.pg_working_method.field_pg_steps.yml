@@ -1,0 +1,82 @@
+uuid: 81712752-72d2-4689-ac3a-5f575c9d87fb
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_steps
+    - paragraphs.paragraphs_type.pg_working_method
+    - paragraphs.paragraphs_type.step
+  module:
+    - entity_reference_revisions
+id: paragraph.pg_working_method.field_pg_steps
+field_name: field_pg_steps
+entity_type: paragraph
+bundle: pg_working_method
+label: Étapes
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      step: step
+    negate: 0
+    target_bundles_drag_drop:
+      cta:
+        weight: 20
+        enabled: false
+      pg_about:
+        weight: 21
+        enabled: false
+      pg_callout:
+        weight: 22
+        enabled: false
+      pg_code:
+        weight: 23
+        enabled: false
+      pg_cta_reminder:
+        weight: 24
+        enabled: false
+      pg_faq:
+        weight: 25
+        enabled: false
+      pg_paragraph:
+        weight: 26
+        enabled: false
+      pg_pitch:
+        weight: 27
+        enabled: false
+      pg_problems:
+        weight: 28
+        enabled: false
+      pg_service_present_with_photo:
+        weight: 29
+        enabled: false
+      pg_solution:
+        weight: 30
+        enabled: false
+      pg_working_method:
+        weight: 31
+        enabled: false
+      question:
+        weight: 32
+        enabled: false
+      reference:
+        weight: 33
+        enabled: false
+      review:
+        weight: 34
+        enabled: false
+      service:
+        weight: 35
+        enabled: false
+      situation:
+        weight: 36
+        enabled: false
+      step:
+        weight: 19
+        enabled: true
+field_type: entity_reference_revisions

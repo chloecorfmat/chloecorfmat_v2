@@ -1,0 +1,8 @@
+uuid: 26a40886-fe77-43ed-b2d5-7e4fe279697a
+langcode: fr
+status: true
+dependencies: {  }
+id: legal-information
+label: 'Informations légales'
+description: 'Affiché dans le footer'
+locked: false

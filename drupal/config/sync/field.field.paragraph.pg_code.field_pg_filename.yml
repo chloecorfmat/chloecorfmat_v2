@@ -1,0 +1,19 @@
+uuid: 87fa6640-13c9-480c-849e-d2131084c4e7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_filename
+    - paragraphs.paragraphs_type.pg_code
+id: paragraph.pg_code.field_pg_filename
+field_name: field_pg_filename
+entity_type: paragraph
+bundle: pg_code
+label: 'Nom du fichier'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

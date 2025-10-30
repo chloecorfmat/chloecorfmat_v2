@@ -1,0 +1,26 @@
+<div class="accordion-item" id="{{ "accordionItem" ~ id|capitalize }}">
+  <h3>
+    <button
+      type="button"
+      aria-expanded="false"
+      class="accordion-trigger"
+      aria-controls="{{ "accordion" ~ id|capitalize ~ "Panel" }}"
+      id="{{ "accordion" ~ id|capitalize }}"
+    >
+      <span>{{ question }}</span>
+      <span aria-hidden="true" class="accordion-trigger--closed">▼</span>
+      <span aria-hidden="true" class="accordion-trigger--opened">▲</span>
+    </button>
+  </h3>
+  <div
+    id="{{ "accordion" ~ id|capitalize ~ "Panel" }}"
+    role="region"
+    aria-labelledby="{{ "accordion" ~ id|capitalize }}"
+    class="accordion-panel accordion-panel--hidden"
+  >
+    <div class="wysiwyg">
+      {{ answer|raw }}
+    </div>
+  </div>
+
+</div>

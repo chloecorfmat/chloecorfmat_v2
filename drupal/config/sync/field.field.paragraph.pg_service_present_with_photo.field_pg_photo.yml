@@ -1,0 +1,29 @@
+uuid: 533e5b84-ad10-4d5f-ac91-4bbe2497af4f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_photo
+    - media.type.image
+    - paragraphs.paragraphs_type.pg_service_present_with_photo
+id: paragraph.pg_service_present_with_photo.field_pg_photo
+field_name: field_pg_photo
+entity_type: paragraph
+bundle: pg_service_present_with_photo
+label: Photo
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

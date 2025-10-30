@@ -1,0 +1,53 @@
+@use "../../tools/colors" as colors;
+@use "../../tools/variables" as variables;
+@use "../../tools/fonts" as fonts;
+@use "../../tools/mixins" as mixins;
+
+.pg-working-method {
+  padding: 3rem 0;
+
+  &__steps {
+    margin: 3rem 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__options {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    &-text {
+      width: 100%;
+
+      .wysiwyg {
+        p:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+
+    &-image {
+      display: none;
+
+      &--image {
+        width: 100%;
+      }
+    }
+
+    @include mixins.media-min("xl") {
+      flex-direction: row;
+
+      &-text {
+        width: 80%;
+      }
+
+      &-image {
+        display: block;
+        width: 20%;
+      }
+    }
+  }
+}

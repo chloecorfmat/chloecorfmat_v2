@@ -1,0 +1,10 @@
+uuid: 15d81456-0cd6-44af-b7ee-749970150b10
+langcode: fr
+status: true
+dependencies: {  }
+id: reference
+label: Référence
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

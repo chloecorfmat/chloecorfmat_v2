@@ -1,0 +1,29 @@
+uuid: 70ed69e0-30d9-42a8-83a5-07c03acf7a8a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_image
+    - media.type.image
+    - paragraphs.paragraphs_type.project
+id: paragraph.project.field_pg_image
+field_name: field_pg_image
+entity_type: paragraph
+bundle: project
+label: Image
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

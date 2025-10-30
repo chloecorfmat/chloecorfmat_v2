@@ -7,3 +7,6 @@ global:
 carousel:
   js:
     src/js/carousel.js: {}
+accordion:
+  js:
+    src/js/accordion.js: {}

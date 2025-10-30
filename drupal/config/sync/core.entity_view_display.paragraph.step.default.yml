@@ -1,0 +1,61 @@
+uuid: 674d3c9d-88ee-400f-8acb-22414e3e56d6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.step.field_pg_background_color
+    - field.field.paragraph.step.field_pg_emoji
+    - field.field.paragraph.step.field_pg_position
+    - field.field.paragraph.step.field_pg_text
+    - field.field.paragraph.step.field_pg_title
+    - paragraphs.paragraphs_type.step
+  module:
+    - color_field
+    - text
+id: paragraph.step.default
+targetEntityType: paragraph
+bundle: step
+mode: default
+content:
+  field_pg_background_color:
+    type: color_field_formatter_text
+    label: above
+    settings:
+      format: hex
+      opacity: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_pg_emoji:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_pg_position:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_pg_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_pg_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

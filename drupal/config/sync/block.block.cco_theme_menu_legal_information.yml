@@ -1,0 +1,25 @@
+uuid: 9b46af95-f769-47b2-98cb-51c8fb9bd9c4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.legal-information
+  module:
+    - system
+  theme:
+    - cco_theme
+id: cco_theme_menu_legal_information
+theme: cco_theme
+region: footer
+weight: -6
+provider: null
+plugin: 'system_menu_block:legal-information'
+settings:
+  id: 'system_menu_block:legal-information'
+  label: 'Informations légales'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: false
+visibility: {  }

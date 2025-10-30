@@ -1,0 +1,29 @@
+uuid: 03caf8a3-193c-4f6f-8975-a4e2fff2307e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_reviews
+    - paragraphs.paragraphs_type.pg_reviews
+    - taxonomy.vocabulary.reviews
+id: paragraph.pg_reviews.field_pg_reviews
+field_name: field_pg_reviews
+entity_type: paragraph
+bundle: pg_reviews
+label: Recommandations
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      reviews: reviews
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

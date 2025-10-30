@@ -1,0 +1,25 @@
+uuid: 4ada02ce-25ba-4633-b464-df7065134d46
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.full
+    - field.field.paragraph.project.field_pg_image
+    - field.field.paragraph.project.field_pg_text
+    - field.field.paragraph.project.field_pg_title
+    - paragraphs.paragraphs_type.project
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.project.full
+targetEntityType: paragraph
+bundle: project
+mode: full
+content: {  }
+hidden:
+  field_pg_image: true
+  field_pg_text: true
+  field_pg_title: true

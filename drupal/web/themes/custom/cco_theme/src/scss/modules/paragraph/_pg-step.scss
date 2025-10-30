@@ -1,0 +1,85 @@
+@use "../../tools/colors" as colors;
+@use "../../tools/variables" as variables;
+@use "../../tools/fonts" as fonts;
+@use "../../tools/mixins" as mixins;
+
+.pg-step {
+  list-style-type: none;
+  background: colors.$salt-flower-gray;
+  padding: 1.5rem;
+  border-radius: variables.$border-radius;
+  position: relative;
+
+  &__content {
+    position: relative;
+    h3 {
+      margin-top: 0;
+    }
+
+    .wysiwyg {
+      p {
+        margin: .25rem 0;
+      }
+    }
+  }
+
+  &__position {
+    left: -5rem;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    transform: translateX(calc(50% - 5px));
+    margin: 0;
+    top: calc(50% - 2rem);
+    display: none;
+    font-family: fonts.$momentz;
+
+    @include mixins.media-min("xl") {
+      display: flex;
+      position: absolute;
+    }
+  }
+
+  @include mixins.media-min("xl") {
+    border-left: 10px solid colors.$honey-yellow;
+    padding: 2rem 2rem 2rem 5rem;
+    align-items: center;
+
+    &--lagoon-blue {
+      border-left-color: colors.$lagoon-blue;
+
+      .pg-step__position {
+        background: colors.$lagoon-blue;
+      }
+    }
+
+    &--vine-peach {
+      border-left-color: colors.$vine-peach;
+
+      .pg-step__position {
+        background: colors.$vine-peach;
+      }
+    }
+
+    &--honey-yellow {
+      border-left-color: colors.$honey-yellow;
+
+      .pg-step__position {
+        background: colors.$honey-yellow;
+      }
+    }
+
+    &--lavender-purple-medium {
+      border-left-color: colors.$lavender-purple-medium;
+
+      .pg-step__position {
+        background: colors.$lavender-purple-medium;
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+uuid: 92214cc4-2d8e-4c2a-ac49-83dc15c08aae
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_text
+    - paragraphs.paragraphs_type.pg_reviews
+  module:
+    - text
+id: paragraph.pg_reviews.field_pg_text
+field_name: field_pg_text
+entity_type: paragraph
+bundle: pg_reviews
+label: Texte
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

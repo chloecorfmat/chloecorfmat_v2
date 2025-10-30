@@ -1,0 +1,25 @@
+uuid: 0c93a013-fa48-47db-888c-3fa74c1daa39
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.social-media
+  module:
+    - system
+  theme:
+    - cco_theme
+id: cco_theme_menu_social_media
+theme: cco_theme
+region: footer
+weight: -4
+provider: null
+plugin: 'system_menu_block:social-media'
+settings:
+  id: 'system_menu_block:social-media'
+  label: 'Réseaux sociaux'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: false
+visibility: {  }

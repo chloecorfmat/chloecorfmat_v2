@@ -1,0 +1,74 @@
+uuid: 560a05fa-a712-47f2-bc63-29eec920e089
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.article
+    - paragraphs.paragraphs_type.pg_callout
+    - paragraphs.paragraphs_type.pg_code
+    - paragraphs.paragraphs_type.pg_paragraph
+  module:
+    - entity_reference_revisions
+id: node.article.field_content
+field_name: field_content
+entity_type: node
+bundle: article
+label: Contenu
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      pg_code: pg_code
+      pg_callout: pg_callout
+      pg_paragraph: pg_paragraph
+    negate: 0
+    target_bundles_drag_drop:
+      cta:
+        weight: 13
+        enabled: false
+      pg_about:
+        weight: 14
+        enabled: false
+      pg_callout:
+        weight: 15
+        enabled: true
+      pg_code:
+        weight: 14
+        enabled: true
+      pg_cta_reminder:
+        weight: 15
+        enabled: false
+      pg_faq:
+        weight: 12
+        enabled: false
+      pg_paragraph:
+        weight: 19
+        enabled: true
+      pg_pitch:
+        weight: 16
+        enabled: false
+      pg_problems:
+        weight: 17
+        enabled: false
+      pg_solution:
+        weight: 18
+        enabled: false
+      question:
+        weight: 19
+        enabled: false
+      review:
+        weight: 20
+        enabled: false
+      service:
+        weight: 21
+        enabled: false
+      situation:
+        weight: 22
+        enabled: false
+field_type: entity_reference_revisions

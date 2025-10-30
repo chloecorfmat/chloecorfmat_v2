@@ -1,0 +1,25 @@
+uuid: 1b118b09-08a7-4885-99ef-e04e1ab2aca2
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.full
+    - field.field.paragraph.question.field_pg_answer
+    - field.field.paragraph.question.field_pg_id
+    - field.field.paragraph.question.field_pg_question
+    - paragraphs.paragraphs_type.question
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.question.full
+targetEntityType: paragraph
+bundle: question
+mode: full
+content: {  }
+hidden:
+  field_pg_answer: true
+  field_pg_id: true
+  field_pg_question: true

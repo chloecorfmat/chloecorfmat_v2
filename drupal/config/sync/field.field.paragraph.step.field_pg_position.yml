@@ -1,0 +1,23 @@
+uuid: 82719688-db54-46ec-becf-71c1b56e1ddb
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_position
+    - paragraphs.paragraphs_type.step
+id: paragraph.step.field_pg_position
+field_name: field_pg_position
+entity_type: paragraph
+bundle: step
+label: Position
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

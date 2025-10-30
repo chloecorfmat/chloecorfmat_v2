@@ -1,0 +1,22 @@
+uuid: 33d663d6-9c0d-4f9c-a4f1-c4ab9b47e665
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_text
+    - paragraphs.paragraphs_type.pg_service_present_with_photo
+  module:
+    - text
+id: paragraph.pg_service_present_with_photo.field_pg_text
+field_name: field_pg_text
+entity_type: paragraph
+bundle: pg_service_present_with_photo
+label: Texte
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

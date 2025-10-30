@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.question.field_pg_answer
+    - field.field.paragraph.question.field_pg_id
     - field.field.paragraph.question.field_pg_question
     - paragraphs.paragraphs_type.question
   module:
@@ -15,15 +16,23 @@ mode: default
 content:
   field_pg_answer:
     type: text_textarea
-    weight: 1
+    weight: 2
     region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-  field_pg_question:
+  field_pg_id:
     type: string_textfield
     weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_pg_question:
+    type: string_textfield
+    weight: 1
     region: content
     settings:
       size: 60

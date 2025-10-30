@@ -1,0 +1,23 @@
+uuid: 1e14da50-0a60-4e1f-a3f5-450cb390df8b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_status
+    - paragraphs.paragraphs_type.pg_callout
+  module:
+    - options
+id: paragraph.pg_callout.field_pg_status
+field_name: field_pg_status
+entity_type: paragraph
+bundle: pg_callout
+label: Statut
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: info
+default_value_callback: ''
+settings: {  }
+field_type: list_string

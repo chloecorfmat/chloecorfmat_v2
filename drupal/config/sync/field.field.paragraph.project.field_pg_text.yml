@@ -1,0 +1,22 @@
+uuid: 769b4e04-f0ca-4d0f-96aa-ca8b77430816
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_text
+    - paragraphs.paragraphs_type.project
+  module:
+    - text
+id: paragraph.project.field_pg_text
+field_name: field_pg_text
+entity_type: paragraph
+bundle: project
+label: Texte
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

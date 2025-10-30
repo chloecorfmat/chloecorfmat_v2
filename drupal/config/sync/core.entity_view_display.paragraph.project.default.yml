@@ -1,0 +1,41 @@
+uuid: 96699ff6-900b-4a89-afc6-583bc4998d48
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.project.field_pg_image
+    - field.field.paragraph.project.field_pg_text
+    - field.field.paragraph.project.field_pg_title
+    - paragraphs.paragraphs_type.project
+  module:
+    - text
+id: paragraph.project.default
+targetEntityType: paragraph
+bundle: project
+mode: default
+content:
+  field_pg_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_pg_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_pg_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

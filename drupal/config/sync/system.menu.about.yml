@@ -1,0 +1,8 @@
+uuid: a353bb31-8cc9-4510-a31d-ea72b0093999
+langcode: fr
+status: true
+dependencies: {  }
+id: about
+label: 'À propos de Chloé Corfmat'
+description: 'Affiché dans le footer'
+locked: false

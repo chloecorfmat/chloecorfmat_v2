@@ -1,0 +1,13 @@
+@use "../../tools/colors" as colors;
+@use "../../tools/variables" as variables;
+@use "../../tools/fonts" as fonts;
+@use "../../tools/mixins" as mixins;
+
+.pg-faq {
+  background: colors.$lavender-purple-light;
+  padding: 3rem 0;
+
+  h2 {
+    color: colors.$midnight-blue;
+  }
+}

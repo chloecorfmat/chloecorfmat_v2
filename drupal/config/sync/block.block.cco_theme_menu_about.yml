@@ -1,0 +1,25 @@
+uuid: f8b39b75-388b-4eeb-9d7d-06047e6e2008
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.about
+  module:
+    - system
+  theme:
+    - cco_theme
+id: cco_theme_menu_about
+theme: cco_theme
+region: footer
+weight: -5
+provider: null
+plugin: 'system_menu_block:about'
+settings:
+  id: 'system_menu_block:about'
+  label: 'À propos de Chloé Corfmat'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: false
+visibility: {  }

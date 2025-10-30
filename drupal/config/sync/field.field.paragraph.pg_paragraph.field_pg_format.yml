@@ -1,0 +1,21 @@
+uuid: 9103033b-cde0-4686-9a36-a96965865e7f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_format
+    - paragraphs.paragraphs_type.pg_paragraph
+  module:
+    - options
+id: paragraph.pg_paragraph.field_pg_format
+field_name: field_pg_format
+entity_type: paragraph
+bundle: pg_paragraph
+label: Format
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

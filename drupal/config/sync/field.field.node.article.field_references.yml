@@ -1,0 +1,73 @@
+uuid: 4ddccda8-ea7f-49dc-97c4-5bf4542d2720
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_references
+    - node.type.article
+    - paragraphs.paragraphs_type.reference
+  module:
+    - entity_reference_revisions
+id: node.article.field_references
+field_name: field_references
+entity_type: node
+bundle: article
+label: Références
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      reference: reference
+    negate: 0
+    target_bundles_drag_drop:
+      cta:
+        weight: 17
+        enabled: false
+      pg_about:
+        weight: 18
+        enabled: false
+      pg_callout:
+        weight: 19
+        enabled: false
+      pg_code:
+        weight: 20
+        enabled: false
+      pg_cta_reminder:
+        weight: 21
+        enabled: false
+      pg_faq:
+        weight: 22
+        enabled: false
+      pg_paragraph:
+        weight: 23
+        enabled: false
+      pg_pitch:
+        weight: 24
+        enabled: false
+      pg_problems:
+        weight: 25
+        enabled: false
+      pg_solution:
+        weight: 26
+        enabled: false
+      question:
+        weight: 27
+        enabled: false
+      reference:
+        weight: 16
+        enabled: true
+      review:
+        weight: 28
+        enabled: false
+      service:
+        weight: 29
+        enabled: false
+      situation:
+        weight: 30
+        enabled: false
+field_type: entity_reference_revisions

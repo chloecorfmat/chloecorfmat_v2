@@ -1,0 +1,22 @@
+uuid: 65c110a8-0998-48cf-ac1c-b31a5fa49ecf
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_text
+    - paragraphs.paragraphs_type.pg_working_method
+  module:
+    - text
+id: paragraph.pg_working_method.field_pg_text
+field_name: field_pg_text
+entity_type: paragraph
+bundle: pg_working_method
+label: Texte
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

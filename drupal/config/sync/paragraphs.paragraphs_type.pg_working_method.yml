@@ -1,0 +1,10 @@
+uuid: 2f2af914-80c1-4f60-b119-2cb88b016ecb
+langcode: fr
+status: true
+dependencies: {  }
+id: pg_working_method
+label: 'Bloc Méthode de travail'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

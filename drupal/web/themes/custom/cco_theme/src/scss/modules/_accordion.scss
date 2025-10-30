@@ -1,0 +1,81 @@
+@use "../tools/colors" as colors;
+@use "../tools/mixins" as mixins;
+@use "../tools/fonts" as fonts;
+
+.accordion {
+  margin-top: 2rem;
+
+  h3 {
+    margin: 0;
+  }
+
+  &-item {
+    margin: 1rem 0;
+  }
+
+  &-trigger {
+    cursor: pointer;
+    background: colors.$snow-white;
+    color: colors.$midnight-blue;
+    font-family: fonts.$momentz;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    line-height: 2;
+    text-align: left;
+    padding: .5rem 2rem .5rem .5rem;
+    font-size: 18px;
+    border-top: 2px solid colors.$lavender-purple-medium;
+    border-right: none;
+    border-left: none;
+
+    &[aria-expanded="true"] {
+      background: colors.$lavender-purple-medium;
+      border: 2px solid colors.$lavender-purple-medium;
+      border-top-color: colors.$midnight-blue;
+      border-bottom: none;
+
+      > .accordion-trigger--closed {
+        display: none;
+      }
+
+      > .accordion-trigger--opened {
+        display: block;
+      }
+    }
+
+    &[aria-expanded="false"] {
+      border-bottom: 2px solid colors.$lavender-purple-medium;
+
+      > .accordion-trigger--closed {
+        display: block;
+      }
+
+      > .accordion-trigger--opened {
+        display: none;
+      }
+    }
+  }
+
+  .wysiwyg {
+    p:first-child {
+      margin-top: 0;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &-panel {
+    background: colors.$snow-white;
+    border: 2px solid colors.$lavender-purple-medium;
+    border-top: 0;
+    padding: .5rem;
+
+    &--hidden {
+      display: none;
+    }
+  }
+}

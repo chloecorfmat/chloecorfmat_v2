@@ -1,0 +1,29 @@
+uuid: 8cfdde4a-b860-4c2a-91d2-7274bf09a2b9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.full
+    - field.field.paragraph.step.field_pg_background_color
+    - field.field.paragraph.step.field_pg_emoji
+    - field.field.paragraph.step.field_pg_position
+    - field.field.paragraph.step.field_pg_text
+    - field.field.paragraph.step.field_pg_title
+    - paragraphs.paragraphs_type.step
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.step.full
+targetEntityType: paragraph
+bundle: step
+mode: full
+content: {  }
+hidden:
+  field_pg_background_color: true
+  field_pg_emoji: true
+  field_pg_position: true
+  field_pg_text: true
+  field_pg_title: true

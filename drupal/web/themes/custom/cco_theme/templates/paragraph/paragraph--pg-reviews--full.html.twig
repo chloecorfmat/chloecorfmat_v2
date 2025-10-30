@@ -1,0 +1,41 @@
+<div class="hp-reviews">
+  <img src="/themes/custom/cco_theme/assets/asset-pencils-white.png" alt="" class="hp-reviews__pencils">
+  <div class="block">
+    <h2 class="hp-reviews__title" id="reviews-title">{{ title }}</h2>
+    <div class="hp-reviews__text">
+      <div class="wysiwyg">
+        {{ text|raw }}
+      </div>
+    </div>
+
+    {# Carousel #}
+    <div class="carousel" role="group" aria-roledescription="Carrousel" aria-labelledby="hp-reviews-title">
+      <button class="carousel__btn carousel__prev">
+        <i class="fa-solid fa-chevron-left fa-2x" aria-hidden="true"></i>
+        <span class="visually-hidden">Recommandations précédentes</span>
+      </button>
+      <div class="carousel__viewport">
+        <ul id="carousel__track" class="carousel__slides" aria-atomic="false" aria-live="polite">
+          {% for review in reviews %}
+            <li class="carousel__slide carousel--{{ review.color }}" role="group" aria-roledescription="Recommandation" aria-label="1 sur 4">
+              <blockquote cite="https://www.linkedin.com/in/chloecorfmat/">
+                <div class="hp-reviews__review">{{ review.review|raw }}</div>
+                <p>{{ review.name }}, <span class="hp-reviews__company">{{ review.company }}</span></p>
+              </blockquote>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <button class="carousel__btn carousel__next">
+        <i class="fa-solid fa-chevron-right fa-2x" aria-hidden="true"></i>
+        <span class="visually-hidden">Recommandations suivantes</span>
+      </button>
+    </div>
+
+    <div class="hp-reviews__cta">
+      <a href="{{ cta.url }}" target="{{ '_' ~ cta.target }}" class="btn btn--{{ cta.color }}">
+        {{ cta.text }}
+      </a>
+    </div>
+  </div>
+</div>

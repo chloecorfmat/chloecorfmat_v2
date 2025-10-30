@@ -1,0 +1,19 @@
+uuid: e76cc165-27e9-438b-b714-9a9a86244a3c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_title
+    - paragraphs.paragraphs_type.pg_projects
+id: paragraph.pg_projects.field_pg_title
+field_name: field_pg_title
+entity_type: paragraph
+bundle: pg_projects
+label: Titre
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

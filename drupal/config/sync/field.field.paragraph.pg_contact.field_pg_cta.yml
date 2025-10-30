@@ -1,0 +1,94 @@
+uuid: 73c570d4-90e4-4832-a1ee-0d89fcf73ec8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_cta
+    - paragraphs.paragraphs_type.cta
+    - paragraphs.paragraphs_type.pg_contact
+  module:
+    - entity_reference_revisions
+id: paragraph.pg_contact.field_pg_cta
+field_name: field_pg_cta
+entity_type: paragraph
+bundle: pg_contact
+label: "Appel à l'action"
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      cta: cta
+    negate: 0
+    target_bundles_drag_drop:
+      cta:
+        weight: 7
+        enabled: true
+      pg_about:
+        weight: 9
+        enabled: false
+      pg_callout:
+        weight: 26
+        enabled: false
+      pg_code:
+        weight: 27
+        enabled: false
+      pg_contact:
+        weight: 23
+        enabled: false
+      pg_cta_reminder:
+        weight: 28
+        enabled: false
+      pg_faq:
+        weight: 29
+        enabled: false
+      pg_paragraph:
+        weight: 30
+        enabled: false
+      pg_pitch:
+        weight: 6
+        enabled: false
+      pg_problems:
+        weight: 12
+        enabled: false
+      pg_projects:
+        weight: 33
+        enabled: false
+      pg_reviews:
+        weight: 34
+        enabled: false
+      pg_service_present_with_photo:
+        weight: 35
+        enabled: false
+      pg_solution:
+        weight: 13
+        enabled: false
+      pg_working_method:
+        weight: 37
+        enabled: false
+      project:
+        weight: 38
+        enabled: false
+      question:
+        weight: 39
+        enabled: false
+      reference:
+        weight: 40
+        enabled: false
+      review:
+        weight: 8
+        enabled: false
+      service:
+        weight: 9
+        enabled: false
+      situation:
+        weight: 10
+        enabled: false
+      step:
+        weight: 44
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,10 @@
+uuid: ab6a9c34-c73d-4a8a-a2f1-e0c5647c099b
+langcode: fr
+status: true
+dependencies: {  }
+id: pg_service_present_with_photo
+label: 'Bloc Présentation de la prestation'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

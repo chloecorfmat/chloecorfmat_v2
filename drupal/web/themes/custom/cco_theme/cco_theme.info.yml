@@ -12,3 +12,4 @@ regions:
 libraries:
   - cco_theme/global
   - cco_theme/carousel
+  - cco_theme/accordion

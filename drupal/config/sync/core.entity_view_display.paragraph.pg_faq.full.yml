@@ -9,6 +9,7 @@ dependencies:
     - field.field.paragraph.pg_faq.field_pg_text
     - paragraphs.paragraphs_type.pg_faq
   module:
+    - entity_reference_revisions
     - layout_builder
 third_party_settings:
   layout_builder:
@@ -18,8 +19,16 @@ id: paragraph.pg_faq.full
 targetEntityType: paragraph
 bundle: pg_faq
 mode: full
-content: {  }
+content:
+  field_pg_questions:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: full
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
-  field_pg_questions: true
   field_pg_subhead: true
   field_pg_text: true

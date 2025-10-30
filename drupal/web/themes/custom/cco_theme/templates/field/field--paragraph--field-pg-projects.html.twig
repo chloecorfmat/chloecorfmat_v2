@@ -1,0 +1,5 @@
+<ul class="pg-projects__projects">
+  {% for item in items %}
+    <li{{ item.attributes.addClass('pg-project') }}>{{ item.content }}</li>
+  {% endfor %}
+</ul>

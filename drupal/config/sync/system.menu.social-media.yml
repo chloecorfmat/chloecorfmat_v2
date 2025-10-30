@@ -1,0 +1,8 @@
+uuid: 91eb1dc3-36b8-464e-aef6-a190564d09c5
+langcode: fr
+status: true
+dependencies: {  }
+id: social-media
+label: 'Réseaux sociaux'
+description: 'Affiché dans le footer'
+locked: false
