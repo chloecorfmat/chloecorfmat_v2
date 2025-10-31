@@ -4,7 +4,7 @@ services:
       context: .
       dockerfile: docker/drupal/dev/php/Dockerfile
     ports:
-      - 8080:80
+      - 8011:80
     working_dir: /app/public/drupal
     volumes:
       - .:/app/public
