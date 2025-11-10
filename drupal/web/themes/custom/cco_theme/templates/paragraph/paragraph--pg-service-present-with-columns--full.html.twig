@@ -1,0 +1,23 @@
+<div class="pg-service-present-with-columns">
+  <div class="block">
+    <div class="pg-service-present-with-columns__header">
+      <h2>{{ title }}</h2>
+      <div class="wysiwyg fs-lg">
+        {{ text|raw }}
+      </div>
+    </div>
+
+    {{ content }}
+
+    <div class="pg-service-present-with-columns__footer">
+      <div class="wysiwyg fs-lg">
+        {{ text|raw }}
+      </div>
+
+      <a href="{{ cta.url }}" target="{{ '_' ~ cta.target }}" class="btn btn--{{ cta.color }}">
+        {{ cta.text }}
+      </a>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,18 @@
+uuid: 605bd685-81fe-4843-a011-22d2596be27f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.difference.field_pg_image
+    - field.field.paragraph.difference.field_pg_text
+    - field.field.paragraph.difference.field_pg_title
+    - paragraphs.paragraphs_type.difference
+id: paragraph.difference.default
+targetEntityType: paragraph
+bundle: difference
+mode: default
+content: {  }
+hidden:
+  field_pg_image: true
+  field_pg_text: true
+  field_pg_title: true

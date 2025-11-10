@@ -1,0 +1,28 @@
+@use "../../tools/colors" as colors;
+@use "../../tools/variables" as variables;
+@use "../../tools/fonts" as fonts;
+@use "../../tools/mixins" as mixins;
+
+.pg-differences {
+  padding: 3rem 0;
+
+  &__header {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  &__differences {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+    @include mixins.media-min("md") {
+      flex-direction: row;
+    }
+
+  }
+}

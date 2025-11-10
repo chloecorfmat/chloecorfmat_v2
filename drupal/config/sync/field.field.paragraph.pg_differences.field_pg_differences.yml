@@ -1,0 +1,121 @@
+uuid: f02da291-232a-41b1-ae88-e848108e73ab
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_differences
+    - paragraphs.paragraphs_type.difference
+    - paragraphs.paragraphs_type.pg_differences
+  module:
+    - entity_reference_revisions
+id: paragraph.pg_differences.field_pg_differences
+field_name: field_pg_differences
+entity_type: paragraph
+bundle: pg_differences
+label: Différences
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      difference: difference
+    negate: 0
+    target_bundles_drag_drop:
+      cta:
+        weight: 33
+        enabled: false
+      difference:
+        weight: 32
+        enabled: true
+      event:
+        weight: 34
+        enabled: false
+      pg_about:
+        weight: 35
+        enabled: false
+      pg_about_header:
+        weight: 36
+        enabled: false
+      pg_callout:
+        weight: 37
+        enabled: false
+      pg_career:
+        weight: 38
+        enabled: false
+      pg_code:
+        weight: 39
+        enabled: false
+      pg_contact:
+        weight: 40
+        enabled: false
+      pg_cta_reminder:
+        weight: 41
+        enabled: false
+      pg_differences:
+        weight: 42
+        enabled: false
+      pg_events:
+        weight: 43
+        enabled: false
+      pg_faq:
+        weight: 44
+        enabled: false
+      pg_paragraph:
+        weight: 45
+        enabled: false
+      pg_pitch:
+        weight: 46
+        enabled: false
+      pg_problems:
+        weight: 47
+        enabled: false
+      pg_projects:
+        weight: 48
+        enabled: false
+      pg_quote:
+        weight: 49
+        enabled: false
+      pg_reviews:
+        weight: 50
+        enabled: false
+      pg_service_present_with_columns:
+        weight: 51
+        enabled: false
+      pg_service_present_with_photo:
+        weight: 52
+        enabled: false
+      pg_solution:
+        weight: 53
+        enabled: false
+      pg_working_method:
+        weight: 54
+        enabled: false
+      project:
+        weight: 55
+        enabled: false
+      question:
+        weight: 56
+        enabled: false
+      reference:
+        weight: 57
+        enabled: false
+      review:
+        weight: 58
+        enabled: false
+      service:
+        weight: 59
+        enabled: false
+      situation:
+        weight: 60
+        enabled: false
+      step:
+        weight: 61
+        enabled: false
+      subservice:
+        weight: 62
+        enabled: false
+field_type: entity_reference_revisions

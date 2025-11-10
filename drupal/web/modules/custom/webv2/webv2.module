@@ -54,5 +54,24 @@ function webv2_theme($existing, $type, $theme, $path) {
         'cta' => NULL,
       ],
     ],
+    'contact' => [
+      'render element' => 'children',
+      'template' => 'contact',
+      'path' => $path . '/templates',
+      'variables' => [
+        'hero' => NULL,
+        'discoveryCall' => NULL,
+        'contact' => NULL,
+      ],
+    ],
+    'linktree' => [
+      'render element' => 'children',
+      'template' => 'linktree',
+      'path' => $path . '/templates',
+      'variables' => [
+        'title' => NULL,
+        'sections' => NULL,
+      ],
+    ],
   ];
 }

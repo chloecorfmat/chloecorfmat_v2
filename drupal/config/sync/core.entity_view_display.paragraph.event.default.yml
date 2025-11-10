@@ -1,0 +1,69 @@
+uuid: 6abccfc7-ceb8-4542-98e1-38ecf55cfbec
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.event.field_pg_cta
+    - field.field.paragraph.event.field_pg_emoji
+    - field.field.paragraph.event.field_pg_price
+    - field.field.paragraph.event.field_pg_schedule
+    - field.field.paragraph.event.field_pg_text
+    - field.field.paragraph.event.field_pg_title
+    - paragraphs.paragraphs_type.event
+  module:
+    - entity_reference_revisions
+    - text
+id: paragraph.event.default
+targetEntityType: paragraph
+bundle: event
+mode: default
+content:
+  field_pg_cta:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_pg_emoji:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_pg_price:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_pg_schedule:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_pg_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_pg_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

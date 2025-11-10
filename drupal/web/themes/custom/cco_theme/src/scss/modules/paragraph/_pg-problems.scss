@@ -12,12 +12,8 @@
   }
 
   &__img {
-    width: 100%;
     text-align: center;
-
-    img {
-      width: 50%;
-    }
+    display: none;
   }
 
   &__content {
@@ -39,6 +35,7 @@
     }
 
     &__img {
+      display: block;
       width: 20%;
 
       img {

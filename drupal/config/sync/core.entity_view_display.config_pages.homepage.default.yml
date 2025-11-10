@@ -11,12 +11,9 @@ dependencies:
     - field.field.config_pages.homepage.field_hp_blog_cta
     - field.field.config_pages.homepage.field_hp_blog_text
     - field.field.config_pages.homepage.field_hp_blog_title
-    - field.field.config_pages.homepage.field_hp_contact_coord_email
-    - field.field.config_pages.homepage.field_hp_contact_coord_email_txt
-    - field.field.config_pages.homepage.field_hp_contact_coord_tel
-    - field.field.config_pages.homepage.field_hp_contact_coord_tel_text
-    - field.field.config_pages.homepage.field_hp_contact_coord_title
     - field.field.config_pages.homepage.field_hp_contact_form_title
+    - field.field.config_pages.homepage.field_hp_contact_others_text
+    - field.field.config_pages.homepage.field_hp_contact_others_title
     - field.field.config_pages.homepage.field_hp_contact_social_title
     - field.field.config_pages.homepage.field_hp_contact_text
     - field.field.config_pages.homepage.field_hp_contact_title
@@ -117,44 +114,6 @@ content:
     third_party_settings: {  }
     weight: 32
     region: content
-  field_hp_contact_coord_email:
-    type: basic_string
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 41
-    region: content
-  field_hp_contact_coord_email_txt:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 45
-    region: content
-  field_hp_contact_coord_tel:
-    type: basic_string
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 40
-    region: content
-  field_hp_contact_coord_tel_text:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 42
-    region: content
-  field_hp_contact_coord_title:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 39
-    region: content
   field_hp_contact_form_title:
     type: string
     label: above
@@ -162,6 +121,21 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 38
+    region: content
+  field_hp_contact_others_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 57
+    region: content
+  field_hp_contact_others_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 56
     region: content
   field_hp_contact_social_title:
     type: string

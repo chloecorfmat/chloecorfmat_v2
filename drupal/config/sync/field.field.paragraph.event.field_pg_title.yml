@@ -1,0 +1,19 @@
+uuid: cd381a34-663e-4a16-8625-7f0a971b9e0c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_title
+    - paragraphs.paragraphs_type.event
+id: paragraph.event.field_pg_title
+field_name: field_pg_title
+entity_type: paragraph
+bundle: event
+label: Titre
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

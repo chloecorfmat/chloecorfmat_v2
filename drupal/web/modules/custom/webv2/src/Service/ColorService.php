@@ -24,6 +24,8 @@ final class ColorService {
         return 'honey-yellow-light';
       case '#FFFFFF':
         return 'snow-white';
+      case '#D54414':
+        return 'bloody-orange';
       case '#F2BB04':
       default:
         return 'honey-yellow';

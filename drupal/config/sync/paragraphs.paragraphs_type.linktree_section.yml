@@ -1,0 +1,10 @@
+uuid: 1c4a7e42-2c43-47bc-9668-0f3fcc62603e
+langcode: fr
+status: true
+dependencies: {  }
+id: linktree_section
+label: "Section de l'arbre à liens"
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

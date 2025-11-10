@@ -1,0 +1,10 @@
+uuid: 79bbb789-b11d-43ea-9e8d-8b6350f4ebf7
+langcode: fr
+status: true
+dependencies: {  }
+id: pg_career
+label: 'Bloc Carrière'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

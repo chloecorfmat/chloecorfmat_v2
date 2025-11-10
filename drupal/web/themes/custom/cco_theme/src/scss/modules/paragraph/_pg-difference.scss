@@ -1,0 +1,38 @@
+@use "../../tools/colors" as colors;
+@use "../../tools/variables" as variables;
+@use "../../tools/fonts" as fonts;
+@use "../../tools/mixins" as mixins;
+
+.pg-difference {
+  width: 100%;
+  text-align: center;
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+
+  .wysiwyg {
+    p:first-child {
+      margin-top: 0;
+    }
+  }
+
+  @include mixins.media-min("md") {
+    width: calc(50% - 1rem);
+  }
+
+  @include mixins.media-min("lg") {
+    width: calc(25% - 2rem);
+  }
+
+  &__image {
+    width: 100%;
+    max-width: 120px;
+
+    &-container {
+      width: 100%;
+    }
+  }
+}

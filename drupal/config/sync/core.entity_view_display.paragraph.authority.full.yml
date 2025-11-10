@@ -1,0 +1,25 @@
+uuid: c0382ade-0dcd-4939-9312-acbd6a98cb56
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.full
+    - field.field.paragraph.authority.field_pg_photo
+    - field.field.paragraph.authority.field_pg_photo_position
+    - field.field.paragraph.authority.field_pg_text
+    - paragraphs.paragraphs_type.authority
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.authority.full
+targetEntityType: paragraph
+bundle: authority
+mode: full
+content: {  }
+hidden:
+  field_pg_photo: true
+  field_pg_photo_position: true
+  field_pg_text: true

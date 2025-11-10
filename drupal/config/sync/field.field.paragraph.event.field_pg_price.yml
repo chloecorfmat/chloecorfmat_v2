@@ -1,0 +1,19 @@
+uuid: 93d638f8-b7c4-4ddf-8689-7ef701a6a26d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_price
+    - paragraphs.paragraphs_type.event
+id: paragraph.event.field_pg_price
+field_name: field_pg_price
+entity_type: paragraph
+bundle: event
+label: Prix
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

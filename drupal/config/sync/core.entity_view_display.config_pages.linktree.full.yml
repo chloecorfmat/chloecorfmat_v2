@@ -1,0 +1,32 @@
+uuid: c387819c-1985-45a5-b78e-3bafb6f932ca
+langcode: fr
+status: true
+dependencies:
+  config:
+    - config_pages.type.linktree
+    - core.entity_view_mode.config_pages.full
+    - field.field.config_pages.linktree.field_linktree_sections
+    - field.field.config_pages.linktree.field_linktree_title
+  module:
+    - entity_reference_revisions
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: config_pages.linktree.full
+targetEntityType: config_pages
+bundle: linktree
+mode: full
+content:
+  field_linktree_sections:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: full
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_linktree_title: true

@@ -5,7 +5,12 @@
 
 .hp-reviews {
   position: relative;
-  padding: 5rem 0 3rem;
+
+  // If ressource block is present.
+  //padding: 5rem 0 3rem;
+
+  // If NO ressource block.
+  padding: 5rem 0 10rem;
 
   &__pencils {
     position: absolute;

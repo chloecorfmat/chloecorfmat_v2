@@ -6,13 +6,16 @@ dependencies:
     - field.storage.node.field_content
     - node.type.service
     - paragraphs.paragraphs_type.pg_about
+    - paragraphs.paragraphs_type.pg_callout
     - paragraphs.paragraphs_type.pg_contact
     - paragraphs.paragraphs_type.pg_cta_reminder
+    - paragraphs.paragraphs_type.pg_events
     - paragraphs.paragraphs_type.pg_faq
     - paragraphs.paragraphs_type.pg_pitch
     - paragraphs.paragraphs_type.pg_problems
     - paragraphs.paragraphs_type.pg_projects
     - paragraphs.paragraphs_type.pg_reviews
+    - paragraphs.paragraphs_type.pg_service_present_with_columns
     - paragraphs.paragraphs_type.pg_service_present_with_photo
     - paragraphs.paragraphs_type.pg_solution
     - paragraphs.paragraphs_type.pg_working_method
@@ -39,21 +42,27 @@ settings:
       pg_problems: pg_problems
       pg_service_present_with_photo: pg_service_present_with_photo
       pg_solution: pg_solution
+      pg_callout: pg_callout
       pg_reviews: pg_reviews
       pg_projects: pg_projects
       pg_contact: pg_contact
+      pg_service_present_with_columns: pg_service_present_with_columns
+      pg_events: pg_events
       pg_working_method: pg_working_method
     negate: 0
     target_bundles_drag_drop:
       cta:
         weight: 13
         enabled: false
+      event:
+        weight: 29
+        enabled: false
       pg_about:
         weight: 14
         enabled: true
       pg_callout:
         weight: 20
-        enabled: false
+        enabled: true
       pg_code:
         weight: 21
         enabled: false
@@ -62,6 +71,9 @@ settings:
         enabled: true
       pg_cta_reminder:
         weight: 15
+        enabled: true
+      pg_events:
+        weight: 27
         enabled: true
       pg_faq:
         weight: 12
@@ -80,6 +92,9 @@ settings:
         enabled: true
       pg_reviews:
         weight: 20
+        enabled: true
+      pg_service_present_with_columns:
+        weight: 24
         enabled: true
       pg_service_present_with_photo:
         weight: 17
@@ -110,5 +125,8 @@ settings:
         enabled: false
       step:
         weight: 19
+        enabled: false
+      subservice:
+        weight: 48
         enabled: false
 field_type: entity_reference_revisions

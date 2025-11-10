@@ -1,0 +1,10 @@
+uuid: f2068fb5-aeb9-40f5-ba42-b53300bb0dab
+langcode: fr
+status: true
+dependencies: {  }
+id: pg_quote
+label: 'Bloc Citation'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,17 @@
+<div class="pg-linktree-section">
+  <h2>{{ title }}</h2>
+  {% if description is not null %}
+    <div class="wysiwyg fs-lg">
+      {{ description|raw }}
+    </div>
+  {% endif %}
+
+  {% for link in links %}
+    <div>
+      <a href="{{ link.url }}" target="{{ '_' ~ link.target }}" class="btn btn--{{ link.color }}">
+        {{ link.text }}
+      </a>
+    </div>
+  {% endfor %}
+
+</div>

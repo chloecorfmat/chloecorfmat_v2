@@ -15,22 +15,13 @@
     max-width: 500px;
   }
 
-  &__computer {
-    max-width: 200px;
-    display: block;
-    margin-top: 2rem;
-    //position: absolute;
-    //left: 50%;
-    //transform: translateX(-50%);
-  }
-
   &__content {
     display: flex;
     flex-direction: column;
     gap: 3rem;
 
     @include mixins.media-min("xl") {
-      gap: 5rem;
+      gap: 7rem;
       flex-direction: row;
     }
   }
@@ -86,10 +77,6 @@
     a {
       color: colors.$snow-white;
       font-size: 18px;
-
-      &:hover {
-        color: colors.$honey-yellow-light;
-      }
     }
   }
 }

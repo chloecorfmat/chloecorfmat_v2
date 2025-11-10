@@ -1,0 +1,127 @@
+uuid: cec18d43-f3cc-47d8-8eb5-6b866fa80300
+langcode: fr
+status: true
+dependencies:
+  config:
+    - config_pages.type.contact
+    - field.storage.config_pages.field_contact_discovery_cta
+    - paragraphs.paragraphs_type.cta
+  module:
+    - entity_reference_revisions
+id: config_pages.contact.field_contact_discovery_cta
+field_name: field_contact_discovery_cta
+entity_type: config_pages
+bundle: contact
+label: "Appel à l'action"
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      cta: cta
+    negate: 0
+    target_bundles_drag_drop:
+      authority:
+        weight: 34
+        enabled: false
+      cta:
+        weight: 35
+        enabled: true
+      difference:
+        weight: 36
+        enabled: false
+      event:
+        weight: 37
+        enabled: false
+      pg_about:
+        weight: 38
+        enabled: false
+      pg_about_header:
+        weight: 39
+        enabled: false
+      pg_authorities:
+        weight: 40
+        enabled: false
+      pg_callout:
+        weight: 41
+        enabled: false
+      pg_career:
+        weight: 42
+        enabled: false
+      pg_code:
+        weight: 43
+        enabled: false
+      pg_contact:
+        weight: 44
+        enabled: false
+      pg_cta_reminder:
+        weight: 45
+        enabled: false
+      pg_differences:
+        weight: 46
+        enabled: false
+      pg_events:
+        weight: 47
+        enabled: false
+      pg_faq:
+        weight: 48
+        enabled: false
+      pg_paragraph:
+        weight: 49
+        enabled: false
+      pg_pitch:
+        weight: 50
+        enabled: false
+      pg_problems:
+        weight: 51
+        enabled: false
+      pg_projects:
+        weight: 52
+        enabled: false
+      pg_quote:
+        weight: 53
+        enabled: false
+      pg_reviews:
+        weight: 54
+        enabled: false
+      pg_service_present_with_columns:
+        weight: 55
+        enabled: false
+      pg_service_present_with_photo:
+        weight: 56
+        enabled: false
+      pg_solution:
+        weight: 57
+        enabled: false
+      pg_working_method:
+        weight: 58
+        enabled: false
+      project:
+        weight: 59
+        enabled: false
+      question:
+        weight: 60
+        enabled: false
+      reference:
+        weight: 61
+        enabled: false
+      review:
+        weight: 62
+        enabled: false
+      service:
+        weight: 63
+        enabled: false
+      situation:
+        weight: 64
+        enabled: false
+      step:
+        weight: 65
+        enabled: false
+      subservice:
+        weight: 66
+        enabled: false
+field_type: entity_reference_revisions

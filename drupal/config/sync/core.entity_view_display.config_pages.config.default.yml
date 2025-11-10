@@ -6,6 +6,7 @@ dependencies:
     - config_pages.type.config
     - field.field.config_pages.config.field_brevo_api_key
     - field.field.config_pages.config.field_brevo_list_newsletter
+    - field.field.config_pages.config.field_formspree_action
 id: config_pages.config.default
 targetEntityType: config_pages
 bundle: config
@@ -26,5 +27,13 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_formspree_action:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
     region: content
 hidden: {  }

@@ -1,0 +1,5 @@
+<ul class="pg-service-present-with-columns__subservices">
+  {% for item in items %}
+    <li{{ item.attributes.addClass('pg-subservice') }}>{{ item.content }}</li>
+  {% endfor %}
+</ul>

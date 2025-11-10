@@ -1,0 +1,10 @@
+uuid: 26905d43-f47e-4214-9ee5-f5af15844708
+langcode: fr
+status: true
+dependencies: {  }
+id: pg_differences
+label: 'Bloc Différences'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

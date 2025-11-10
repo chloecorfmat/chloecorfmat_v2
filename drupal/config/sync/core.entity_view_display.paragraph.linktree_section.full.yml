@@ -1,0 +1,25 @@
+uuid: 8376ebbc-8caa-4c03-8bd8-89fe38ceaee1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.full
+    - field.field.paragraph.linktree_section.field_pg_description_text_format
+    - field.field.paragraph.linktree_section.field_pg_links
+    - field.field.paragraph.linktree_section.field_pg_title
+    - paragraphs.paragraphs_type.linktree_section
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.linktree_section.full
+targetEntityType: paragraph
+bundle: linktree_section
+mode: full
+content: {  }
+hidden:
+  field_pg_description_text_format: true
+  field_pg_links: true
+  field_pg_title: true

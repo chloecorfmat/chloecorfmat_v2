@@ -1,0 +1,41 @@
+uuid: de1bb6e0-2a9d-4fb1-816a-9b5e3927c132
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.subservice.field_pg_image
+    - field.field.paragraph.subservice.field_pg_text
+    - field.field.paragraph.subservice.field_pg_title
+    - paragraphs.paragraphs_type.subservice
+  module:
+    - text
+id: paragraph.subservice.default
+targetEntityType: paragraph
+bundle: subservice
+mode: default
+content:
+  field_pg_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_pg_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_pg_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

@@ -29,24 +29,11 @@
       }
     }
 
-    &-image {
-      display: none;
-
-      &--image {
-        width: 100%;
-      }
-    }
-
     @include mixins.media-min("xl") {
       flex-direction: row;
 
       &-text {
-        width: 80%;
-      }
-
-      &-image {
-        display: block;
-        width: 20%;
+        width: 70%;
       }
     }
   }

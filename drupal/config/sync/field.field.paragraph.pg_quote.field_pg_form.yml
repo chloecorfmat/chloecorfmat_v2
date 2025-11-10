@@ -1,0 +1,23 @@
+uuid: 358292bc-d5f8-4941-a680-427f2e934fe4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_form
+    - paragraphs.paragraphs_type.pg_quote
+  module:
+    - options
+id: paragraph.pg_quote.field_pg_form
+field_name: field_pg_form
+entity_type: paragraph
+bundle: pg_quote
+label: Forme
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: p
+default_value_callback: ''
+settings: {  }
+field_type: list_string

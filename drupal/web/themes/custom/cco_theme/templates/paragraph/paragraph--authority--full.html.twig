@@ -1,0 +1,19 @@
+<div class="pg-authority">
+  {% if photo.position == 'left' %}
+    <div class="pg-authority__photo-container">
+      <img src="{{ file_url(photo.url) }}" alt="" class="pg-authority__photo" />
+    </div>
+  {% endif %}
+
+  <div class="pg-authority__text">
+    <div class="wysiwyg fs-lg">
+      {{ text|raw }}
+    </div>
+  </div>
+
+  {% if photo.position == 'right' %}
+    <div class="pg-authority__photo-container">
+      <img src="{{ file_url(photo.url) }}" alt="" class="pg-authority__photo" />
+    </div>
+  {% endif %}
+</div>

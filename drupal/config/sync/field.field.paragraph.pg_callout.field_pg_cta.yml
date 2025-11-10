@@ -1,0 +1,100 @@
+uuid: 35b534fe-2757-40a4-b1fe-62e75f13b63d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_cta
+    - paragraphs.paragraphs_type.cta
+    - paragraphs.paragraphs_type.pg_callout
+  module:
+    - entity_reference_revisions
+id: paragraph.pg_callout.field_pg_cta
+field_name: field_pg_cta
+entity_type: paragraph
+bundle: pg_callout
+label: "Appel à l'action"
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      cta: cta
+    negate: 0
+    target_bundles_drag_drop:
+      cta:
+        weight: 7
+        enabled: true
+      pg_about:
+        weight: 9
+        enabled: false
+      pg_callout:
+        weight: 27
+        enabled: false
+      pg_code:
+        weight: 28
+        enabled: false
+      pg_contact:
+        weight: 29
+        enabled: false
+      pg_cta_reminder:
+        weight: 30
+        enabled: false
+      pg_faq:
+        weight: 31
+        enabled: false
+      pg_paragraph:
+        weight: 32
+        enabled: false
+      pg_pitch:
+        weight: 6
+        enabled: false
+      pg_problems:
+        weight: 12
+        enabled: false
+      pg_projects:
+        weight: 35
+        enabled: false
+      pg_reviews:
+        weight: 36
+        enabled: false
+      pg_service_present_with_columns:
+        weight: 37
+        enabled: false
+      pg_service_present_with_photo:
+        weight: 38
+        enabled: false
+      pg_solution:
+        weight: 13
+        enabled: false
+      pg_working_method:
+        weight: 40
+        enabled: false
+      project:
+        weight: 41
+        enabled: false
+      question:
+        weight: 42
+        enabled: false
+      reference:
+        weight: 43
+        enabled: false
+      review:
+        weight: 8
+        enabled: false
+      service:
+        weight: 9
+        enabled: false
+      situation:
+        weight: 10
+        enabled: false
+      step:
+        weight: 47
+        enabled: false
+      subservice:
+        weight: 48
+        enabled: false
+field_type: entity_reference_revisions

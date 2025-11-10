@@ -1,0 +1,25 @@
+uuid: a150b49f-ca52-4636-baa5-d1e130b5901b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.full
+    - field.field.paragraph.subservice.field_pg_image
+    - field.field.paragraph.subservice.field_pg_text
+    - field.field.paragraph.subservice.field_pg_title
+    - paragraphs.paragraphs_type.subservice
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.subservice.full
+targetEntityType: paragraph
+bundle: subservice
+mode: full
+content: {  }
+hidden:
+  field_pg_image: true
+  field_pg_text: true
+  field_pg_title: true

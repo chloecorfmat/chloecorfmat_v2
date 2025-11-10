@@ -1,0 +1,22 @@
+uuid: a92cbc72-27a9-49cb-b109-eb0d70389ed0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - config_pages.type.contact
+    - field.storage.config_pages.field_contact_header_callout
+  module:
+    - text
+id: config_pages.contact.field_contact_header_callout
+field_name: field_contact_header_callout
+entity_type: config_pages
+bundle: contact
+label: Callout
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

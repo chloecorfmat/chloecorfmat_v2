@@ -19,3 +19,17 @@ chloecorfmat.services:
     _title: 'Mes prestations'
   requirements:
     _permission: 'access content'
+chloecorfmat.contact:
+  path: '/contact'
+  defaults:
+    _controller: '\Drupal\webv2\Controller\ContactController:build'
+    _title: 'Me contacter'
+  requirements:
+    _permission: 'access content'
+chloecorfmat.linktree:
+  path: '/liens'
+  defaults:
+    _controller: '\Drupal\webv2\Controller\LinktreeController:build'
+    _title: 'Liens'
+  requirements:
+    _permission: 'access content'

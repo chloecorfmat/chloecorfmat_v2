@@ -1,0 +1,22 @@
+uuid: 55b9018f-fd73-451e-9884-788e3a7401e7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_text
+    - paragraphs.paragraphs_type.authority
+  module:
+    - text
+id: paragraph.authority.field_pg_text
+field_name: field_pg_text
+entity_type: paragraph
+bundle: authority
+label: Texte
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

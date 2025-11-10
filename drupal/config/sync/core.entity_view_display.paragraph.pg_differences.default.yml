@@ -1,0 +1,42 @@
+uuid: 5152391d-5b99-4184-8672-b28c10d87f7a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pg_differences.field_pg_differences
+    - field.field.paragraph.pg_differences.field_pg_text
+    - field.field.paragraph.pg_differences.field_pg_title
+    - paragraphs.paragraphs_type.pg_differences
+  module:
+    - entity_reference_revisions
+    - text
+id: paragraph.pg_differences.default
+targetEntityType: paragraph
+bundle: pg_differences
+mode: default
+content:
+  field_pg_differences:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_pg_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_pg_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

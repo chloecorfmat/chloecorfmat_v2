@@ -1,0 +1,25 @@
+uuid: a8f4d47f-21fb-436a-aeec-fe9e46a53113
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.full
+    - field.field.paragraph.difference.field_pg_image
+    - field.field.paragraph.difference.field_pg_text
+    - field.field.paragraph.difference.field_pg_title
+    - paragraphs.paragraphs_type.difference
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.difference.full
+targetEntityType: paragraph
+bundle: difference
+mode: full
+content: {  }
+hidden:
+  field_pg_image: true
+  field_pg_text: true
+  field_pg_title: true

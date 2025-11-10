@@ -1,0 +1,22 @@
+uuid: 34e35791-3480-4691-8239-80d86cb3c701
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_header_text
+    - paragraphs.paragraphs_type.pg_authorities
+  module:
+    - text
+id: paragraph.pg_authorities.field_pg_header_text
+field_name: field_pg_header_text
+entity_type: paragraph
+bundle: pg_authorities
+label: 'Texte (header)'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

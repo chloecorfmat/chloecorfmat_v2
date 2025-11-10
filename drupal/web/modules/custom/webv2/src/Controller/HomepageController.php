@@ -359,20 +359,22 @@ class HomepageController extends ControllerBase
       ];
     }
 
-    $contactPage = $config_pages->load('contact');
+    $form = $this->formBuilder->getForm('Drupal\webv2\Form\FormspreeContactForm');
+
     $blockContact = [
-      'title' => $contactPage->get('field_contact_title')->value,
-      'text' => $contactPage->get('field_contact_text')->value,
+      'title' => $homepage->get('field_hp_contact_title')->value,
+      'text' => $homepage->get('field_hp_contact_text')->value,
       'others' => [
-        'title' => $contactPage->get('field_contact_others_title')->value,
-        'text' => $contactPage->get('field_contact_others_text')->value,
+        'title' => $homepage->get('field_hp_contact_others_title')->value,
+        'text' => $homepage->get('field_hp_contact_others_text')->value,
       ],
       'social' => [
-        'title' => $contactPage->get('field_contact_social_title')->value,
+        'title' => $homepage->get('field_hp_contact_social_title')->value,
         'platforms' => $platforms,
       ],
       'form' => [
-        'title' => $contactPage->get('field_contact_form_title')->value,
+        'title' => $homepage->get('field_hp_contact_form_title')->value,
+        'form' => $form,
       ],
     ];
 

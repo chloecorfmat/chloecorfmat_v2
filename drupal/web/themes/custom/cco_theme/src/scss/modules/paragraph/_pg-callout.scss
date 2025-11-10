@@ -1,0 +1,28 @@
+@use "../../tools/colors" as colors;
+@use "../../tools/variables" as variables;
+@use "../../tools/fonts" as fonts;
+@use "../../tools/mixins" as mixins;
+
+.pg-callout {
+  background: colors.$snow-white;
+  padding: 3rem 0;
+
+  &__container {
+    border: 3px dashed colors.$lagoon-blue;
+
+    border-radius: variables.$border-radius;
+    max-width: 800px;
+    margin: auto;
+  }
+
+  &__content {
+    margin: 1rem;
+    padding: 2rem;
+    background: colors.$lagoon-blue;
+
+  }
+
+  h2 {
+    color: colors.$midnight-blue;
+  }
+}

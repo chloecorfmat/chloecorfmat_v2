@@ -1,3 +1,14 @@
-.wysiwyg {
+@use "../tools/colors" as colors;
+@use "../tools/variables" as variables;
+@use "../tools/fonts" as fonts;
 
+.wysiwyg {
+  a {
+    color: colors.$midnight-blue;
+
+    &:focus,
+    &:hover {
+      text-decoration: underline dashed;
+    }
+  }
 }

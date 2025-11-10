@@ -1,0 +1,50 @@
+uuid: f2fd39eb-ffcf-4a5f-937a-4bd3d0596ebe
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pg_authorities.field_pg_authorities
+    - field.field.paragraph.pg_authorities.field_pg_footer_text
+    - field.field.paragraph.pg_authorities.field_pg_header_text
+    - field.field.paragraph.pg_authorities.field_pg_title
+    - paragraphs.paragraphs_type.pg_authorities
+  module:
+    - entity_reference_revisions
+    - text
+id: paragraph.pg_authorities.default
+targetEntityType: paragraph
+bundle: pg_authorities
+mode: default
+content:
+  field_pg_authorities:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_pg_footer_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_pg_header_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_pg_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden: {  }

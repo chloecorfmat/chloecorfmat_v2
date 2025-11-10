@@ -1,0 +1,22 @@
+uuid: 18f0fc49-2a91-4f60-80a8-e785f421f4bd
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_cta_text
+    - paragraphs.paragraphs_type.pg_events
+  module:
+    - text
+id: paragraph.pg_events.field_pg_cta_text
+field_name: field_pg_cta_text
+entity_type: paragraph
+bundle: pg_events
+label: "Appel à l'action"
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

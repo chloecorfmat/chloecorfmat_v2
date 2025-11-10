@@ -1,0 +1,100 @@
+uuid: 1eb770d6-8d23-45dd-bc22-9010fcf0ec6b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_subservices
+    - paragraphs.paragraphs_type.pg_service_present_with_columns
+    - paragraphs.paragraphs_type.subservice
+  module:
+    - entity_reference_revisions
+id: paragraph.pg_service_present_with_columns.field_pg_subservices
+field_name: field_pg_subservices
+entity_type: paragraph
+bundle: pg_service_present_with_columns
+label: Sous-prestations
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      subservice: subservice
+    negate: 0
+    target_bundles_drag_drop:
+      cta:
+        weight: 26
+        enabled: false
+      pg_about:
+        weight: 27
+        enabled: false
+      pg_callout:
+        weight: 28
+        enabled: false
+      pg_code:
+        weight: 29
+        enabled: false
+      pg_contact:
+        weight: 30
+        enabled: false
+      pg_cta_reminder:
+        weight: 31
+        enabled: false
+      pg_faq:
+        weight: 32
+        enabled: false
+      pg_paragraph:
+        weight: 33
+        enabled: false
+      pg_pitch:
+        weight: 34
+        enabled: false
+      pg_problems:
+        weight: 35
+        enabled: false
+      pg_projects:
+        weight: 36
+        enabled: false
+      pg_reviews:
+        weight: 37
+        enabled: false
+      pg_service_present_with_columns:
+        weight: 38
+        enabled: false
+      pg_service_present_with_photo:
+        weight: 39
+        enabled: false
+      pg_solution:
+        weight: 40
+        enabled: false
+      pg_working_method:
+        weight: 41
+        enabled: false
+      project:
+        weight: 42
+        enabled: false
+      question:
+        weight: 43
+        enabled: false
+      reference:
+        weight: 44
+        enabled: false
+      review:
+        weight: 45
+        enabled: false
+      service:
+        weight: 46
+        enabled: false
+      situation:
+        weight: 47
+        enabled: false
+      step:
+        weight: 48
+        enabled: false
+      subservice:
+        weight: 25
+        enabled: true
+field_type: entity_reference_revisions

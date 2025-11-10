@@ -192,6 +192,168 @@ function cco_theme_preprocess_paragraph__project__full(&$variables) {
 /**
  * Implements hook_preprocess_HOOK().
  */
+function cco_theme_preprocess_paragraph__subservice__full(&$variables) {
+  $variables['title'] = $variables['paragraph']->get('field_pg_title')->value;
+  $variables['text'] = $variables['paragraph']->get('field_pg_text')->value;
+  $variables['image'] = $variables['paragraph']->get('field_pg_image')->referencedEntities()[0]
+    ->field_media_image[0]
+    ->entity->uri->value;
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function cco_theme_preprocess_paragraph__pg_callout__full(&$variables) {
+  $variables['title'] = $variables['paragraph']->get('field_pg_title')->value;
+  $variables['text'] = $variables['paragraph']->get('field_pg_text')->value;
+
+  $colorService = \Drupal::service('webv2.color_service');
+  $entities = $variables['paragraph']->get('field_pg_cta')->referencedEntities();
+
+  if (!empty($entities)) {
+    $entity = $entities[0];
+    $cta = [
+      'url' => $entity->get('field_pg_link')->first()->getUrl()->toString(),
+      'text' => $entity->get('field_pg_link')->first()->title,
+      'target' => ($entity->get('field_pg_is_external')->value == TRUE) ? 'blank' : 'self',
+      'external' => ($entity->get('field_pg_is_external')->value == TRUE),
+      'color' => $colorService->getLitteralColorFromHexaCode($entity->get('field_pg_background_color')[0]->color),
+    ];
+
+    $variables['cta'] = $cta;
+  }
+}
+
+function cco_theme_preprocess_paragraph__pg_events__full(&$variables) {
+  $variables['title'] = $variables['paragraph']->get('field_pg_title')->value;
+  $variables['text'] = $variables['paragraph']->get('field_pg_text')->value;
+  $variables['ctaText'] = $variables['paragraph']->get('field_pg_cta_text')->value;
+}
+
+function cco_theme_preprocess_paragraph__event__full(&$variables) {
+  $variables['title'] = $variables['paragraph']->get('field_pg_title')->value;
+  $variables['text'] = $variables['paragraph']->get('field_pg_text')->value;
+
+  $colorService = \Drupal::service('webv2.color_service');
+  $entities = $variables['paragraph']->get('field_pg_cta')->referencedEntities();
+
+  if (!empty($entities)) {
+    $entity = $entities[0];
+    $cta = [
+      'url' => $entity->get('field_pg_link')->first()->getUrl()->toString(),
+      'text' => $entity->get('field_pg_link')->first()->title,
+      'target' => ($entity->get('field_pg_is_external')->value == TRUE) ? 'blank' : 'self',
+      'external' => ($entity->get('field_pg_is_external')->value == TRUE),
+      'color' => $colorService->getLitteralColorFromHexaCode($entity->get('field_pg_background_color')[0]->color),
+    ];
+
+    $variables['cta'] = $cta;
+  }
+
+  $variables['emoji'] = $variables['paragraph']->get('field_pg_emoji')->value;
+  $variables['schedule'] = $variables['paragraph']->get('field_pg_schedule')->value;
+  $variables['price'] = $variables['paragraph']->get('field_pg_price')->value;
+}
+
+function cco_theme_preprocess_paragraph__pg_about_header__full(&$variables) {
+  $variables['title'] = $variables['paragraph']->get('field_pg_title')->value;
+  $variables['text'] = $variables['paragraph']->get('field_pg_text')->value;
+  $variables['photo'] = $variables['paragraph']->get('field_pg_photo')->referencedEntities()[0]
+    ->field_media_image[0]
+    ->entity->uri->value;
+}
+
+function cco_theme_preprocess_paragraph__pg_quote__full(&$variables) {
+  $variables['quote'] = $variables['paragraph']->get('field_pg_quote')->value;
+  $variables['text'] = $variables['paragraph']->get('field_pg_plain_text')->value;
+  $variables['form'] = $variables['paragraph']->get('field_pg_form')->value;
+}
+
+function cco_theme_preprocess_paragraph__pg_career__full(&$variables) {
+  $variables['title'] = $variables['paragraph']->get('field_pg_title')->value;
+  $variables['textPart1'] = $variables['paragraph']->get('field_pg_text_part1')->value;
+  $variables['textPart2'] = $variables['paragraph']->get('field_pg_text_part2')->value;
+  $variables['photo'] = $variables['paragraph']->get('field_pg_photo')->referencedEntities()[0]
+    ->field_media_image[0]
+    ->entity->uri->value;
+}
+
+function cco_theme_preprocess_paragraph__pg_authorities__full(&$variables) {
+  $variables['title'] = $variables['paragraph']->get('field_pg_title')->value;
+  $variables['headerText'] = $variables['paragraph']->get('field_pg_header_text')->value;
+  $variables['footerText'] = $variables['paragraph']->get('field_pg_footer_text')->value;
+}
+
+function cco_theme_preprocess_paragraph__authority__full(&$variables) {
+  $variables['text'] = $variables['paragraph']->get('field_pg_text')->value;
+  $variables['photo'] = [
+    "position" => $variables['paragraph']->get('field_pg_photo_position')->value,
+    "url" => $variables['paragraph']->get('field_pg_photo')->referencedEntities()[0]
+    ->field_media_image[0]
+    ->entity->uri->value
+    ];
+}
+
+function cco_theme_preprocess_paragraph__pg_differences__full(&$variables) {
+  $variables['title'] = $variables['paragraph']->get('field_pg_title')->value;
+  $variables['text'] = $variables['paragraph']->get('field_pg_text')->value;
+}
+
+function cco_theme_preprocess_paragraph__difference__full(&$variables) {
+  $variables['title'] = $variables['paragraph']->get('field_pg_title')->value;
+  $variables['text'] = $variables['paragraph']->get('field_pg_text')->value;
+  $variables['image'] = $variables['paragraph']->get('field_pg_image')->referencedEntities()[0]
+    ->field_media_image[0]
+    ->entity->uri->value;
+}
+
+function cco_theme_preprocess_paragraph__linktree_section__full(&$variables) {
+  $paragraph = $variables['paragraph'];
+  $colorService = \Drupal::service('webv2.color_service');
+
+  $variables['title'] = $paragraph->get('field_pg_title')->value;
+  $variables['description'] = $paragraph->get('field_pg_description_text_format')->value;
+  $variables['links'] = [];
+
+  if ($paragraph->hasField('field_pg_links') && !$paragraph->get('field_pg_links')->isEmpty()) {
+    foreach ($paragraph->get('field_pg_links')->referencedEntities() as $entity) {
+
+      $cta = [
+        'url' => $entity->get('field_pg_link')->first()->getUrl()->toString(),
+        'text' => $entity->get('field_pg_link')->first()->title,
+        'target' => ($entity->get('field_pg_is_external')->value == TRUE) ? 'blank' : 'self',
+        'external' => ($entity->get('field_pg_is_external')->value == TRUE),
+        'color' => $colorService->getLitteralColorFromHexaCode($entity->get('field_pg_background_color')[0]->color),
+      ];
+
+      $variables['links'][] = $cta;
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function cco_theme_preprocess_paragraph__pg_service_present_with_columns__full(&$variables) {
+  $variables['title'] = $variables['paragraph']->get('field_pg_title')->value;
+  $variables['text'] = $variables['paragraph']->get('field_pg_text')->value;
+
+  $colorService = \Drupal::service('webv2.color_service');
+  $entity = $variables['paragraph']->get('field_pg_cta')->referencedEntities()[0];
+  $cta = [
+    'url' => $entity->get('field_pg_link')->first()->getUrl()->toString(),
+    'text' => $entity->get('field_pg_link')->first()->title,
+    'target' => ($entity->get('field_pg_is_external')->value == TRUE) ? 'blank' : 'self',
+    'external' => ($entity->get('field_pg_is_external')->value == TRUE),
+    'color' => $colorService->getLitteralColorFromHexaCode($entity->get('field_pg_background_color')[0]->color),
+  ];
+
+  $variables['cta'] = $cta;
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
 function cco_theme_preprocess_paragraph__pg_contact__full(&$variables) {
   $variables['title'] = $variables['paragraph']->get('field_pg_title')->value;
   $variables['text'] = $variables['paragraph']->get('field_pg_text')->value;

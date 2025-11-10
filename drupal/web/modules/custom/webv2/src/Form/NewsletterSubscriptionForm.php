@@ -14,7 +14,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\config_pages\ConfigPagesLoaderServiceInterface;
 
 /**
- * Provides a form for searching movies.
+ * Provides a newsletter subscription form.
  */
 class NewsletterSubscriptionForm extends FormBase {
 

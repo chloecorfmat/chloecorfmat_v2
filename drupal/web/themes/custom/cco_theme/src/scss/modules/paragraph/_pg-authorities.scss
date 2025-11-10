@@ -1,0 +1,24 @@
+@use "../../tools/colors" as colors;
+@use "../../tools/variables" as variables;
+@use "../../tools/fonts" as fonts;
+@use "../../tools/mixins" as mixins;
+
+.pg-authorities {
+  background: colors.$honey-yellow-light;
+  padding: 3rem 0;
+
+  &__header,
+  &__footer {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+
+    h2 {
+      color: colors.$electric-blue;
+    }
+
+    @include mixins.media-min("xl") {
+      text-align: center;
+    }
+  }
+}

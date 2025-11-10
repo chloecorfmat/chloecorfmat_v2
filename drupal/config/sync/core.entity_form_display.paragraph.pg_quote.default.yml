@@ -1,0 +1,39 @@
+uuid: 5d18d19e-4345-4b20-b601-dfd92836d24c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pg_quote.field_pg_form
+    - field.field.paragraph.pg_quote.field_pg_plain_text
+    - field.field.paragraph.pg_quote.field_pg_quote
+    - paragraphs.paragraphs_type.pg_quote
+id: paragraph.pg_quote.default
+targetEntityType: paragraph
+bundle: pg_quote
+mode: default
+content:
+  field_pg_form:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_pg_plain_text:
+    type: string_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_pg_quote:
+    type: string_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

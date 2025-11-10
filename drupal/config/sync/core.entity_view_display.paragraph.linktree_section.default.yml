@@ -1,0 +1,26 @@
+uuid: 5cadf277-b9d1-4cfb-800f-0a078282cafc
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.linktree_section.field_pg_description_text_format
+    - field.field.paragraph.linktree_section.field_pg_links
+    - field.field.paragraph.linktree_section.field_pg_title
+    - paragraphs.paragraphs_type.linktree_section
+  module:
+    - text
+id: paragraph.linktree_section.default
+targetEntityType: paragraph
+bundle: linktree_section
+mode: default
+content:
+  field_pg_description_text_format:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_pg_links: true
+  field_pg_title: true

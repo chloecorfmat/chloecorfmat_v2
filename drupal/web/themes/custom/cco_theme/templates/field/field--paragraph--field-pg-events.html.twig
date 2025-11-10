@@ -1,0 +1,5 @@
+<ul class="pg-events__events">
+  {% for item in items %}
+    <li{{ item.attributes.addClass('pg-event') }}>{{ item.content }}</li>
+  {% endfor %}
+</ul>

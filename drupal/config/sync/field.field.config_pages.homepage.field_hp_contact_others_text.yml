@@ -1,0 +1,22 @@
+uuid: f539f8b9-257f-4734-8e70-bfc1c9075d70
+langcode: fr
+status: true
+dependencies:
+  config:
+    - config_pages.type.homepage
+    - field.storage.config_pages.field_hp_contact_others_text
+  module:
+    - text
+id: config_pages.homepage.field_hp_contact_others_text
+field_name: field_hp_contact_others_text
+entity_type: config_pages
+bundle: homepage
+label: 'Texte "Vous voulez me joindre autrement"'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

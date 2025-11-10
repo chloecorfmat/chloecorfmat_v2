@@ -1,0 +1,22 @@
+uuid: ab8e0226-c138-4117-bd47-1773a6bab334
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_footer_text
+    - paragraphs.paragraphs_type.pg_authorities
+  module:
+    - text
+id: paragraph.pg_authorities.field_pg_footer_text
+field_name: field_pg_footer_text
+entity_type: paragraph
+bundle: pg_authorities
+label: 'Texte (footer)'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

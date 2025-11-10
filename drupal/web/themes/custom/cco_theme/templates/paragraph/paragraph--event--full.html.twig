@@ -1,0 +1,23 @@
+<h3><span aria-hidden="true">{{ emoji }}</span> {{ title }}</h3>
+
+{% if schedule is not empty %}
+  <p><span aria-hidden="true">📆</span> {{ schedule }}</p>
+{% else %}
+  <p><span aria-hidden="true">📆</span> <span class="fs-italic">Date à venir</span></p>
+{% endif %}
+
+{% if price is not empty %}
+  <p><span aria-hidden="true">💰</span> {{ price }}</p>
+{% else %}
+  <p><span aria-hidden="true">💰</span> <span class="fs-italic">Prix à venir</span></p>
+{% endif %}
+
+<div class="wysiwyg">
+  {{ text|raw }}
+</div>
+
+{% if cta %}
+  <a href="{{ cta.url }}" target="{{ '_' ~ cta.target }}" class="btn pg-event__cta">
+    {{ cta.text }}
+  </a>
+{% endif %}

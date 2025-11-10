@@ -1,0 +1,130 @@
+uuid: 56d913b2-b4bc-41eb-a775-ad89b820ec15
+langcode: fr
+status: true
+dependencies:
+  config:
+    - config_pages.type.linktree
+    - field.storage.config_pages.field_linktree_sections
+    - paragraphs.paragraphs_type.linktree_section
+  module:
+    - entity_reference_revisions
+id: config_pages.linktree.field_linktree_sections
+field_name: field_linktree_sections
+entity_type: config_pages
+bundle: linktree
+label: Sections
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      linktree_section: linktree_section
+    negate: 0
+    target_bundles_drag_drop:
+      authority:
+        weight: 36
+        enabled: false
+      cta:
+        weight: 37
+        enabled: false
+      difference:
+        weight: 38
+        enabled: false
+      event:
+        weight: 39
+        enabled: false
+      linktree_section:
+        weight: 35
+        enabled: true
+      pg_about:
+        weight: 40
+        enabled: false
+      pg_about_header:
+        weight: 41
+        enabled: false
+      pg_authorities:
+        weight: 42
+        enabled: false
+      pg_callout:
+        weight: 43
+        enabled: false
+      pg_career:
+        weight: 44
+        enabled: false
+      pg_code:
+        weight: 45
+        enabled: false
+      pg_contact:
+        weight: 46
+        enabled: false
+      pg_cta_reminder:
+        weight: 47
+        enabled: false
+      pg_differences:
+        weight: 48
+        enabled: false
+      pg_events:
+        weight: 49
+        enabled: false
+      pg_faq:
+        weight: 50
+        enabled: false
+      pg_paragraph:
+        weight: 51
+        enabled: false
+      pg_pitch:
+        weight: 52
+        enabled: false
+      pg_problems:
+        weight: 53
+        enabled: false
+      pg_projects:
+        weight: 54
+        enabled: false
+      pg_quote:
+        weight: 55
+        enabled: false
+      pg_reviews:
+        weight: 56
+        enabled: false
+      pg_service_present_with_columns:
+        weight: 57
+        enabled: false
+      pg_service_present_with_photo:
+        weight: 58
+        enabled: false
+      pg_solution:
+        weight: 59
+        enabled: false
+      pg_working_method:
+        weight: 60
+        enabled: false
+      project:
+        weight: 61
+        enabled: false
+      question:
+        weight: 62
+        enabled: false
+      reference:
+        weight: 63
+        enabled: false
+      review:
+        weight: 64
+        enabled: false
+      service:
+        weight: 65
+        enabled: false
+      situation:
+        weight: 66
+        enabled: false
+      step:
+        weight: 67
+        enabled: false
+      subservice:
+        weight: 68
+        enabled: false
+field_type: entity_reference_revisions

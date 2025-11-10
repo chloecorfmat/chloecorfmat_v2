@@ -1,0 +1,19 @@
+uuid: dcf240a4-11e1-4afb-b17e-b9805b861e51
+langcode: fr
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_pg_description_text_format
+field_name: field_pg_description_text_format
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

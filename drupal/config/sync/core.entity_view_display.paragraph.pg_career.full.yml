@@ -1,0 +1,27 @@
+uuid: 031ab762-77b8-4cdd-bf9e-2b77932b3229
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.full
+    - field.field.paragraph.pg_career.field_pg_photo
+    - field.field.paragraph.pg_career.field_pg_text_part1
+    - field.field.paragraph.pg_career.field_pg_text_part2
+    - field.field.paragraph.pg_career.field_pg_title
+    - paragraphs.paragraphs_type.pg_career
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.pg_career.full
+targetEntityType: paragraph
+bundle: pg_career
+mode: full
+content: {  }
+hidden:
+  field_pg_photo: true
+  field_pg_text_part1: true
+  field_pg_text_part2: true
+  field_pg_title: true

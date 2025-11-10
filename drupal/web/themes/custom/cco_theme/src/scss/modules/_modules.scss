@@ -8,19 +8,33 @@
 @use "list_services";
 
 @use "paragraph/pg-about";
+@use "paragraph/pg-about-header";
+@use "paragraph/pg-authority";
+@use "paragraph/pg-authorities";
+@use "paragraph/pg-callout";
+@use "paragraph/pg-career";
 @use "paragraph/pg-contact";
 @use "paragraph/pg-cta-reminder";
-@use "paragraph/pg-pitch";
+@use "paragraph/pg-difference";
+@use "paragraph/pg-differences";
+@use "paragraph/pg-event";
+@use "paragraph/pg-events";
 @use "paragraph/pg-faq";
+@use "paragraph/pg-linktree-section";
+@use "paragraph/pg-pitch";
 @use "paragraph/pg-problems";
 @use "paragraph/pg-project";
 @use "paragraph/pg-projects";
+@use "paragraph/pg-quote";
+@use "paragraph/pg-service-present-with-columns";
 @use "paragraph/pg-service-present-with-photo";
 @use "paragraph/pg-solution";
+@use "paragraph/pg-subservice";
 @use "paragraph/pg-step";
 @use "paragraph/pg-working-method";
 
 @use "pages/services" as pages-services;
+@use "pages/linktree" as pages-linktree;
 
 @use "homepage/about";
 @use "homepage/blog";
@@ -33,4 +47,9 @@
 @use "homepage/resource";
 @use "homepage/services" as homepage-services;
 @use "homepage/situations";
+
+@use "contact/discovery-call";
+@use "contact/contact" as contact-contact;
+@use "contact/hero" as contact-hero;
+
 

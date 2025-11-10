@@ -1,0 +1,10 @@
+uuid: 93785d50-4a65-4d3f-a906-9d26e33479fa
+langcode: fr
+status: true
+dependencies: {  }
+id: pg_service_present_with_columns
+label: 'Bloc Présentation de la prestation (colonnes)'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

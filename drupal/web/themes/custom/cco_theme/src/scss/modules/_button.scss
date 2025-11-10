@@ -6,77 +6,103 @@
   text-decoration: none;
   color: colors.$midnight-blue;
   background: colors.$honey-yellow;
+  border: 2px solid colors.$honey-yellow;
   padding: .5rem 1rem;
   border-radius: 30px;
   transition: all 500ms;
   margin: .5rem auto;
   text-align: center;
   font-family: fonts.$fredoka;
-  border: none;
   font-size: 18px;
 
   &:focus,
   &:hover {
     background: colors.$midnight-blue;
+    border-color: colors.$midnight-blue;
     color: colors.$honey-yellow;
     cursor: pointer;
   }
 
   &--lagoon-blue {
     background: colors.$lagoon-blue;
+    border-color: colors.$lagoon-blue;
 
     &:focus,
     &:hover {
       color: colors.$lagoon-blue;
+      border-color: colors.$midnight-blue;
     }
   }
 
   &--vine-peach {
     background: colors.$vine-peach;
+    border-color: colors.$vine-peach;
 
     &:focus,
     &:hover {
       color: colors.$vine-peach;
+      border-color: colors.$midnight-blue;
     }
   }
 
   &--honey-yellow {
     background: colors.$honey-yellow;
+    border-color: colors.$honey-yellow;
 
     &:focus,
     &:hover {
       color: colors.$honey-yellow;
+      border-color: colors.$midnight-blue;
     }
   }
 
   &--lavender-purple-medium {
     background: colors.$lavender-purple-medium;
+    border-color: colors.$lavender-purple-medium;
 
     &:focus,
     &:hover {
       color: colors.$lavender-purple-medium;
+      border-color: colors.$midnight-blue;
     }
   }
 
   &--midnight-blue {
     background: colors.$midnight-blue;
+    border-color: colors.$midnight-blue;
     color: colors.$snow-white;
 
     &:focus,
     &:hover {
       color: colors.$midnight-blue;
       background: colors.$snow-white;
+      border-color: colors.$snow-white;
     }
   }
 
   &--snow-white {
     background: colors.$snow-white;
+    border-color: colors.$snow-white;
     color: colors.$midnight-blue;
 
     &:focus,
     &:hover {
       color: colors.$snow-white;
       background: colors.$midnight-blue;
+      border-color: colors.$midnight-blue;
+    }
+  }
+
+  &--bloody-orange {
+    background: colors.$bloody-orange;
+    border-color: colors.$bloody-orange;
+    color: colors.$snow-white;
+
+    &:focus,
+    &:hover {
+      color: colors.$bloody-orange;
+      background: colors.$snow-white;
+      border-color: colors.$bloody-orange;
     }
   }
 }

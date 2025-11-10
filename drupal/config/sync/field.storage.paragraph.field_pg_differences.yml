@@ -1,0 +1,20 @@
+uuid: 8c0fbf56-9017-4b58-bd46-e6b9b566f47c
+langcode: fr
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - paragraphs
+id: paragraph.field_pg_differences
+field_name: field_pg_differences
+entity_type: paragraph
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: 4
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

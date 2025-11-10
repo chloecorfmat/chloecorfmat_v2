@@ -1,0 +1,21 @@
+uuid: 80b6cb8f-7808-4035-9c49-8771fcf30bc6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_photo_position
+    - paragraphs.paragraphs_type.authority
+  module:
+    - options
+id: paragraph.authority.field_pg_photo_position
+field_name: field_pg_photo_position
+entity_type: paragraph
+bundle: authority
+label: 'Position de la photo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

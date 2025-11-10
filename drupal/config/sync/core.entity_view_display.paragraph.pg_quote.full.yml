@@ -1,0 +1,25 @@
+uuid: efd702e6-2546-47c5-bacd-4d69961c5988
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.full
+    - field.field.paragraph.pg_quote.field_pg_form
+    - field.field.paragraph.pg_quote.field_pg_plain_text
+    - field.field.paragraph.pg_quote.field_pg_quote
+    - paragraphs.paragraphs_type.pg_quote
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.pg_quote.full
+targetEntityType: paragraph
+bundle: pg_quote
+mode: full
+content: {  }
+hidden:
+  field_pg_form: true
+  field_pg_plain_text: true
+  field_pg_quote: true

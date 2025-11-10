@@ -1,0 +1,22 @@
+uuid: 194654e5-f23c-493a-88d9-979e721a7dcb
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_text_on_cta
+    - paragraphs.paragraphs_type.pg_service_present_with_columns
+  module:
+    - text
+id: paragraph.pg_service_present_with_columns.field_pg_text_on_cta
+field_name: field_pg_text_on_cta
+entity_type: paragraph
+bundle: pg_service_present_with_columns
+label: 'Texte sur CTA'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

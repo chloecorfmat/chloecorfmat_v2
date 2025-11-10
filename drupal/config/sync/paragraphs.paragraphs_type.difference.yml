@@ -1,0 +1,10 @@
+uuid: b0462d78-7258-4514-823d-dd3c4bebef15
+langcode: fr
+status: true
+dependencies: {  }
+id: difference
+label: Différence
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

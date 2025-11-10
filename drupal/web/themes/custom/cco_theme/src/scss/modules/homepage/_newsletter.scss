@@ -143,12 +143,14 @@
 
   .btn {
     background: colors.$snow-white;
+    border-color: colors.$snow-white;
     color: colors.$electric-blue;
     font-size: 16px;
 
     &:hover,
     &:focus {
       background: colors.$midnight-blue;
+      border-color: colors.$midnight-blue;
       color: colors.$snow-white;
     }
   }

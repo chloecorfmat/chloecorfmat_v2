@@ -1,0 +1,39 @@
+@use "../../tools/colors" as colors;
+@use "../../tools/variables" as variables;
+@use "../../tools/fonts" as fonts;
+@use "../../tools/mixins" as mixins;
+
+.pg-events {
+  background: colors.$lagoon-blue;
+  padding: 3rem 0;
+
+  &__header {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  &__footer {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  &__events {
+    margin: 3rem 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+    @include mixins.media-min("xl") {
+      flex-direction: row;
+    }
+
+  }
+
+  h2 {
+    color: colors.$midnight-blue;
+  }
+}

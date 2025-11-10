@@ -1,0 +1,19 @@
+uuid: cbc8d712-3f62-4f4f-adf9-5b4a79b5bb40
+langcode: fr
+status: true
+dependencies:
+  config:
+    - config_pages.type.linktree
+    - field.storage.config_pages.field_linktree_title
+id: config_pages.linktree.field_linktree_title
+field_name: field_linktree_title
+entity_type: config_pages
+bundle: linktree
+label: Titre
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

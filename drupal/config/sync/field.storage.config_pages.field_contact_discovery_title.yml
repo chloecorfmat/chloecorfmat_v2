@@ -1,0 +1,21 @@
+uuid: 46c68661-d0a1-4ae1-8fbe-9a1d51dbb0a9
+langcode: fr
+status: true
+dependencies:
+  module:
+    - config_pages
+id: config_pages.field_contact_discovery_title
+field_name: field_contact_discovery_title
+entity_type: config_pages
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

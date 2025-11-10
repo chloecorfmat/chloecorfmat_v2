@@ -1,0 +1,33 @@
+<div class="pg-career">
+  <div class="block">
+    <div class="pg-career__part1">
+      <div class="pg-career__part1-text">
+        <h2>{{ title }}</h2>
+        <div class="wysiwyg fs-lg">
+          {{ textPart1|raw }}
+        </div>
+      </div>
+
+      <div class="pg-career__part1-image">
+        <img src="/themes/custom/cco_theme/assets/asset-sticker-accessible-white.png" alt="" class="pg-career__part1-image-accessible">
+        <img src="/themes/custom/cco_theme/assets/asset-sticker-impact-white.png" alt="" class="pg-career__part1-image-impact">
+        <img src="{{ file_url(photo) }}" alt="" class="pg-career__part1-image-photo">
+        <img src="/themes/custom/cco_theme/assets/asset-sticker-numerique-responsable-white.png" alt="" class="pg-career__part1-image-numerique-responsable">
+      </div>
+    </div>
+
+    {% if textPart2 is not null %}
+      <div class="pg-career__part2">
+        <div class="pg-career__part2-image-container">
+          <img src="/themes/custom/cco_theme/assets/asset-sticker-plant-bg.png" alt="" class="pg-career__part2-image" />
+        </div>
+
+        <div class="pg-career__part2-text">
+          <div class="wysiwyg fs-lg">
+            {{ textPart2|raw }}
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  </div>
+</div>

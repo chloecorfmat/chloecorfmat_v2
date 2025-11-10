@@ -1,0 +1,24 @@
+@use "../../tools/colors" as colors;
+@use "../../tools/variables" as variables;
+@use "../../tools/fonts" as fonts;
+@use "../../tools/mixins" as mixins;
+
+.pg-quote {
+  background: colors.$lagoon-blue;
+  padding: 3rem 0;
+
+  &__container {
+    max-width: 800px;
+    text-align: center;
+    margin: auto;
+  }
+
+  &__text {
+    font-size: 22px;
+  }
+
+  &__quote {
+    font-size: 28px;
+    font-family: fonts.$momentz;
+  }
+}

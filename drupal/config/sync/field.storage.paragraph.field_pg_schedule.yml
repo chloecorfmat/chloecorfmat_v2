@@ -1,0 +1,21 @@
+uuid: a34ccd1d-1cb1-4b10-bc64-5e548ae0c232
+langcode: fr
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_pg_schedule
+field_name: field_pg_schedule
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

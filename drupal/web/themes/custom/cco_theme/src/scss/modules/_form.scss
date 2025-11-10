@@ -12,17 +12,51 @@ form {
   }
 }
 
+.form-item {
+  margin: 1.5rem 0;
+
+  .description {
+    p {
+      color: colors.$snow-white;
+    }
+  }
+}
+
 label {
   font-family: fonts.$fredoka;
   font-size: 16px;
   font-weight: 600;
+  display: block;
 }
 
-input[type="email"] {
+input[type="email"],
+input[type="text"] {
   border-radius: 30px;
   border: none;
   font-family: fonts.$fredoka;
   font-size: 16px;
   padding: .5rem 1rem;
-  margin: .5rem auto;
+  margin: .5rem 0;
+  display: block;
+}
+
+textarea {
+  border-radius: 10px;
+  border: none;
+  font-family: fonts.$fredoka;
+  font-size: 16px;
+  padding: .5rem 1rem;
+  margin: .5rem 0;
+  display: block;
+}
+
+.form-submit {
+  background: colors.$snow-white;
+  border-color: colors.$snow-white;
+  color: colors.$midnight-blue;
+
+  &:hover,
+  &:focus {
+    color: colors.$snow-white,
+  }
 }

@@ -1,0 +1,137 @@
+uuid: cc9d7f6c-7abc-4dba-bd4c-75bd0ca98b44
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.page
+    - paragraphs.paragraphs_type.pg_about_header
+    - paragraphs.paragraphs_type.pg_authorities
+    - paragraphs.paragraphs_type.pg_career
+    - paragraphs.paragraphs_type.pg_contact
+    - paragraphs.paragraphs_type.pg_differences
+    - paragraphs.paragraphs_type.pg_quote
+  module:
+    - entity_reference_revisions
+id: node.page.field_content
+field_name: field_content
+entity_type: node
+bundle: page
+label: Contenu
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      pg_about_header: pg_about_header
+      pg_quote: pg_quote
+      pg_contact: pg_contact
+      pg_career: pg_career
+      pg_authorities: pg_authorities
+      pg_differences: pg_differences
+    negate: 0
+    target_bundles_drag_drop:
+      authority:
+        weight: 34
+        enabled: false
+      cta:
+        weight: 13
+        enabled: false
+      difference:
+        weight: 32
+        enabled: false
+      event:
+        weight: 30
+        enabled: false
+      pg_about:
+        weight: 14
+        enabled: false
+      pg_about_header:
+        weight: 28
+        enabled: true
+      pg_authorities:
+        weight: 40
+        enabled: true
+      pg_callout:
+        weight: 15
+        enabled: false
+      pg_career:
+        weight: 35
+        enabled: true
+      pg_code:
+        weight: 14
+        enabled: false
+      pg_contact:
+        weight: 34
+        enabled: true
+      pg_cta_reminder:
+        weight: 15
+        enabled: false
+      pg_differences:
+        weight: 42
+        enabled: true
+      pg_events:
+        weight: 36
+        enabled: false
+      pg_faq:
+        weight: 12
+        enabled: false
+      pg_paragraph:
+        weight: 19
+        enabled: false
+      pg_pitch:
+        weight: 16
+        enabled: false
+      pg_problems:
+        weight: 17
+        enabled: false
+      pg_projects:
+        weight: 41
+        enabled: false
+      pg_quote:
+        weight: 29
+        enabled: true
+      pg_reviews:
+        weight: 42
+        enabled: false
+      pg_service_present_with_columns:
+        weight: 43
+        enabled: false
+      pg_service_present_with_photo:
+        weight: 44
+        enabled: false
+      pg_solution:
+        weight: 18
+        enabled: false
+      pg_working_method:
+        weight: 46
+        enabled: false
+      project:
+        weight: 47
+        enabled: false
+      question:
+        weight: 19
+        enabled: false
+      reference:
+        weight: 49
+        enabled: false
+      review:
+        weight: 20
+        enabled: false
+      service:
+        weight: 21
+        enabled: false
+      situation:
+        weight: 22
+        enabled: false
+      step:
+        weight: 53
+        enabled: false
+      subservice:
+        weight: 54
+        enabled: false
+field_type: entity_reference_revisions

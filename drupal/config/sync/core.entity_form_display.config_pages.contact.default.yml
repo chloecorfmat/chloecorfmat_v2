@@ -4,20 +4,143 @@ status: true
 dependencies:
   config:
     - config_pages.type.contact
-    - field.field.config_pages.contact.field_contact_form_title
-    - field.field.config_pages.contact.field_contact_others_text
-    - field.field.config_pages.contact.field_contact_others_title
-    - field.field.config_pages.contact.field_contact_social_title
-    - field.field.config_pages.contact.field_contact_text
-    - field.field.config_pages.contact.field_contact_title
+    - field.field.config_pages.contact.field_c_contact_others_text
+    - field.field.config_pages.contact.field_c_contact_others_title
+    - field.field.config_pages.contact.field_c_contact_social_title
+    - field.field.config_pages.contact.field_contact_contact_form_title
+    - field.field.config_pages.contact.field_contact_discovery_cta
+    - field.field.config_pages.contact.field_contact_discovery_text
+    - field.field.config_pages.contact.field_contact_discovery_title
+    - field.field.config_pages.contact.field_contact_header_callout
+    - field.field.config_pages.contact.field_contact_header_photo
+    - field.field.config_pages.contact.field_contact_header_text
+    - field.field.config_pages.contact.field_contact_header_title
   module:
+    - field_group
+    - media_library
+    - paragraphs
     - text
+third_party_settings:
+  field_group:
+    group_contact_header:
+      children:
+        - field_contact_header_photo
+        - field_contact_header_title
+        - field_contact_header_text
+        - field_contact_header_callout
+      label: Header
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+    group_contact_contact:
+      children:
+        - field_contact_contact_title
+        - field_contact_contact_text
+        - field_contact_contact_form_title
+        - field_c_contact_others_title
+        - field_c_contact_others_text
+        - field_c_contact_social_title
+      label: Contact
+      region: content
+      parent_name: ''
+      weight: 3
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+    group_contact_discovery_call:
+      children:
+        - field_contact_discovery_title
+        - field_contact_discovery_text
+        - field_contact_discovery_cta
+      label: 'Appel découverte'
+      region: content
+      parent_name: ''
+      weight: 1
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
 id: config_pages.contact.default
 targetEntityType: config_pages
 bundle: contact
 mode: default
 content:
-  field_contact_form_title:
+  field_c_contact_others_text:
+    type: text_textarea
+    weight: 8
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_c_contact_others_title:
+    type: string_textfield
+    weight: 7
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_c_contact_social_title:
+    type: string_textfield
+    weight: 9
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_contact_contact_form_title:
+    type: string_textfield
+    weight: 6
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_contact_discovery_cta:
+    type: paragraphs
+    weight: 4
+    region: content
+    settings:
+      title: Paragraphe
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_contact_discovery_text:
+    type: text_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_contact_discovery_title:
     type: string_textfield
     weight: 2
     region: content
@@ -25,41 +148,32 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_contact_others_text:
+  field_contact_header_callout:
     type: text_textarea
-    weight: 4
+    weight: 9
     region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-  field_contact_others_title:
-    type: string_textfield
-    weight: 3
+  field_contact_header_photo:
+    type: media_library_widget
+    weight: 6
     region: content
     settings:
-      size: 60
-      placeholder: ''
+      media_types: {  }
     third_party_settings: {  }
-  field_contact_social_title:
-    type: string_textfield
-    weight: 5
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_contact_text:
+  field_contact_header_text:
     type: text_textarea
-    weight: 1
+    weight: 8
     region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-  field_contact_title:
+  field_contact_header_title:
     type: string_textfield
-    weight: 0
+    weight: 7
     region: content
     settings:
       size: 60

@@ -1,0 +1,36 @@
+@use "../../tools/colors" as colors;
+@use "../../tools/variables" as variables;
+@use "../../tools/fonts" as fonts;
+@use "../../tools/mixins" as mixins;
+
+.pg-subservice {
+  width: 100%;
+  background: colors.$snow-white;
+  padding: 2rem;
+  border-radius: variables.$border-radius;
+  box-sizing: border-box;
+
+  h3 {
+    margin-top: 1rem;
+  }
+
+  &__image {
+    width: 50%;
+    max-width: 200px;
+
+
+    &-container {
+      text-align: left;
+      margin: auto;
+
+      @include mixins.media-min("xl") {
+        text-align: center;
+      }
+    }
+  }
+
+  @include mixins.media-min("xl") {
+    width: 30%;
+  }
+
+}

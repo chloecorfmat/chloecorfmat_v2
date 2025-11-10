@@ -1,0 +1,31 @@
+uuid: a5f0260c-8e60-4738-a497-c172c19dadbf
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.full
+    - field.field.paragraph.event.field_pg_cta
+    - field.field.paragraph.event.field_pg_emoji
+    - field.field.paragraph.event.field_pg_price
+    - field.field.paragraph.event.field_pg_schedule
+    - field.field.paragraph.event.field_pg_text
+    - field.field.paragraph.event.field_pg_title
+    - paragraphs.paragraphs_type.event
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.event.full
+targetEntityType: paragraph
+bundle: event
+mode: full
+content: {  }
+hidden:
+  field_pg_cta: true
+  field_pg_emoji: true
+  field_pg_price: true
+  field_pg_schedule: true
+  field_pg_text: true
+  field_pg_title: true

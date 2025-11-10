@@ -1,0 +1,22 @@
+uuid: a3bff714-f089-4cfb-8b2e-94d0a3fa509d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_text
+    - paragraphs.paragraphs_type.difference
+  module:
+    - text
+id: paragraph.difference.field_pg_text
+field_name: field_pg_text
+entity_type: paragraph
+bundle: difference
+label: Texte
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

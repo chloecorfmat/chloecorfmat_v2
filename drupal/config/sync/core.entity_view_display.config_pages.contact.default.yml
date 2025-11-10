@@ -4,63 +4,109 @@ status: true
 dependencies:
   config:
     - config_pages.type.contact
-    - field.field.config_pages.contact.field_contact_form_title
-    - field.field.config_pages.contact.field_contact_others_text
-    - field.field.config_pages.contact.field_contact_others_title
-    - field.field.config_pages.contact.field_contact_social_title
-    - field.field.config_pages.contact.field_contact_text
-    - field.field.config_pages.contact.field_contact_title
+    - field.field.config_pages.contact.field_c_contact_others_text
+    - field.field.config_pages.contact.field_c_contact_others_title
+    - field.field.config_pages.contact.field_c_contact_social_title
+    - field.field.config_pages.contact.field_contact_contact_form_title
+    - field.field.config_pages.contact.field_contact_discovery_cta
+    - field.field.config_pages.contact.field_contact_discovery_text
+    - field.field.config_pages.contact.field_contact_discovery_title
+    - field.field.config_pages.contact.field_contact_header_callout
+    - field.field.config_pages.contact.field_contact_header_photo
+    - field.field.config_pages.contact.field_contact_header_text
+    - field.field.config_pages.contact.field_contact_header_title
   module:
+    - entity_reference_revisions
     - text
 id: config_pages.contact.default
 targetEntityType: config_pages
 bundle: contact
 mode: default
 content:
-  field_contact_form_title:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 2
-    region: content
-  field_contact_others_text:
+  field_c_contact_others_text:
     type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 5
+    weight: 11
     region: content
-  field_contact_others_title:
+  field_c_contact_others_title:
     type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 3
+    weight: 10
     region: content
-  field_contact_social_title:
+  field_c_contact_social_title:
     type: string
     label: above
     settings:
       link_to_entity: false
+    third_party_settings: {  }
+    weight: 13
+    region: content
+  field_contact_contact_form_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_contact_discovery_cta:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_contact_discovery_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_contact_discovery_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_contact_header_callout:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_contact_header_photo:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
     third_party_settings: {  }
     weight: 4
     region: content
-  field_contact_text:
+  field_contact_header_text:
     type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
     weight: 1
     region: content
-  field_contact_title:
+  field_contact_header_title:
     type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 0
+    weight: 3
     region: content
 hidden: {  }

@@ -138,7 +138,7 @@
   </div>
 </div>
 
-<div class="hp-newsletter">
+<div class="hp-newsletter" id="newsletter">
   <div class="block">
     <div class="hp-newsletter__content">
       <h2>{{ newsletter.title }}</h2>
@@ -151,14 +151,14 @@
         {{ newsletter.form.form }}
       </div>
 
-      <div class="hp-newsletter__last-editions">
+      {# <div class="hp-newsletter__last-editions">
         <div class="wysiwyg">
           {{ newsletter.last_editions.text|raw }}
         </div>
         <a href="{{ newsletter.last_editions.cta.url }}" target="{{ '_' ~ newsletter.last_editions.cta.target }}" class="btn">
           {{ newsletter.last_editions.cta.text }}
         </a>
-      </div>
+      </div> #}
     </div>
     <div class="hp-newsletter__image">
       <img src="/themes/custom/cco_theme/assets/asset-sticker-accessible-white.png" alt="" class="hp-newsletter__image-accessible">
@@ -308,7 +308,7 @@
   </div>
 </div>
 
-<div class="hp-resource">
+{#  <div class="hp-resource">
   <div class="block">
     <div class="hp-resource__content">
       <h2>{{ resource.title }}</h2>
@@ -326,7 +326,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> #}
 
 <div class="hp-contact">
   <div class="block">
@@ -362,7 +362,10 @@
       </div>
       <div class="hp-contact__form">
         <h2>{{ contact.form.title }}</h2>
-        <img src="/themes/custom/cco_theme/assets/asset-sticker-computer-white.png" alt="" class="hp-contact__computer">
+        <div class="wysiwyg fs-lg">
+          <p>Tous les champs sont obligatoires.</p>
+        </div>
+        {{ contact.form.form }}
       </div>
     </div>
   </div>

@@ -1,0 +1,19 @@
+uuid: 7a513838-ba4a-4d39-b071-5768fb107eff
+langcode: fr
+status: true
+dependencies:
+  config:
+    - config_pages.type.contact
+    - field.storage.config_pages.field_contact_discovery_title
+id: config_pages.contact.field_contact_discovery_title
+field_name: field_contact_discovery_title
+entity_type: config_pages
+bundle: contact
+label: Titre
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,22 @@
+uuid: 2d697887-ef82-411b-8c32-2b07dda83dfb
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_text
+    - paragraphs.paragraphs_type.subservice
+  module:
+    - text
+id: paragraph.subservice.field_pg_text
+field_name: field_pg_text
+entity_type: paragraph
+bundle: subservice
+label: Texte
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

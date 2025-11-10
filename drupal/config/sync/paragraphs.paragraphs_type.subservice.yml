@@ -1,0 +1,10 @@
+uuid: 4bd8542e-27fa-4813-aa0f-4ea8d22a91d6
+langcode: fr
+status: true
+dependencies: {  }
+id: subservice
+label: Sous-prestation
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
