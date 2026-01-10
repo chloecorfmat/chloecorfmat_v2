@@ -1,0 +1,44 @@
+services:
+  drupal:
+    build:
+      context: .
+      dockerfile: docker/drupal/dev/php/Dockerfile
+    ports:
+      - 8200:80
+    working_dir: /app/public/drupal
+    volumes:
+      - .:/app/public
+      - ./docker/drupal/dev/caddy/Caddyfile:/etc/frankenphp/Caddyfile
+      - ./docker/drupal/dev/php/php.ini:/usr/local/etc/php/php.ini
+    depends_on:
+      - db
+    networks:
+      - chloecorfmat-network
+      - web
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.chloecorfmat_v2.rule=Host(`chloecorfmat.fr`)"
+      - "traefik.http.routers.chloecorfmat_v2.entrypoints=websecure"
+      - "traefik.http.routers.chloecorfmat_v2.middlewares=strip-www"
+
+  db:
+    image: postgres:16-bookworm
+    command: -c 'max_connections=10'
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=drupal
+      - POSTGRES_USER=drupal
+      - POSTGRES_PASSWORD=drupal
+    ports:
+      - '5432:5432'
+    networks:
+      - chloecorfmat-network
+
+volumes:
+  db-data:
+
+networks:
+  chloecorfmat-network:
+  web:
+    external: true
