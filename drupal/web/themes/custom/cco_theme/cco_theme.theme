@@ -175,6 +175,7 @@ function cco_theme_preprocess_paragraph__pg_reviews__full(&$variables) {
 function cco_theme_preprocess_paragraph__pg_projects__full(&$variables) {
   $variables['title'] = $variables['paragraph']->get('field_pg_title')->value;
   $variables['text'] = $variables['paragraph']->get('field_pg_text')->value;
+  $variables['anchor'] = $variables['paragraph']->get('field_pg_anchor')->value;
 }
 
 /**
@@ -237,6 +238,7 @@ function cco_theme_preprocess_paragraph__pg_events__full(&$variables) {
   $variables['title'] = $variables['paragraph']->get('field_pg_title')->value;
   $variables['text'] = $variables['paragraph']->get('field_pg_text')->value;
   $variables['ctaText'] = $variables['paragraph']->get('field_pg_cta_text')->value;
+  $variables['anchor'] = $variables['paragraph']->get('field_pg_anchor')->value;
 }
 
 function cco_theme_preprocess_paragraph__event__full(&$variables) {

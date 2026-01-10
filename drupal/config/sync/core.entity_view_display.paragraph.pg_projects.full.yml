@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.paragraph.full
+    - field.field.paragraph.pg_projects.field_pg_anchor
     - field.field.paragraph.pg_projects.field_pg_projects
     - field.field.paragraph.pg_projects.field_pg_text
     - field.field.paragraph.pg_projects.field_pg_title
@@ -30,5 +31,6 @@ content:
     weight: 0
     region: content
 hidden:
+  field_pg_anchor: true
   field_pg_text: true
   field_pg_title: true

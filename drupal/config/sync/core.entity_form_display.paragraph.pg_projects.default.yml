@@ -3,6 +3,7 @@ langcode: fr
 status: true
 dependencies:
   config:
+    - field.field.paragraph.pg_projects.field_pg_anchor
     - field.field.paragraph.pg_projects.field_pg_projects
     - field.field.paragraph.pg_projects.field_pg_text
     - field.field.paragraph.pg_projects.field_pg_title
@@ -15,6 +16,14 @@ targetEntityType: paragraph
 bundle: pg_projects
 mode: default
 content:
+  field_pg_anchor:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_pg_projects:
     type: paragraphs
     weight: 3

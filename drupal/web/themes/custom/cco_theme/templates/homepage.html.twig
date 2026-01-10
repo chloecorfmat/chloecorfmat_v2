@@ -86,14 +86,14 @@
         {% endif %}
       </div>
 
-      <div class="hp-podcast__content-transcription">
+      {# <div class="hp-podcast__content-transcription">
         <p class="hp-podcast__content-transcription-text">
           <strong>{{ podcast.transcription.text }}</strong>
         </p>
         <a href="{{ podcast.transcription.cta.url }}" target="{{ '_' ~ podcast.transcription.cta.target }}" class="btn">
           {{ podcast.transcription.cta.text }}
         </a>
-      </div>
+      </div> #}
     </div>
     <div class="hp-podcast__mascotte">
       <img src="{{ file_url(podcast.mascotte) }}" alt="">

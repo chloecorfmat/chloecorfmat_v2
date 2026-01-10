@@ -3,6 +3,7 @@ langcode: fr
 status: true
 dependencies:
   config:
+    - field.field.paragraph.pg_projects.field_pg_anchor
     - field.field.paragraph.pg_projects.field_pg_projects
     - field.field.paragraph.pg_projects.field_pg_text
     - field.field.paragraph.pg_projects.field_pg_title
@@ -39,4 +40,5 @@ content:
     third_party_settings: {  }
     weight: 2
     region: content
-hidden: {  }
+hidden:
+  field_pg_anchor: true

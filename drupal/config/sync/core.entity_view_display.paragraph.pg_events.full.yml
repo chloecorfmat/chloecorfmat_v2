@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.paragraph.full
+    - field.field.paragraph.pg_events.field_pg_anchor
     - field.field.paragraph.pg_events.field_pg_cta_text
     - field.field.paragraph.pg_events.field_pg_events
     - field.field.paragraph.pg_events.field_pg_text
@@ -31,6 +32,7 @@ content:
     weight: 0
     region: content
 hidden:
+  field_pg_anchor: true
   field_pg_cta_text: true
   field_pg_text: true
   field_pg_title: true

@@ -3,6 +3,7 @@ langcode: fr
 status: true
 dependencies:
   config:
+    - field.field.paragraph.pg_events.field_pg_anchor
     - field.field.paragraph.pg_events.field_pg_cta_text
     - field.field.paragraph.pg_events.field_pg_events
     - field.field.paragraph.pg_events.field_pg_text
@@ -16,6 +17,14 @@ targetEntityType: paragraph
 bundle: pg_events
 mode: default
 content:
+  field_pg_anchor:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_pg_cta_text:
     type: text_textarea
     weight: 4
