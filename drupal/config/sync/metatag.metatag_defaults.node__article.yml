@@ -1,0 +1,8 @@
+uuid: f083cc8f-1a34-4dad-9aed-9cf333a912f2
+langcode: fr
+status: true
+dependencies: {  }
+id: node__article
+label: 'Contenu: Article'
+tags:
+  title: '[current-page:title] — [site:name]'

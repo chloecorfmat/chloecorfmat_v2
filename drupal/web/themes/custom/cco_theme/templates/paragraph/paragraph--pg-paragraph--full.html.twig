@@ -1,0 +1,20 @@
+<div
+  class="pg-paragraph block"
+  {% if anchor is not null %} id="{{ anchor }}" {% endif %}
+>
+  {% if title %}
+    <h2>{{ title }}</h2>
+  {% endif %}
+
+  {% if image and format == 'title_image_text' %}
+    <img src="{{ file_url(image.entity.uri[0].value) }}" alt="{{ image.alt }}" />
+  {% endif %}
+
+  <div class="wysiwyg">
+    {{ text|raw }}
+  </div>
+
+  {% if image and format == 'title_text_image' %}
+    <img src="{{ file_url(image.entity.uri[0].value) }}" alt="{{ image.alt }}" />
+  {% endif %}
+</div>

@@ -1,3 +1,9 @@
 <div class="page">
+ {% if node.field_is_title_displayed.value %}
+    <div class="block">
+      <h1 class="page-title">{{ node.title.value }}</h1>
+    </div>
+  {% endif %}
+
   {{ content }}
 </div>

@@ -224,6 +224,15 @@ function cco_theme_preprocess_paragraph__pg_callout__full(&$variables) {
   }
 }
 
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function cco_theme_preprocess_paragraph__pg_callout_with_icon__full(&$variables) {
+  $variables['text'] = $variables['paragraph']->get('field_pg_text')->value;
+  $variables['icon'] = $variables['paragraph']->get('field_pg_emoji')->value;
+  $variables['status'] = $variables['paragraph']->get('field_pg_status')->value;
+}
+
 function cco_theme_preprocess_paragraph__pg_events__full(&$variables) {
   $variables['title'] = $variables['paragraph']->get('field_pg_title')->value;
   $variables['text'] = $variables['paragraph']->get('field_pg_text')->value;
@@ -369,7 +378,21 @@ function cco_theme_preprocess_paragraph__pg_contact__full(&$variables) {
   ];
 
   $variables['cta'] = $cta;
+}
 
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function cco_theme_preprocess_paragraph__pg_paragraph__full(&$variables) {
+  $variables['title'] = $variables['paragraph']->get('field_pg_title')->value;
+  $variables['text'] = $variables['paragraph']->get('field_pg_text')->value;
+  $variables['anchor'] = $variables['paragraph']->get('field_pg_anchor')->value;
+  $variables['format'] = $variables['paragraph']->get('field_pg_format')->value;
+  $variables['image'] = null;
+  if (!empty($variables['paragraph']->get('field_pg_image')->referencedEntities())) {
+    $variables['image'] = $variables['paragraph']->get('field_pg_image')->referencedEntities()[0]
+      ->field_media_image[0];
+  }
 }
 
 /**
@@ -394,3 +417,4 @@ function cco_theme_preprocess_paragraph__pg_cta_reminder__full(&$variables) {
 
   $variables['cta'] = $cta;
 }
+

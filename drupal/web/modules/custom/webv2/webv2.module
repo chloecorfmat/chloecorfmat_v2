@@ -64,6 +64,17 @@ function webv2_theme($existing, $type, $theme, $path) {
         'contact' => NULL,
       ],
     ],
+    'blog' => [
+      'render element' => 'children',
+      'template' => 'blog',
+      'path' => $path . '/templates',
+      'variables' => [
+        'title' => NULL,
+        'subtitle' => NULL,
+        'description' => NULL,
+        'articles' => NULL,
+      ],
+    ],
     'linktree' => [
       'render element' => 'children',
       'template' => 'linktree',

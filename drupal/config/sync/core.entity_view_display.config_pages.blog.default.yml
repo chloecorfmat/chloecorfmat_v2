@@ -1,0 +1,40 @@
+uuid: ef1a4c81-4795-4e13-9dda-456715223cab
+langcode: fr
+status: true
+dependencies:
+  config:
+    - config_pages.type.blog
+    - field.field.config_pages.blog.field_blog_description
+    - field.field.config_pages.blog.field_blog_subtitle
+    - field.field.config_pages.blog.field_blog_title
+  module:
+    - text
+id: config_pages.blog.default
+targetEntityType: config_pages
+bundle: blog
+mode: default
+content:
+  field_blog_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_blog_subtitle:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_blog_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

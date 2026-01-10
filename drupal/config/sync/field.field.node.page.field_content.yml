@@ -10,6 +10,7 @@ dependencies:
     - paragraphs.paragraphs_type.pg_career
     - paragraphs.paragraphs_type.pg_contact
     - paragraphs.paragraphs_type.pg_differences
+    - paragraphs.paragraphs_type.pg_paragraph
     - paragraphs.paragraphs_type.pg_quote
   module:
     - entity_reference_revisions
@@ -27,6 +28,7 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
+      pg_paragraph: pg_paragraph
       pg_about_header: pg_about_header
       pg_quote: pg_quote
       pg_contact: pg_contact
@@ -46,6 +48,9 @@ settings:
         enabled: false
       event:
         weight: 30
+        enabled: false
+      linktree_section:
+        weight: 39
         enabled: false
       pg_about:
         weight: 14
@@ -82,7 +87,7 @@ settings:
         enabled: false
       pg_paragraph:
         weight: 19
-        enabled: false
+        enabled: true
       pg_pitch:
         weight: 16
         enabled: false

@@ -1,0 +1,42 @@
+uuid: eafaabf6-79f3-466b-9680-a359d3f5352a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - config_pages.type.blog
+    - field.field.config_pages.blog.field_blog_description
+    - field.field.config_pages.blog.field_blog_subtitle
+    - field.field.config_pages.blog.field_blog_title
+  module:
+    - text
+id: config_pages.blog.default
+targetEntityType: config_pages
+bundle: blog
+mode: default
+content:
+  field_blog_description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_blog_subtitle:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_blog_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  label: true

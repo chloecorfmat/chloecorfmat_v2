@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.full
     - field.field.node.page.field_content
+    - field.field.node.page.field_is_title_displayed
     - node.type.page
   module:
     - entity_reference_revisions
@@ -23,7 +24,7 @@ mode: full
 content:
   field_content:
     type: entity_reference_revisions_entity_view
-    label: visually_hidden
+    label: hidden
     settings:
       view_mode: full
       link: ''
@@ -31,7 +32,10 @@ content:
     weight: 0
     region: content
   links:
+    settings: {  }
+    third_party_settings: {  }
     weight: 101
     region: content
 hidden:
+  field_is_title_displayed: true
   langcode: true

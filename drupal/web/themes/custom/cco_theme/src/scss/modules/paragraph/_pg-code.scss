@@ -1,0 +1,14 @@
+@use "../../tools/colors" as colors;
+@use "../../tools/variables" as variables;
+@use "../../tools/fonts" as fonts;
+@use "../../tools/mixins" as mixins;
+
+.pg-code {
+  p {
+    margin-bottom: 0;
+  }
+
+  pre {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,23 @@
+uuid: 82d49d30-4add-4136-a723-1cbc0a9b6f7f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_is_title_displayed
+    - node.type.page
+id: node.page.field_is_title_displayed
+field_name: field_is_title_displayed
+entity_type: node
+bundle: page
+label: 'Afficher le titre ?'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Oui
+  off_label: Non
+field_type: boolean

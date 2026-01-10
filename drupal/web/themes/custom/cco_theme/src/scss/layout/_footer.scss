@@ -31,7 +31,12 @@
     a {
       font-size: 16px;
       color: colors.$snow-white;
-      text-decoration: none;
+      text-decoration: underline;
+
+      &:hover,
+      &:focus {
+        text-decoration-thickness: 2px;
+      }
     }
 
     ul {

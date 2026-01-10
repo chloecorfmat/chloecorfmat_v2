@@ -8,6 +8,7 @@ use Drupal\Core\Controller\ControllerBase;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Form\FormBuilderInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
+use Drupal\node\Entity\Node;
 
 class HomepageController extends ControllerBase
 {
@@ -278,10 +279,21 @@ class HomepageController extends ControllerBase
       ),
     ];
 
+    $query = \Drupal::entityQuery('node')
+      ->condition('type', 'article')
+      ->condition('status', 1) // Publiés uniquement
+      ->sort('created', 'DESC')
+      ->range(0, 3)
+      ->accessCheck(TRUE);
+
+    $nids = $query->execute();
+    $articles = Node::loadMultiple($nids);
+
     $blockBlog = [
       'title' => $homepage->get('field_hp_blog_title')->value,
       'text' => $homepage->get('field_hp_blog_text')->value,
       'cta' => $blogCta,
+      'articles' => $articles,
     ];
 
     $entity = $homepage->get('field_hp_reviews_cta')->referencedEntities()[0];

@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.page.field_content
+    - field.field.node.page.field_is_title_displayed
     - node.type.page
   module:
     - entity_reference_revisions
@@ -17,12 +18,22 @@ mode: default
 content:
   field_content:
     type: entity_reference_revisions_entity_view
-    label: hidden
+    label: visually_hidden
     settings:
       view_mode: full
       link: ''
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_is_title_displayed:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 1
     region: content
 hidden:
   langcode: true

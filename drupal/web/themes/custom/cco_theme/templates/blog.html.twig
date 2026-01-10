@@ -1,0 +1,33 @@
+<div class="hp-cta__background">
+</div>
+
+<div class="hp-blog">
+  <div class="block">
+    <h1 class="h2-like">{{ subtitle }}</h1>
+    <div class="hp-blog__text">
+      <div class="wysiwyg">
+        {{ description|raw }}
+      </div>
+    </div>
+
+    <div class="hp-blog__articles">
+      {% for article in articles %}
+        {% set first_paragraph = article.field_content.0.entity %}
+        {% set article_url = path('entity.node.canonical', {'node': article.id}) %}
+
+        <div class="hp-blog__articles-article">
+          {% set cover = article.field_cover.entity.field_media_image.entity.uri.value %}
+          <img src="{{ file_url(cover) }}" alt="" class="">
+
+          <h3>{{ article.title.value }}</h3>
+
+          <p>{{ article.field_summary.value|raw }}</p>
+
+          <a href="{{ article_url }}" class="btn">
+            Lire l'article
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

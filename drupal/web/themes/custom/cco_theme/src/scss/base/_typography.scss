@@ -3,7 +3,8 @@
 @use "../tools/mixins" as mixins;
 
 body {
-  h1  {
+  h1,
+  .h1-like {
     font-family: fonts.$momentz;
     color: colors.$bloody-orange;
     font-weight: normal;
@@ -27,6 +28,14 @@ body {
     margin: 0;
   }
 
+  .h2-like {
+    font-family: fonts.$momentz;
+    color: colors.$midnight-blue;
+    font-weight: normal;
+    font-size: 28px;
+    text-align: center;
+  }
+
   h3 {
     font-family: fonts.$fredoka;
     font-weight: 700;
@@ -37,7 +46,7 @@ body {
   p {
     font-family: fonts.$fredoka;
     color: colors.$midnight-blue;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5;
   }
 
@@ -55,6 +64,10 @@ body {
   a {
     font-family: fonts.$fredoka;
     text-decoration: underline;
+  }
+
+  code {
+    font-size: 16px !important;
   }
 
 }

@@ -232,30 +232,22 @@
     </div>
 
     <div class="hp-blog__articles">
-      <div class="hp-blog__articles-article">
-        <img src="/themes/custom/cco_theme/assets/asset-blog-1.png" alt="" class="">
-        <h3>Comment les déficients visuels utilisent le web ? – Podcast Clic Éthique</h3>
-        <p>Je suis très heureuse de vous présenter le second épisode de mon podcast Clic Éthique : « Comment les déficients visuels utilisent le web ? »</p>
-        <a href="{{ blog.cta.url }}" target="{{ '_' ~ blog.cta.target }}" class="btn">
-          Lire l'article
-        </a>
-      </div>
-      <div class="hp-blog__articles-article">
-        <img src="/themes/custom/cco_theme/assets/asset-blog-2.png" alt="" class="">
-        <h3>Comment les déficients visuels utilisent le web ? – Podcast Clic Éthique</h3>
-        <p>Je suis très heureuse de vous présenter le second épisode de mon podcast Clic Éthique : « Comment les déficients visuels utilisent le web ? »</p>
-        <a href="{{ blog.cta.url }}" target="{{ '_' ~ blog.cta.target }}" class="btn">
-          Lire l'article
-        </a>
-      </div>
-      <div class="hp-blog__articles-article">
-        <img src="/themes/custom/cco_theme/assets/asset-blog-3.png" alt="" class="">
-        <h3>Comment les déficients visuels utilisent le web ? – Podcast Clic Éthique</h3>
-        <p>Je suis très heureuse de vous présenter le second épisode de mon podcast Clic Éthique : « Comment les déficients visuels utilisent le web ? »</p>
-        <a href="{{ blog.cta.url }}" target="{{ '_' ~ blog.cta.target }}" class="btn">
-          Lire l'article
-        </a>
-      </div>
+      {% for article in blog.articles %}
+        {% set article_url = path('entity.node.canonical', {'node': article.id}) %}
+
+        <div class="hp-blog__articles-article">
+          {% set cover = article.field_cover.entity.field_media_image.entity.uri.value %}
+          <img src="{{ file_url(cover) }}" alt="" class="">
+
+          <h3>{{ article.title.value }}</h3>
+
+          <p>{{ article.field_summary.value|raw }}</p>
+
+          <a href="{{ article_url }}" class="btn">
+            Lire l'article
+          </a>
+        </div>
+      {% endfor %}
     </div>
 
     <div class="hp-blog__cta">

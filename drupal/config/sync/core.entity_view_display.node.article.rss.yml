@@ -5,8 +5,12 @@ dependencies:
   config:
     - core.entity_view_mode.node.rss
     - field.field.node.article.field_content
+    - field.field.node.article.field_cover
+    - field.field.node.article.field_metatag
     - field.field.node.article.field_reading_time
     - field.field.node.article.field_references
+    - field.field.node.article.field_related_articles
+    - field.field.node.article.field_summary
     - node.type.article
   module:
     - user
@@ -22,6 +26,10 @@ content:
     region: content
 hidden:
   field_content: true
+  field_cover: true
+  field_metatag: true
   field_reading_time: true
   field_references: true
+  field_related_articles: true
+  field_summary: true
   langcode: true

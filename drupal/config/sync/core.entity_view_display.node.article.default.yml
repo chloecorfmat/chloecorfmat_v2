@@ -4,8 +4,12 @@ status: true
 dependencies:
   config:
     - field.field.node.article.field_content
+    - field.field.node.article.field_cover
+    - field.field.node.article.field_metatag
     - field.field.node.article.field_reading_time
     - field.field.node.article.field_references
+    - field.field.node.article.field_related_articles
+    - field.field.node.article.field_summary
     - node.type.article
   module:
     - entity_reference_revisions
@@ -19,23 +23,19 @@ mode: default
 content:
   field_content:
     type: entity_reference_revisions_entity_view
-    label: visually_hidden
+    label: hidden
     settings:
       view_mode: full
       link: ''
     third_party_settings: {  }
     weight: 0
     region: content
-  field_references:
-    type: entity_reference_revisions_entity_view
-    label: visually_hidden
-    settings:
-      view_mode: full
-      link: ''
-    third_party_settings: {  }
-    weight: 1
-    region: content
 hidden:
+  field_cover: true
+  field_metatag: true
   field_reading_time: true
+  field_references: true
+  field_related_articles: true
+  field_summary: true
   langcode: true
   links: true

@@ -12,7 +12,9 @@
 @use "paragraph/pg-authority";
 @use "paragraph/pg-authorities";
 @use "paragraph/pg-callout";
+@use "paragraph/pg-callout-with-icon";
 @use "paragraph/pg-career";
+@use "paragraph/pg-code";
 @use "paragraph/pg-contact";
 @use "paragraph/pg-cta-reminder";
 @use "paragraph/pg-difference";
@@ -21,6 +23,7 @@
 @use "paragraph/pg-events";
 @use "paragraph/pg-faq";
 @use "paragraph/pg-linktree-section";
+@use "paragraph/pg-paragraph";
 @use "paragraph/pg-pitch";
 @use "paragraph/pg-problems";
 @use "paragraph/pg-project";
@@ -35,6 +38,7 @@
 
 @use "pages/services" as pages-services;
 @use "pages/linktree" as pages-linktree;
+@use "pages/articles";
 
 @use "homepage/about";
 @use "homepage/blog";

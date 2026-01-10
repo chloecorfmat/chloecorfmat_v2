@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_content
     - node.type.article
-    - paragraphs.paragraphs_type.pg_callout
+    - paragraphs.paragraphs_type.pg_callout_with_icon
     - paragraphs.paragraphs_type.pg_code
     - paragraphs.paragraphs_type.pg_paragraph
   module:
@@ -25,24 +25,57 @@ settings:
   handler_settings:
     target_bundles:
       pg_code: pg_code
-      pg_callout: pg_callout
       pg_paragraph: pg_paragraph
+      pg_callout_with_icon: pg_callout_with_icon
     negate: 0
     target_bundles_drag_drop:
+      authority:
+        weight: 37
+        enabled: false
       cta:
         weight: 13
+        enabled: false
+      difference:
+        weight: 39
+        enabled: false
+      event:
+        weight: 40
+        enabled: false
+      linktree_section:
+        weight: 41
         enabled: false
       pg_about:
         weight: 14
         enabled: false
+      pg_about_header:
+        weight: 43
+        enabled: false
+      pg_authorities:
+        weight: 44
+        enabled: false
       pg_callout:
         weight: 15
+        enabled: false
+      pg_callout_with_icon:
+        weight: 36
         enabled: true
+      pg_career:
+        weight: 46
+        enabled: false
       pg_code:
         weight: 14
         enabled: true
+      pg_contact:
+        weight: 48
+        enabled: false
       pg_cta_reminder:
         weight: 15
+        enabled: false
+      pg_differences:
+        weight: 50
+        enabled: false
+      pg_events:
+        weight: 51
         enabled: false
       pg_faq:
         weight: 12
@@ -56,11 +89,35 @@ settings:
       pg_problems:
         weight: 17
         enabled: false
+      pg_projects:
+        weight: 56
+        enabled: false
+      pg_quote:
+        weight: 57
+        enabled: false
+      pg_reviews:
+        weight: 58
+        enabled: false
+      pg_service_present_with_columns:
+        weight: 59
+        enabled: false
+      pg_service_present_with_photo:
+        weight: 60
+        enabled: false
       pg_solution:
         weight: 18
         enabled: false
+      pg_working_method:
+        weight: 62
+        enabled: false
+      project:
+        weight: 63
+        enabled: false
       question:
         weight: 19
+        enabled: false
+      reference:
+        weight: 65
         enabled: false
       review:
         weight: 20
@@ -70,5 +127,11 @@ settings:
         enabled: false
       situation:
         weight: 22
+        enabled: false
+      step:
+        weight: 69
+        enabled: false
+      subservice:
+        weight: 70
         enabled: false
 field_type: entity_reference_revisions

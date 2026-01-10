@@ -1,0 +1,17 @@
+uuid: f155e247-1d24-44fd-840f-50a4aeb366aa
+langcode: fr
+status: true
+dependencies: {  }
+id: blog
+label: Blog
+token: false
+context:
+  show_warning: true
+  group:
+    language: false
+  fallback:
+    language: ''
+menu:
+  path: ''
+  weight: 0
+  description: ''

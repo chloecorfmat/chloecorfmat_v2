@@ -1,0 +1,65 @@
+<div class="article block">
+  <div class="article__container">
+    <div class="article__aside">
+      <div class="article__aside-infos block">
+        <p>Écrit par Chloé Corfmat <i class="fa-solid fa-user" aria-hidden="true"></i></p>
+        <p>Écrit le {{ node.changed.value|format_date('custom', 'j F Y') }} <i class="fa-solid fa-clock" aria-hidden="true"></i></p>
+        <p>Lecture  {{ node.field_reading_time.value }} minutes <i class="fa-solid fa-stopwatch" aria-hidden="true"></i></p>
+      </div>
+
+      <div class="article__aside-references block">
+        <h2>Références</h2>
+        {% for reference in node.field_references %}
+          {% set description = reference.entity.field_pg_description.value %}
+          {% set title = reference.entity.field_pg_title.value %}
+          {% set uri = reference.entity.field_pg_link.uri %}
+
+          <div class="article__aside-references-reference">
+            <h3>{{ title }}</h3>
+            <p>{{ description }}</p>
+            <a href="{{ uri }}" target="_blank">{{ uri }}</a>
+          </div>
+        {% endfor %}
+      </div>
+
+    </div>
+    <div class="article__content">
+      <div class="block">
+        <h1 class="page-title">{{ node.title.value }}</h1>
+      </div>
+
+      {{ content }}
+
+      <div class="article__signature">
+        <p>Chloé Corfmat</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="hp-cta__background">
+</div>
+
+<div class="hp-blog">
+  <div class="block">
+    <h1 class="h2-like">Articles en lien</h1>
+
+    <div class="hp-blog__articles">
+      {% for article in node.field_related_articles %}
+        {% set article_url = path('entity.node.canonical', {'node': article.entity.id}) %}
+
+        <div class="hp-blog__articles-article">
+          {% set cover = article.entity.field_cover.entity.field_media_image.entity.uri.value %}
+          <img src="{{ file_url(cover) }}" alt="" class="">
+
+          <h3>{{ article.entity.title.value }}</h3>
+
+          <p>{{ article.entity.field_summary.value|raw }}</p>
+
+          <a href="{{ article_url }}" class="btn">
+            Lire l'article
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

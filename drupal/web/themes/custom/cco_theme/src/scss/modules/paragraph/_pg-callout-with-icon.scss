@@ -1,0 +1,57 @@
+@use "../../tools/colors" as colors;
+@use "../../tools/variables" as variables;
+@use "../../tools/fonts" as fonts;
+@use "../../tools/mixins" as mixins;
+
+.pg-callout-with-icon {
+
+  &__container {
+    padding: 2rem !important;
+    border-radius: variables.$border-radius;
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__icon {
+    width: 10%;
+    font-size: 32px;
+  }
+
+  &__text {
+    flex-grow: 1;
+
+    .wysiwyg {
+      p:first-child {
+        margin-top: 0;
+      }
+
+      p:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &--warning {
+    .pg-callout-with-icon__container {
+      background: scale-color(colors.$honey-yellow-light, $lightness: 50%);
+    }
+  }
+
+  &--info {
+    .pg-callout-with-icon__container {
+      background: scale-color(colors.$lagoon-blue, $lightness: 50%);
+    }
+  }
+
+  &--danger {
+    .pg-callout-with-icon__container {
+      background: scale-color(colors.$bloody-orange, $lightness: 80%);
+    }
+  }
+
+  &--success {
+    .pg-callout-with-icon__container {
+      background: scale-color(colors.$fir-green-light, $lightness: 50%);
+    }
+  }
+}

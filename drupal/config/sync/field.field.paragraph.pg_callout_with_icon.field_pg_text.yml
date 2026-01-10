@@ -1,0 +1,22 @@
+uuid: c98a4a11-fd63-4a48-8f47-f5b21019d805
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_text
+    - paragraphs.paragraphs_type.pg_callout_with_icon
+  module:
+    - text
+id: paragraph.pg_callout_with_icon.field_pg_text
+field_name: field_pg_text
+entity_type: paragraph
+bundle: pg_callout_with_icon
+label: Texte
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

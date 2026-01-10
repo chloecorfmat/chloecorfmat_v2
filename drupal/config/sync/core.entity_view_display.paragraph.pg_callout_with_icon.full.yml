@@ -1,0 +1,25 @@
+uuid: bb3865ad-0ab8-4c5c-a7fe-2953cbec0728
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.full
+    - field.field.paragraph.pg_callout_with_icon.field_pg_emoji
+    - field.field.paragraph.pg_callout_with_icon.field_pg_status
+    - field.field.paragraph.pg_callout_with_icon.field_pg_text
+    - paragraphs.paragraphs_type.pg_callout_with_icon
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.pg_callout_with_icon.full
+targetEntityType: paragraph
+bundle: pg_callout_with_icon
+mode: full
+content: {  }
+hidden:
+  field_pg_emoji: true
+  field_pg_status: true
+  field_pg_text: true

@@ -1,0 +1,19 @@
+uuid: 4f56705c-4690-4041-9c52-0b7675a1c8d3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - config_pages.type.blog
+    - field.storage.config_pages.field_blog_subtitle
+id: config_pages.blog.field_blog_subtitle
+field_name: field_blog_subtitle
+entity_type: config_pages
+bundle: blog
+label: Sous-titre
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -8,3 +8,16 @@
     margin: auto;
   }
 }
+
+.article {
+  .block {
+    padding: .5rem 2rem;
+  }
+
+  .paragraph--type--pg-code.block {
+    padding: 0 2rem;
+    margin: 0;
+  }
+}
+
+

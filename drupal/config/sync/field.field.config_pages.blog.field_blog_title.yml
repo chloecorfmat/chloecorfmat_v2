@@ -1,0 +1,19 @@
+uuid: e8268e3b-a1ad-487f-b888-4a5086282c9c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - config_pages.type.blog
+    - field.storage.config_pages.field_blog_title
+id: config_pages.blog.field_blog_title
+field_name: field_blog_title
+entity_type: config_pages
+bundle: blog
+label: Titre
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

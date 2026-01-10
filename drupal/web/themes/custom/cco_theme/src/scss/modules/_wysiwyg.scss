@@ -8,7 +8,46 @@
 
     &:focus,
     &:hover {
-      text-decoration: underline dashed;
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+    }
+  }
+
+  // Table.
+  .table {
+    min-width: 800px;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 16px;
+    border-radius: variables.$border-radius;
+    overflow: hidden;
+
+    thead {
+      background: colors.$midnight-blue;
+
+      th {
+        padding: 1rem;
+        text-align: left;
+        font-weight: 600;
+        font-size: 16px;
+        font-family: fonts.$fredoka;
+        color: colors.$snow-white;
+      }
+    }
+
+    tbody {
+      td {
+        padding: 1rem;
+        border-bottom: 1px solid rgba(colors.$midnight-blue, 0.3);
+        border-right: 1px solid rgba(colors.$midnight-blue, 0.3);
+        font-family: fonts.$fredoka;
+        color: colors.$midnight-blue;
+
+        &:first-child {
+          border-left: 1px solid rgba(colors.$midnight-blue, 0.3);
+        }
+      }
     }
   }
 }

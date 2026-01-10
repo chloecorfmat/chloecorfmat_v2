@@ -1,0 +1,115 @@
+@use "../../tools/colors" as colors;
+@use "../../tools/variables" as variables;
+@use "../../tools/fonts" as fonts;
+@use "../../tools/mixins" as mixins;
+
+.article {
+  &__container {
+    display: flex;
+    flex-direction: column-reverse;
+
+    @include mixins.media-min("xl") {
+      gap: 2rem;
+      flex-direction: row;
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__aside {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+    text-align: right;
+
+    @include mixins.media-min("xl") {
+      width: 30%;
+      margin-top: 4rem;
+      margin-bottom: 0;
+    }
+
+    &-infos {
+      flex-grow: 0;
+      flex-shrink: 0;
+      margin: 0;
+
+      p {
+        font-size: 20px;
+        margin: .5rem 0;
+      }
+
+      svg {
+        margin-left: 1rem;
+      }
+    }
+
+    &-references {
+      flex-grow: 0;
+      flex-shrink: 0;
+
+      &-reference {
+        border: 2px solid colors.$lagoon-blue;
+        border-radius: variables.$border-radius;
+        padding: 1rem;
+        margin: 1rem 0;
+
+        h3 {
+          margin: 0;
+        }
+
+        p {
+          margin: .5rem 0;
+        }
+
+        a {
+          font-size: 18px;
+
+          &:hover,
+          &:focus {
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+          }
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  &__content {
+    width: 100%;
+
+    @include mixins.media-min("xl") {
+      width: 70%;
+    }
+  }
+
+  &__signature {
+    text-align: right;
+    margin-bottom: 1rem;
+    padding: 0 4rem;
+
+    p {
+      font-family: fonts.$momentz;
+      font-size: 1.5rem;
+    }
+  }
+
+  .page-title {
+    margin-top: 4rem;
+    font-size: 2rem;
+    text-align: left;
+  }
+
+  .block {
+    margin-bottom: 1rem;
+  }
+
+  .pg-paragraph {
+    &:last-child {
+      padding-bottom: initial;
+    }
+  }
+}

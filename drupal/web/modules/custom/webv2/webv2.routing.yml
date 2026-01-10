@@ -26,6 +26,13 @@ chloecorfmat.contact:
     _title: 'Me contacter'
   requirements:
     _permission: 'access content'
+chloecorfmat.blog:
+  path: '/blog'
+  defaults:
+    _controller: '\Drupal\webv2\Controller\BlogController:build'
+    _title: 'Blog'
+  requirements:
+    _permission: 'access content'
 chloecorfmat.linktree:
   path: '/liens'
   defaults:
