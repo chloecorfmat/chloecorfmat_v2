@@ -10,12 +10,12 @@
       </div>
     </div>
 
-    <div class="hp-blog__articles">
+    <ul class="hp-blog__articles">
       {% for article in articles %}
         {% set first_paragraph = article.field_content.0.entity %}
         {% set article_url = path('entity.node.canonical', {'node': article.id}) %}
 
-        <div class="hp-blog__articles-article">
+        <li class="hp-blog__articles-article">
           {% set cover = article.field_cover.entity.field_media_image.entity.uri.value %}
           <img src="{{ file_url(cover) }}" alt="" class="">
 
@@ -26,8 +26,8 @@
           <a href="{{ article_url }}" class="btn">
             Lire l'article
           </a>
-        </div>
+        </li>
       {% endfor %}
-    </div>
+    </ul>
   </div>
 </div>
