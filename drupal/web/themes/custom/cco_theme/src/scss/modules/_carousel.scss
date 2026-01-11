@@ -149,3 +149,38 @@
   }
 
 }
+
+/* Version mobile : afficher toutes les slides */
+@media (max-width: 768px) {
+  /* Masquer les boutons */
+  .carousel__prev,
+  .carousel__next {
+    display: none;
+  }
+
+  /* Réinitialiser le conteneur */
+  .carousel__viewport {
+    overflow: visible;
+  }
+
+  /* Désactiver le transform */
+  #carousel__track {
+    transform: none !important;
+    display: block !important;
+  }
+
+  /* FORCER l'affichage de TOUTES les slides */
+  .carousel__slide {
+    display: block !important;
+    position: static !important; /* Au cas où elles seraient en position absolute */
+    opacity: 1 !important;
+    visibility: visible !important;
+    width: 100% !important; /* Forcer la largeur complète */
+    margin-bottom: 2rem;
+  }
+
+  /* Même celles avec aria-hidden */
+  .carousel__slide[aria-hidden="true"] {
+    display: block !important;
+  }
+}

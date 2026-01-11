@@ -5,14 +5,22 @@
 
 .hp-contact {
   position: relative;
-  padding: 8rem 0 3rem;
+  padding: 3rem 0 3rem;
   background: colors.$bloody-orange;
   color: colors.$snow-white;
+
+  @include mixins.media-min("sm") {
+    padding: 8rem 0 3rem;
+  }
 
   &__mascotte {
     position: absolute;
     top: -10rem;
-    max-width: 500px;
+    max-width: 350px;
+
+    @include mixins.media-min("sm") {
+      max-width: 500px;
+    }
   }
 
   &__content {
