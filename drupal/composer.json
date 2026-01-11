@@ -41,6 +41,7 @@
         "drupal/metatag": "^2.1",
         "drupal/paragraphs": "^1.19",
         "drupal/pathauto": "^1.13",
+        "drupal/redirect": "^1.12",
         "drupal/sitemap": "^2.0",
         "drush/drush": "^13.6",
         "getbrevo/brevo-php": "^2.0"
