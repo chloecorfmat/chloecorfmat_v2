@@ -9,7 +9,7 @@
     flex-direction: column-reverse;
 
     @include mixins.media-min("xl") {
-      gap: 2rem;
+      gap: 0;
       flex-direction: row;
       margin-bottom: 4rem;
     }

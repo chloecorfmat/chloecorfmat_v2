@@ -7,6 +7,7 @@
         <p>Lecture  {{ node.field_reading_time.value }} minutes <i class="fa-solid fa-stopwatch" aria-hidden="true"></i></p>
       </div>
 
+      {% if node.field_references is not empty %}
       <div class="article__aside-references block">
         <h2>Références</h2>
         {% for reference in node.field_references %}
@@ -21,7 +22,7 @@
           </div>
         {% endfor %}
       </div>
-
+      {% endif %}
     </div>
     <div class="article__content">
       <div class="block">
