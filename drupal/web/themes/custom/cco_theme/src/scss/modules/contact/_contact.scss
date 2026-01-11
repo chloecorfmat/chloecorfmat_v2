@@ -12,7 +12,11 @@
   &__mascotte {
     position: absolute;
     top: -10rem;
-    max-width: 500px;
+    max-width: 350px;
+
+    @include mixins.media-min("sm") {
+      max-width: 500px;
+    }
   }
 
   &__computer {
