@@ -276,7 +276,7 @@
       <div class="carousel__viewport">
         <ul id="carousel__track" class="carousel__slides" aria-atomic="false" aria-live="polite">
           {%- for review in reviews.reviews -%}
-            <li class="carousel__slide carousel--{{ review.color }}" role="group" aria-roledescription="Recommandation" aria-label="1 sur 4">
+            <li class="carousel__slide carousel--{{ review.color }}" aria-label="1 sur 4">
               <blockquote cite="https://www.linkedin.com/in/chloecorfmat/">
                 <div class="hp-reviews__review">{{ review.review|raw }}</div>
                 <p>{{ review.name }}, <span class="hp-reviews__company">{{ review.company }}</span></p>
