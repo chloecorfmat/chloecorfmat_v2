@@ -20,6 +20,10 @@ services:
       - "traefik.http.routers.chloecorfmat_v2.rule=Host(`chloecorfmat.fr`)"
       - "traefik.http.routers.chloecorfmat_v2.entrypoints=websecure"
       - "traefik.http.routers.chloecorfmat_v2.middlewares=strip-www"
+      # Middleware de redirection
+      - "traefik.http.middlewares.redirect-old-blog.redirectregex.regex=^https?://([^/]+)/blog/2024/08/liens-evitement/?$$"
+      - "traefik.http.middlewares.redirect-old-blog.redirectregex.replacement=https://$${1}/liens-evitement"
+      - "traefik.http.middlewares.redirect-old-blog.redirectregex.permanent=true"
 
   db:
     image: postgres:16-bookworm
