@@ -2893,16 +2893,16 @@
         },
         {
             "name": "getbrevo/brevo-php",
-            "version": "v2.0.8",
+            "version": "v2.0.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/getbrevo/brevo-php.git",
-                "reference": "31e0054ac54c3358ac3c7c8e816f7994f0924319"
+                "reference": "1abb1b75e06aa2ca3a6893d8e8d1968a8a76dc3f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/getbrevo/brevo-php/zipball/31e0054ac54c3358ac3c7c8e816f7994f0924319",
-                "reference": "31e0054ac54c3358ac3c7c8e816f7994f0924319",
+                "url": "https://api.github.com/repos/getbrevo/brevo-php/zipball/1abb1b75e06aa2ca3a6893d8e8d1968a8a76dc3f",
+                "reference": "1abb1b75e06aa2ca3a6893d8e8d1968a8a76dc3f",
                 "shasum": ""
             },
             "require": {
@@ -2950,9 +2950,9 @@
             ],
             "support": {
                 "issues": "https://github.com/getbrevo/brevo-php/issues",
-                "source": "https://github.com/getbrevo/brevo-php/tree/v2.0.8"
+                "source": "https://github.com/getbrevo/brevo-php/tree/v2.0.14"
             },
-            "time": "2025-06-24T07:06:49+00:00"
+            "time": "2025-11-06T10:13:45+00:00"
         },
         {
             "name": "grasmash/expander",

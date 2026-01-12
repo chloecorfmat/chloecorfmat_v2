@@ -1,39 +1,39 @@
-chloecorfmat.homepage:
+webv2.homepage:
   path: '/homepage'
   defaults:
     _controller: '\Drupal\webv2\Controller\HomepageController:build'
     _title: 'Accueil'
   requirements:
     _permission: 'access content'
-chloecorfmat.newsletter.confirmation:
+webv2.newsletter.confirmation:
   path: '/newsletter/confirmation'
   defaults:
     _controller: '\Drupal\webv2\Controller\NewsletterController:confirmation'
-    _title: 'Votre inscription a bien été prise en compte.'
+    _title: 'Merci pour votre confiance !'
   requirements:
     _permission: 'access content'
-chloecorfmat.services:
+webv2.services:
   path: '/prestations'
   defaults:
     _controller: '\Drupal\webv2\Controller\ServicesController:list'
     _title: 'Mes prestations'
   requirements:
     _permission: 'access content'
-chloecorfmat.contact:
+webv2.contact:
   path: '/contact'
   defaults:
     _controller: '\Drupal\webv2\Controller\ContactController:build'
     _title: 'Me contacter'
   requirements:
     _permission: 'access content'
-chloecorfmat.blog:
+webv2.blog:
   path: '/blog'
   defaults:
     _controller: '\Drupal\webv2\Controller\BlogController:build'
     _title: 'Blog'
   requirements:
     _permission: 'access content'
-chloecorfmat.linktree:
+webv2.linktree:
   path: '/liens'
   defaults:
     _controller: '\Drupal\webv2\Controller\LinktreeController:build'

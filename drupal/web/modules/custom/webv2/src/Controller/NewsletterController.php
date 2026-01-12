@@ -62,7 +62,7 @@ class NewsletterController extends ControllerBase {
     $config_pages = $this->configPagesLoader;
     $newsletter = $config_pages->load('newsletter');
 
-    $title = 'Votre inscription a bien été prise en compte.';
+    $title = 'Merci pour votre confiance !';
 
     $build = [
       '#theme' => 'newsletter_confirmation',

@@ -1,5 +1,5 @@
 # Dockerfile
-FROM dunglas/frankenphp:1.7-php8.4-bookworm
+FROM dunglas/frankenphp:1.7-php8.3-bookworm
 
 COPY --from=composer:2.8 /usr/bin/composer /usr/local/bin/composer
 
