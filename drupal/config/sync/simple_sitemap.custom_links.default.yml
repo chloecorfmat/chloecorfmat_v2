@@ -2,15 +2,16 @@ links:
   -
     path: /
     priority: '1.0'
-    changefreq: ''
+    changefreq: monthly
   -
     path: /blog
     priority: '1.0'
-    changefreq: ''
+    changefreq: monthly
   -
     path: /contact
     priority: '1.0'
-    changefreq: ''
+    changefreq: yearly
   -
     path: /prestations
     priority: '1.0'
+    changefreq: yearly
