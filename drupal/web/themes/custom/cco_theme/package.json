@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "livereload": "livereload --exclusions node_modules/ --exts 'css,js,twig,theme,apng,avif,gif,jpg,jpeg,jfif,pjpeg,pjp,png,svg,webp'",
-    "dev": "vite build --watch",
-    "build": "vite build",
+    "dev": "vite build --watch --mode development",
+    "build": "vite build --mode production",
     "serve": "vite preview"
   },
   "author": "Chloé Corfmat (contact@chloecorfmat.fr)",

@@ -1,3 +1,4 @@
+@use "sass:color";
 @use "../../tools/colors" as colors;
 @use "../../tools/variables" as variables;
 @use "../../tools/fonts" as fonts;
@@ -33,25 +34,25 @@
 
   &--warning {
     .pg-callout-with-icon__container {
-      background: scale-color(colors.$honey-yellow-light, $lightness: 50%);
+      background: color.scale(colors.$honey-yellow-light, $lightness: 50%);
     }
   }
 
   &--info {
     .pg-callout-with-icon__container {
-      background: scale-color(colors.$lagoon-blue, $lightness: 50%);
+      background: color.scale(colors.$lagoon-blue, $lightness: 50%);
     }
   }
 
   &--danger {
     .pg-callout-with-icon__container {
-      background: scale-color(colors.$bloody-orange, $lightness: 80%);
+      background: color.scale(colors.$bloody-orange, $lightness: 80%);
     }
   }
 
   &--success {
     .pg-callout-with-icon__container {
-      background: scale-color(colors.$fir-green-light, $lightness: 50%);
+      background: color.scale(colors.$fir-green-light, $lightness: 50%);
     }
   }
 }

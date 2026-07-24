@@ -1,4 +1,16 @@
 {
+  "src/js/accordion.js": {
+    "file": "accordion.js",
+    "name": "accordion",
+    "src": "src/js/accordion.js",
+    "isEntry": true
+  },
+  "src/js/carousel.js": {
+    "file": "carousel.js",
+    "name": "carousel",
+    "src": "src/js/carousel.js",
+    "isEntry": true
+  },
   "src/main.js": {
     "file": "main.js",
     "name": "main",

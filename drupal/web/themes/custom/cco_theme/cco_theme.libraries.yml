@@ -6,7 +6,7 @@ global:
     dist/main.js: {}
 carousel:
   js:
-    src/js/carousel.js: {}
+    dist/carousel.js: {}
 accordion:
   js:
-    src/js/accordion.js: {}
+    dist/accordion.js: {}
