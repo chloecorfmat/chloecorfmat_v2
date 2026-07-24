@@ -1,0 +1,21 @@
+uuid: 95f2e325-731a-46ab-b114-0deb813df74e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metatag
+    - node.type.service
+  module:
+    - metatag
+id: node.service.field_metatag
+field_name: field_metatag
+entity_type: node
+bundle: service
+label: Metatag
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

@@ -1,0 +1,16 @@
+links:
+  -
+    path: /
+    priority: '1.0'
+    changefreq: ''
+  -
+    path: /blog
+    priority: '1.0'
+    changefreq: ''
+  -
+    path: /contact
+    priority: '1.0'
+    changefreq: ''
+  -
+    path: /prestations
+    priority: '1.0'

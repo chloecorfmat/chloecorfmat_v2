@@ -5,5 +5,5 @@ dependencies: {  }
 id: node__service
 label: 'Contenu: Prestation'
 tags:
-  robots: 'index, follow'
+  description: ' '
   title: '[node:title] | [site:name]'

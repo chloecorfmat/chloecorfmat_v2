@@ -9,9 +9,11 @@ dependencies:
     - field.field.node.service.field_list_description
     - field.field.node.service.field_list_name
     - field.field.node.service.field_mascot
+    - field.field.node.service.field_metatag
     - node.type.service
   module:
     - entity_reference_revisions
+    - metatag
     - user
 id: node.service.default
 targetEntityType: node
@@ -26,6 +28,13 @@ content:
       link: ''
     third_party_settings: {  }
     weight: 6
+    region: content
+  field_metatag:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
     region: content
 hidden:
   field_list_cta_color: true

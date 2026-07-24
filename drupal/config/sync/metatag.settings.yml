@@ -4,6 +4,8 @@ entity_type_groups:
   node:
     article:
       basic: basic
+    service:
+      basic: basic
 separator: ','
 tag_trim_method: beforeValue
 use_maxlength: true
